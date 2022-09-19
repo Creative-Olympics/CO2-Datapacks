@@ -1,0 +1,137 @@
+# Note: This score contains useful constants like:
+# - Values from -2 to 25
+# - Trigonometric values Pi and x*Pi/4 (in degrees)
+# - Trigonometric values 32400, 40500, 18000, 36000, 90000, 180000, 270000, 324000000, 405000000, 28125, 640, 785, 74, 212 (usefull for sinus, cosinus, arctangent et arccosinus approximations)
+# - Powers of 2 (2,4,8,16,32,64,... to 4096)
+# - Powers of 10 (10,100,1000,... to 1000000)
+# - Prime numbers to 100
+# - Others: log(10)*10^6, log(10)*10^4, log(2)*10^4
+
+scoreboard objectives add const dummy
+
+# Classic numbers
+scoreboard players set Neg const -1
+scoreboard players set -2 const -2
+scoreboard players set -1 const -1
+scoreboard players set 0 const 0
+scoreboard players set 1 const 1
+scoreboard players set 2 const 2
+scoreboard players set 3 const 3
+scoreboard players set 4 const 4
+scoreboard players set 5 const 5
+scoreboard players set 6 const 6
+scoreboard players set 7 const 7
+scoreboard players set 8 const 8
+scoreboard players set 9 const 9
+scoreboard players set 10 const 10
+scoreboard players set 11 const 11
+scoreboard players set 12 const 12
+scoreboard players set 13 const 13
+scoreboard players set 14 const 14
+scoreboard players set 15 const 15
+scoreboard players set 16 const 16
+scoreboard players set 17 const 17
+scoreboard players set 18 const 18
+scoreboard players set 19 const 19
+scoreboard players set 20 const 20
+scoreboard players set 21 const 21
+scoreboard players set 22 const 22
+scoreboard players set 23 const 23
+scoreboard players set 24 const 24
+scoreboard players set 25 const 25
+scoreboard players set 26 const 26
+scoreboard players set 29 const 29
+scoreboard players set 30 const 30
+scoreboard players set 31 const 31
+scoreboard players set 32 const 32
+scoreboard players set 37 const 37
+scoreboard players set 40 const 40
+scoreboard players set 41 const 41
+scoreboard players set 43 const 43
+scoreboard players set 45 const 45
+scoreboard players set 47 const 47
+scoreboard players set 50 const 50
+scoreboard players set 53 const 53
+scoreboard players set 59 const 59
+scoreboard players set 60 const 60
+scoreboard players set 61 const 61
+scoreboard players set 62 const 62
+scoreboard players set 64 const 64
+scoreboard players set 67 const 67
+scoreboard players set 70 const 70
+scoreboard players set 71 const 71
+scoreboard players set 73 const 73
+scoreboard players set 74 const 74
+scoreboard players set 79 const 79
+scoreboard players set 80 const 80
+scoreboard players set 83 const 83
+scoreboard players set 89 const 89
+scoreboard players set 90 const 90
+scoreboard players set 97 const 97
+scoreboard players set 100 const 100
+scoreboard players set 101 const 101
+scoreboard players set 120 const 120
+scoreboard players set 128 const 128
+scoreboard players set 135 const 135
+scoreboard players set 180 const 180
+scoreboard players set 200 const 200
+scoreboard players set 212 const 212
+scoreboard players set 225 const 225
+scoreboard players set 256 const 256
+scoreboard players set 270 const 270
+scoreboard players set 300 const 300
+scoreboard players set 307 const 307
+scoreboard players set 315 const 315
+scoreboard players set 360 const 360
+scoreboard players set 400 const 400
+scoreboard players set 500 const 500
+scoreboard players set 512 const 512
+scoreboard players set 600 const 600
+scoreboard players set 640 const 640
+scoreboard players set 700 const 700
+scoreboard players set 785 const 785
+scoreboard players set 800 const 800
+scoreboard players set 900 const 900
+scoreboard players set 1000 const 1000
+scoreboard players set 1001 const 1001
+scoreboard players set 1200 const 1200
+scoreboard players set 1500 const 1500
+scoreboard players set 1024 const 1024
+scoreboard players set 2001 const 2001
+scoreboard players set 2048 const 2048
+scoreboard players set 4000 const 4000
+scoreboard players set 4096 const 4096
+scoreboard players set 6500 const 6500
+scoreboard players set 6931 const 6931
+scoreboard players set 10000 const 10000
+scoreboard players set 11500 const 11500
+scoreboard players set 15500 const 15500
+scoreboard players set 16807 const 16807
+scoreboard players set 17364 const 17364
+scoreboard players set 18000 const 18000
+scoreboard players set 23026 const 23026
+scoreboard players set 24000 const 24000
+scoreboard players set 28125 const 28125
+scoreboard players set 32400 const 32400
+scoreboard players set 36000 const 36000
+scoreboard players set 36288 const 36288
+scoreboard players set 40500 const 40500
+scoreboard players set 65521 const 65521
+scoreboard players set 65536 const 65536
+scoreboard players set 90000 const 90000
+scoreboard players set 100000 const 100000
+scoreboard players set 117500 const 117500
+scoreboard players set 118998 const 118998
+scoreboard players set 166667 const 166667
+scoreboard players set 180000 const 180000
+scoreboard players set 270000 const 270000
+scoreboard players set 1000000 const 1000000
+scoreboard players set 2302585 const 2302585
+scoreboard players set 405000000 const 405000000
+scoreboard players set 324000000 const 324000000
+
+# Particular numbers
+scoreboard players set Pi const 3142
+scoreboard players set Pi2 const 314
+scoreboard players set Pi3 const 3142
+scoreboard players set Pi6 const 3141593
