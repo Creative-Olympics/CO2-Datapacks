@@ -1,5 +1,7 @@
 {
  "values": [
-	"mg:main"
+	"jump:main",
+	"thimble:main",
+	"tnt_run:main"
  ]
 }
