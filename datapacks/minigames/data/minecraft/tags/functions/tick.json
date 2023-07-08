@@ -1,7 +1,7 @@
 {
  "values": [
-	"jump:main",
-	"thimble:main",
-	"tnt_run:main"
+	"jump:__tick__",
+	"thimble:__tick__",
+	"tnt_run:__tick__"
  ]
 }

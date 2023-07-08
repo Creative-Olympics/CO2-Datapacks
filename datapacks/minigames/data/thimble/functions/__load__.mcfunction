@@ -1,4 +1,3 @@
-# When the server starts
 
 function thimble:map/reset
 function thimble:player/reset

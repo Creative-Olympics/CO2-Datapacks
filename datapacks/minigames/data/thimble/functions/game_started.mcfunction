@@ -2,7 +2,9 @@
 # Set player conditions
 function thimble:player_state
 
-# Jump Complete
+# Detect end of turn ----------------------------------------------------------
+
+# Detect success jump
 execute as @a[tag=thimble.inGame,tag=thimble.yourTurn] at @s if block ~ ~ ~ water run tag @s add thimble.jumpComplete
 execute as @a[tag=thimble.jumpComplete] run function thimble:set_wool
 execute as @a[tag=thimble.jumpComplete] run function thimble:detect_dac
@@ -19,12 +21,13 @@ scoreboard players remove @a[tag=thimble.jumpCancelled,scores={thimble.lives=1..
 tag @a[tag=thimble.yourTurn,scores={damageResisted=1..}] add thimble.jumpFailed
 scoreboard players remove @a[tag=thimble.jumpFailed,scores={thimble.lives=1..}] thimble.lives 1
 
+# Action at end of turn -------------------------------------------------------
+
 # Messages
 execute as @a[tag=thimble.jumpFailed] at @s run tellraw @a[tag=thimble.inGame] ["",{"text":"THIMBLE > ","color":"yellow"},{"selector":"@s","color":"gray"},{"text":" missed his jump...","color":"gray"}]
 execute as @a[tag=thimble.jumpCancelled] at @s run tellraw @a[tag=thimble.inGame] ["",{"text":"THIMBLE > ","color":"yellow"},{"selector":"@s","color":"gray"},{"text":" didn't jump :/","color":"gray"}]
 execute as @a[tag=thimble.jumpComplete,tag=!thimble.dac] at @s run tellraw @a[tag=thimble.inGame] ["",{"text":"THIMBLE > ","color":"yellow"},{"selector":"@s","color":"gray"},{"text":" succeeded in his jump!","color":"gray"}]
-execute as @a[tag=thimble.dac] at @s run tellraw @a[tag=thimble.inGame] ["",{"text":"THIMBLE > ","color":"yellow"},{"selector":"@s","color":"gray"},{"text":" DID A THIMBLE! ","color":"gray"},{"text":"+1 ♥","color":"red"}]
-
+execute as @a[tag=thimble.dac] at @s run tellraw @a[tag=thimble.inGame] ["",{"text":"THIMBLE > ","color":"yellow"},{"selector":"@s","color":"gray"},{"text":" DID A THIMBLE! ","color":"green"},{"text":"+1 ♥","color":"red"}]
 
 # Eliminated
 scoreboard players set @a[tag=thimble.yourTurn,scores={thimble.lives=0}] tmp 0
@@ -41,9 +44,6 @@ tag @a[tag=thimble.jumpFailed] add thimble.jumpComplete
 tag @a[tag=thimble.jumpCancelled] add thimble.jumpComplete
 
 #scoreboard players set @a[tag=thimble.jumpComplete] countdown -20
-
-
-
 
 #execute if score $EndGame data matches 0 if entity @a[tag=thimble.jumpComplete,tag=thimble.yourTurn] run function mg:thimble/get_next_player
 

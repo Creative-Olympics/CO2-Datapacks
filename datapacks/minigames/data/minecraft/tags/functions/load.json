@@ -1,5 +1,6 @@
 {
  "values": [
-	"tnt_run:load"
+    "thimble:__load__",
+	"tnt_run:__load__"
  ]
 }
