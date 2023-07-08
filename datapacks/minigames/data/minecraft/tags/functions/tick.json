@@ -2,6 +2,7 @@
  "values": [
 	"jump:__tick__",
 	"thimble:__tick__",
-	"tnt_run:__tick__"
+	"tnt_run:__tick__",
+	"boat_royal:main"
  ]
 }
