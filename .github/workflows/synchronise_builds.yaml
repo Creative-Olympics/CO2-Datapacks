@@ -28,6 +28,8 @@ jobs:
           REMOTE_PATH: /world/region
         run: |
           # Ajout de la clé SSH à known_hosts
+          mkdir ~/.ssh
+          touch ~/.ssh/known_hosts
           ssh-keyscan -H $SFTP_HOST >> ~/.ssh/known_hosts
         
           # Synchronisation des fichiers du serveur SFTP vers le dossier local
