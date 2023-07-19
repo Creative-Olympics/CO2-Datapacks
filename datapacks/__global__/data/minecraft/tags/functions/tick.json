@@ -1,6 +1,6 @@
 {
  "values": [
-	"global:main",
-    "environment:fountain"
+	"global:__tick__",
+    "environment:__tick__"
  ]
 }

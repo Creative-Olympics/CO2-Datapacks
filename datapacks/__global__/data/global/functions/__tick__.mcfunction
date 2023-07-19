@@ -36,8 +36,6 @@ function lib:utils/anti-drop
 # Display areas (armor_stand that indicate a zone to be in or out)
 function lib:utils/print_area
 
-# Effects so people can't die
-effect give @a resistance 1000000 255 true
 #effect give @a weakness 1000000 255 true
 effect give @a saturation 1000000 255 true
 

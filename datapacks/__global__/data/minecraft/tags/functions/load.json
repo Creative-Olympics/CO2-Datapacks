@@ -1,5 +1,5 @@
 {
  "values": [
-	"global:load"
+	"global:__load__"
  ]
 }
