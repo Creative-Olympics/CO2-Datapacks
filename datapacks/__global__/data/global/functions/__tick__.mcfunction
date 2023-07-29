@@ -1,52 +1,36 @@
+# Executed globally
+# tellraw @a {"text":"global:__tick__"}
 
-#__________________________________________________
-# INIT
+# Listen triggers -------------------------------------------------------------
 
-# Time Exist
-scoreboard objectives add timeExist dummy
-scoreboard players add @e timeExist 1
+function global:triggers/drop
+function global:triggers/join
 
-# ID
-scoreboard objectives add id dummy
+# Living time -----------------------------------------------------------------
+
+# Positive : count the time since last death
+# Negative : give the time before the entity will be killed
+kill @e[scores={living_time=-1}]
+
+# ID --------------------------------------------------------------------------
+
 scoreboard players add @a id 0
 execute as @e[scores={id=0}] run function lib:get_id
-scoreboard objectives add parentId dummy
 
-# Location
-scoreboard objectives add locX dummy
-scoreboard objectives add locY dummy
-scoreboard objectives add locZ dummy
-execute as @a store result score @s locX run data get entity @s Pos[0] 1
-execute as @a store result score @s locY run data get entity @s Pos[1] 1
-execute as @a store result score @s locZ run data get entity @s Pos[2] 1
+# Location --------------------------------------------------------------------
 
-# Other
-scoreboard objectives add gameStarted dummy
-scoreboard objectives add data dummy
-scoreboard objectives add tmp dummy
-function mg:lib/constants
-scoreboard objectives add damageResisted minecraft.custom:minecraft.damage_resisted
+execute as @a store result score @s loc.x run data get entity @s Pos[0] 1
+execute as @a store result score @s loc.y run data get entity @s Pos[1] 1
+execute as @a store result score @s loc.z run data get entity @s Pos[2] 1
 
+# Global player effects -------------------------------------------------------
 
-#__________________________________________________
-# WALL UTILS
+effect give @a[team=Lobby] saturation infinite 255 true
+effect give @a[team=Lobby] resistance infinite 255 true
+effect give @a[team=Lobby] weakness 1000000 255 true
+effect give @a[team=Lobby] resistance infinite 255 true
 
-function lib:utils/countdown
-function lib:utils/anti-drop
-# Display areas (armor_stand that indicate a zone to be in or out)
-function lib:utils/print_area
+# Player status ---------------------------------------------------------------
 
-#effect give @a weakness 1000000 255 true
-effect give @a saturation 1000000 255 true
-
-#__________________________________________________
-# OTHER
-
-# Allow everyone to start games -> NEED TO BE DISABLED ONCE EVENT START
+# ⏲️ TEMPORARY: anyone can start games
 tag @a add canLaunchGames
-
-
-#__________________________________________________
-# RESET 1 TICK SCORES & TAGS
-scoreboard players set @e damageResisted 0
-scoreboard players set SERVER_START data 0
