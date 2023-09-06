@@ -11,7 +11,7 @@ scoreboard objectives add prophunt.prop_switch_cooldown dummy
 scoreboard objectives add prophunt.stun_hunters_cooldown dummy
 scoreboard objectives add prophunt.stuned dummy
 
-scoreboard objectives add prophunt.parent_UUID dummy
+scoreboard objectives add prophunt.parent_SUID dummy
 
 team add prophunt
 team modify prophunt collisionRule never
@@ -24,4 +24,5 @@ function prophunt:stop
 function prophunt:start
 
 scoreboard players set 2 data 2
+scoreboard players set 4 data 4
 scoreboard players set 20 data 20

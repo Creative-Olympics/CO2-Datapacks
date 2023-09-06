@@ -1,5 +1,5 @@
 # Executed globally
-tellraw @a {"text":"oitc:stop"}
+# tellraw @a {"text":"oitc:stop"}
 
 # Reset map
 fill -194 99 -75 -192 101 -75 air replace barrier

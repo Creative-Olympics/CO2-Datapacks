@@ -1,5 +1,5 @@
 # Executed globally
-tellraw @a {"text":"global:__load__"}
+# tellraw @a {"text":"global:__load__"}
 
 # Set gamerules ---------------------------------------------------------------
 
@@ -12,6 +12,7 @@ gamerule fallDamage false
 # Utils
 scoreboard objectives add data dummy
 scoreboard objectives add tmp dummy
+scoreboard objectives add SUID dummy
 scoreboard objectives add UUID dummy
 
 # Continuous informations
