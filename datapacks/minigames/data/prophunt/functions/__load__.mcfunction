@@ -3,6 +3,7 @@
 
 scoreboard objectives add prophunt.drop_trigger minecraft.custom:minecraft.drop
 scoreboard objectives add prophunt.prop_type dummy
+scoreboard objectives add prophunt.prop_variation dummy
 scoreboard objectives add prophunt.jump_trigger minecraft.custom:minecraft.jump
 scoreboard objectives add prophunt.crouch_trigger minecraft.custom:minecraft.sneak_time
 scoreboard objectives add prophunt.climb dummy

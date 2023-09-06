@@ -6,6 +6,7 @@
 function prophunt:triggers/switch_prop
 function prophunt:triggers/stun_hunters
 function prophunt:triggers/prop_hitbox_attacked
+function prophunt:triggers/prop_hitbox_interacted
 function prophunt:triggers/stuned
 
 # Mechanics -------------------------------------------------------------------
