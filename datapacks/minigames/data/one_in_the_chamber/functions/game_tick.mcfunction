@@ -2,6 +2,7 @@
 # tellraw @a {"text":"oitc:game_tick"}
 
 # Listen triggers (order is important!)
+function one_in_the_chamber:triggers/arrow_planted
 function one_in_the_chamber:triggers/death
 function one_in_the_chamber:triggers/kill
 function one_in_the_chamber:triggers/respawn

@@ -19,9 +19,9 @@ execute as @e[scores={id=0}] run function lib:get_id
 
 # Location --------------------------------------------------------------------
 
-execute as @a store result score @s loc.x run data get entity @s Pos[0] 1
-execute as @a store result score @s loc.y run data get entity @s Pos[1] 1
-execute as @a store result score @s loc.z run data get entity @s Pos[2] 1
+execute as @a store result score @s pos.x run data get entity @s Pos[0] 1000
+execute as @a store result score @s pos.y run data get entity @s Pos[1] 1000
+execute as @a store result score @s pos.z run data get entity @s Pos[2] 1000
 
 # Global player effects -------------------------------------------------------
 
@@ -34,3 +34,6 @@ effect give @a[team=Lobby] resistance infinite 255 true
 
 # ⏲️ TEMPORARY: anyone can start games
 tag @a add canLaunchGames
+
+scoreboard players add @e UUID 0
+execute as @e[scores={UUID=0}] store result score @s UUID run data get entity @s UUID[0]

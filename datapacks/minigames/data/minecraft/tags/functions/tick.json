@@ -3,6 +3,7 @@
 	"jump:__tick__",
 	"thimble:__tick__",
 	"tnt_run:__tick__",
-    "one_in_the_chamber:__tick__"
+    "one_in_the_chamber:__tick__",
+    "prophunt:__tick__"
  ]
 }

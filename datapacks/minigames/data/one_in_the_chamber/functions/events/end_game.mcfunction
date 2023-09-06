@@ -1,5 +1,5 @@
 # executed globally
-tellraw @a {"text":"oitc:events/end_game"}
+# tellraw @a {"text":"oitc:events/end_game"}
 
 # Summon eng game camera
 summon armor_stand -183.0 112.0 -107.0 {Invisible:1b,NoGravity:1b,Marker:1b,Tags:["oitc_end_game_camera"]}

@@ -5,19 +5,21 @@ tellraw @a {"text":"global:__load__"}
 
 gamerule naturalRegeneration false
 gamerule showDeathMessages false
+gamerule fallDamage false
 
 # Global objectives -----------------------------------------------------------
 
 # Utils
 scoreboard objectives add data dummy
 scoreboard objectives add tmp dummy
+scoreboard objectives add UUID dummy
 
 # Continuous informations
 scoreboard objectives add id dummy
 scoreboard objectives add parent.id dummy
-scoreboard objectives add loc.x dummy
-scoreboard objectives add loc.y dummy
-scoreboard objectives add loc.z dummy
+scoreboard objectives add pos.x dummy
+scoreboard objectives add pos.y dummy
+scoreboard objectives add pos.z dummy
 scoreboard objectives add health health {"text":"❤","color":"red"}
 scoreboard objectives add living_time minecraft.custom:minecraft.time_since_death
 

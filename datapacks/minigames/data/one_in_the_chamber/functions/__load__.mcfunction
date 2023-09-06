@@ -1,5 +1,5 @@
 # Executed globally
-tellraw @a {"text":"oitc:__load__"}
+# tellraw @a {"text":"oitc:__load__"}
 
 # Scores setup
 scoreboard objectives add oitc_kills playerKillCount {"text":"OITC Score","color":"red","bold":true}

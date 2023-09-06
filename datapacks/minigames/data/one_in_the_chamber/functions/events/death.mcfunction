@@ -1,5 +1,5 @@
 # Executed as & at player
-tellraw @a [{"text":"oitc:events/death on "},{"selector":"@s"}]
+# tellraw @a [{"text":"oitc:events/death on "},{"selector":"@s"}]
 
 # Firework
 summon firework_rocket ~ ~ ~ {LifeTime:0,FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:4,Flicker:1b,Colors:[I;16711680]}]}}}}
