@@ -1,16 +1,30 @@
 # Executed globally
 # tellraw @a {"text":"prophunt:__load__"}
 
+# Climb
+scoreboard objectives add prophunt.jump_trigger minecraft.custom:minecraft.jump
+scoreboard objectives add prophunt.climb dummy
+scoreboard objectives add prophunt.pos.y.last dummy
+
+# Prop switch
+scoreboard objectives add prophunt.prop_switch_cooldown dummy
 scoreboard objectives add prophunt.drop_trigger minecraft.custom:minecraft.drop
 scoreboard objectives add prophunt.prop_type dummy
 scoreboard objectives add prophunt.prop_variation dummy
-scoreboard objectives add prophunt.jump_trigger minecraft.custom:minecraft.jump
-scoreboard objectives add prophunt.crouch_trigger minecraft.custom:minecraft.sneak_time
-scoreboard objectives add prophunt.climb dummy
-scoreboard objectives add prophunt.pos.y.last dummy
-scoreboard objectives add prophunt.prop_switch_cooldown dummy
+
+# Stun
 scoreboard objectives add prophunt.stun_hunters_cooldown dummy
 scoreboard objectives add prophunt.stuned dummy
+
+# Taunt
+scoreboard objectives add prophunt.taunt_timer dummy
+
+# Dash
+scoreboard objectives add prophunt.dash_trigger minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add prophunt.dash_timer minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add prophunt.dash_cooldown dummy
+
+
 
 scoreboard objectives add prophunt.parent_SUID dummy
 

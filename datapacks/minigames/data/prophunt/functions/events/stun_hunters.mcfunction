@@ -1,5 +1,5 @@
 # Executed as and at the attacked interaction
-tellraw @a {"text":"prophunt:events/stun_hunters"}
+# tellraw @a {"text":"prophunt:events/stun_hunters"}
 
 function prophunt:events/unlock_prop
 
