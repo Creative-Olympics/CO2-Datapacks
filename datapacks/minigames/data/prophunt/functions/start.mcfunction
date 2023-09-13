@@ -19,9 +19,7 @@ gamemode adventure @a[team=prophunt]
 execute as @a[tag=prophunt.is_prop] store result score @s prophunt.taunt_timer run random value 0..300
 scoreboard players add @a[tag=prophunt.is_prop] prophunt.taunt_timer 600
 
-# function prophunt:make_teams with prophunt:data
-
 effect give @a[tag=prophunt.is_prop] minecraft:invisibility infinite 1 true
-execute as @a[tag=prophunt.is_prop] at @s run function prophunt:events/switch_prop_end
 
-execute as @a[tag=prophunt.is_hunter] at @s run function prophunt:events/give_hunter_items
+execute as @a[tag=prophunt.is_prop] at @s run function prophunt:features/switch_prop/stop
+execute as @a[tag=prophunt.is_hunter] at @s run function prophunt:utils/give_items/hunter
