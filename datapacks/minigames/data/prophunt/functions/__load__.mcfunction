@@ -14,7 +14,6 @@ scoreboard objectives add prophunt.jump_trigger minecraft.custom:minecraft.jump
 scoreboard objectives add prophunt.climb dummy
 scoreboard objectives add prophunt.pos.y.last dummy
 
-
 # Stun
 scoreboard objectives add prophunt.stun_hunters_cooldown dummy
 scoreboard objectives add prophunt.stuned dummy
@@ -23,9 +22,14 @@ scoreboard objectives add prophunt.stuned dummy
 scoreboard objectives add prophunt.taunt_timer dummy
 
 # Dash
-scoreboard objectives add prophunt.dash_trigger minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add prophunt.dash_timer dummy
 scoreboard objectives add prophunt.dash_cooldown dummy
+
+# Ping
+scoreboard objectives add prophunt.use_item_trigger minecraft.used:minecraft.carrot_on_a_stick
+
+# Ultimate
+scoreboard objectives add prophunt.ultimate_points dummy
 
 scoreboard objectives add prophunt.parent_SUID dummy
 
@@ -43,3 +47,4 @@ scoreboard players set 2 data 2
 scoreboard players set 3 data 3
 scoreboard players set 4 data 4
 scoreboard players set 20 data 20
+scoreboard players set 100 data 100

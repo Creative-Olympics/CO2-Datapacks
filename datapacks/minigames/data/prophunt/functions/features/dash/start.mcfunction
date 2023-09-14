@@ -2,9 +2,10 @@
 # tellraw @a {"text":"prophunt:features/dash/start"}
 
 clear @s
-kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick"}}]
 effect give @s speed infinite 127 true
 playsound minecraft:entity.ender_dragon.flap master @a[distance=..30] ~ ~ ~ 2 2 0
+
+effect give @s invisibility infinite 1 true
 
 
 summon armor_stand ~ ~ ~ {Tags:["prophunt.dash","prophunt.dash.new"],Invisible:1b,Marker:1b,Small:1b}

@@ -23,3 +23,11 @@ effect give @a[tag=prophunt.is_prop] minecraft:invisibility infinite 1 true
 
 execute as @a[tag=prophunt.is_prop] at @s run function prophunt:features/switch_prop/stop
 execute as @a[tag=prophunt.is_hunter] at @s run function prophunt:utils/give_items/hunter
+
+
+scoreboard players set $prophunt.game_time data 2400
+scoreboard players operation $prophunt.remaining_time data = $prophunt.game_time data
+
+scoreboard players operation $prophunt.ultimate_cost data = $prophunt.game_time data
+scoreboard players set @a[tag=prophunt.is_hunter] prophunt.ultimate_points 0
+scoreboard players set @a[tag=prophunt.is_prop] prophunt.dash_cooldown 0
