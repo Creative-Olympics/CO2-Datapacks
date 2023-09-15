@@ -3,7 +3,12 @@
 
 team join prophunt @a
 
+effect give @a[team=prophunt] saturation infinite 255 true
+effect give @a[team=prophunt] regeneration infinite 255 true
+effect give @a[team=prophunt] resistance infinite 255 true
+
 scoreboard players add @a prophunt.drop_trigger 0
+scoreboard players add @a prophunt.climb 0
 scoreboard players add @a prophunt.prop_type 0
 scoreboard players add @a prophunt.stun_hunters_cooldown 0
 
@@ -30,4 +35,5 @@ scoreboard players operation $prophunt.remaining_time data = $prophunt.game_time
 
 scoreboard players operation $prophunt.ultimate_cost data = $prophunt.game_time data
 scoreboard players set @a[tag=prophunt.is_hunter] prophunt.ultimate_points 0
+scoreboard players set @a[tag=prophunt.is_hunter] prophunt.ultimate_timer 0
 scoreboard players set @a[tag=prophunt.is_prop] prophunt.dash_cooldown 0

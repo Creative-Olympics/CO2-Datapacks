@@ -8,6 +8,9 @@ effect clear @s slowness
 effect clear @s levitation
 effect clear @s blindness
 effect clear @s mining_fatigue
+effect clear @s regeneration
+effect clear @s resistance
+effect clear @s saturation
 clear @s
 tag @s remove prophunt.is_hunter
 tag @s remove prophunt.is_prop

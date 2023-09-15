@@ -12,5 +12,6 @@ function prophunt:utils/give_items/hunter
 scoreboard players set @s prophunt.drop_trigger 0
 scoreboard players set @s prophunt.jump_trigger 1
 effect clear @s speed
+effect give @s[scores={prophunt.ultimate_timer=1..}] speed infinite 4 true
 
 scoreboard players set @s prophunt.dash_cooldown 200

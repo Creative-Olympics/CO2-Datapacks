@@ -30,6 +30,7 @@ scoreboard objectives add prophunt.use_item_trigger minecraft.used:minecraft.car
 
 # Ultimate
 scoreboard objectives add prophunt.ultimate_points dummy
+scoreboard objectives add prophunt.ultimate_timer dummy
 
 scoreboard objectives add prophunt.parent_SUID dummy
 

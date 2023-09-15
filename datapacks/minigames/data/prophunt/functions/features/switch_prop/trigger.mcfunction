@@ -15,4 +15,5 @@ scoreboard players add @a[tag=prophunt.is_prop,scores={prophunt.drop_trigger=1..
 execute as @a[tag=prophunt.is_prop,scores={prophunt.drop_trigger=20}] at @s run function prophunt:features/switch_prop/stop
 
 # Start cooldown
+execute as @a[scores={prophunt.prop_switch_cooldown=1}] at @s run playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~ 0.5 2 0
 scoreboard players remove @a[tag=prophunt.is_prop,scores={prophunt.prop_switch_cooldown=1..}] prophunt.prop_switch_cooldown 1

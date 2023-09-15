@@ -18,6 +18,7 @@ execute as @a[tag=prophunt.stun_trigger,scores={prophunt.stun_hunters_cooldown=1
 execute as @a[tag=prophunt.stun_trigger] at @s run function prophunt:utils/give_items/prop
 
 # Cooldown
+execute as @a[scores={prophunt.stun_hunters_cooldown=1}] at @s run playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~ 0.5 2 0
 scoreboard players remove @a[scores={prophunt.stun_hunters_cooldown=1..}] prophunt.stun_hunters_cooldown 1
 
 # Remove tag
