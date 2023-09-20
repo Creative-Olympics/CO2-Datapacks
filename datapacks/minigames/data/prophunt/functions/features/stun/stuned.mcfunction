@@ -2,7 +2,7 @@
 # tellraw @a {"text":"prophunt:events/stuned"}
 
 scoreboard players operation #prophunt.stuned data = @s prophunt.stuned
-scoreboard players operation #prophunt.stuned data %= 4 data
+scoreboard players operation #prophunt.stuned data %= 4 const
 execute if score #prophunt.stuned data matches 0 run playsound minecraft:entity.parrot.ambient master @a[distance=..10] ~ ~ ~ 0.1 2 0
 
 particle electric_spark ~ ~1.7 ~ 0.3 0.3 0.3 0 3 force @a[distance=0.1..]

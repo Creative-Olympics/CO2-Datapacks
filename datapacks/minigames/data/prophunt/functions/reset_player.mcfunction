@@ -14,3 +14,4 @@ effect clear @s saturation
 clear @s
 tag @s remove prophunt.is_hunter
 tag @s remove prophunt.is_prop
+tag @s remove prophunt.was_prop

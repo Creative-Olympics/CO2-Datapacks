@@ -4,7 +4,7 @@
 # Switch ----------------------------------------------------------------------
 
 scoreboard players operation #switch_prop_cooldown data = @s prophunt.prop_switch_cooldown
-scoreboard players operation #switch_prop_cooldown data /= 20 data
+scoreboard players operation #switch_prop_cooldown data /= 20 const
 scoreboard players add #switch_prop_cooldown data 1
 
 # Can use it
@@ -17,7 +17,7 @@ execute as @s[scores={prophunt.drop_trigger=1..}] run data modify storage prophu
 # Stun ------------------------------------------------------------------------
 
 scoreboard players operation #stun_hunters_cooldown data = @s prophunt.stun_hunters_cooldown
-scoreboard players operation #stun_hunters_cooldown data /= 20 data
+scoreboard players operation #stun_hunters_cooldown data /= 20 const
 scoreboard players add #stun_hunters_cooldown data 1
 
 # Can use it

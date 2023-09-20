@@ -8,7 +8,7 @@ playsound minecraft:block.weeping_vines.break master @s ~ ~ ~ 0.1 2 0
 tag @s add prophunt.unlock_prop.player
 
 # Kill associated locker 
-execute as @e[tag=prophunt.locker] if score @s prophunt.parent_SUID = @a[tag=prophunt.unlock_prop.player,limit=1,sort=nearest] SUID run kill @s
+execute as @e[tag=prophunt.locker] if score @s parent.SUID = @a[tag=prophunt.unlock_prop.player,limit=1,sort=nearest] SUID run kill @s
 
 # Remove identification tag
 tag @s remove prophunt.unlock_prop.player

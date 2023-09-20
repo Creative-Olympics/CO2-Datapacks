@@ -9,7 +9,7 @@ execute as @a[scores={prophunt.climb=1..}] at @s positioned ^ ^ ^0.2 run particl
 
 # Audio effect
 execute as @a[scores={prophunt.climb=1..}] run scoreboard players operation @s data = @s prophunt.climb
-scoreboard players operation @a[scores={prophunt.climb=1..}] data %= 3 data
+scoreboard players operation @a[scores={prophunt.climb=1..}] data %= 3 const
 execute at @a[scores={prophunt.climb=1..,data=0}] run playsound minecraft:block.wool.step master @a[distance=..5] ~ ~ ~ 0.2 2 0
 
 # Update timer

@@ -11,11 +11,12 @@ scoreboard players add @a prophunt.drop_trigger 0
 scoreboard players add @a prophunt.climb 0
 scoreboard players add @a prophunt.prop_type 0
 scoreboard players add @a prophunt.stun_hunters_cooldown 0
+scoreboard players set @a prophunt.stop.timer 0
 
 # Make teams
 scoreboard players set $prophunt.player_count data 0
 execute as @a[team=prophunt,sort=random] store result score @s data run scoreboard players add $prophunt.player_count data 1
-scoreboard players operation $prophunt.player_count data /= 2 data
+scoreboard players operation $prophunt.player_count data /= 2 const
 execute as @a[team=prophunt] if score @s data > $prophunt.player_count data run tag @s add prophunt.is_prop
 tag @a[team=prophunt,tag=!prophunt.is_prop] add prophunt.is_hunter
 gamemode adventure @a[team=prophunt]

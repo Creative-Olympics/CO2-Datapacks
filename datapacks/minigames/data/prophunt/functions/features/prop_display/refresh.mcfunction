@@ -1,5 +1,5 @@
 # Executed as and at the prop player
-# tellraw @a {"text":"prophunt:feature/prop_display/refresh"}
+# tellraw @a [{"selector":"@s"},{"text":" > prophunt:features/prop_display/refresh","color":"gray"}]
 
 function prophunt:utils/get_associated_entities
 kill @e[tag=prophunt.current.display]
@@ -119,4 +119,4 @@ execute if score @s prophunt.prop_type matches 11 if score @s prophunt.prop_vari
 
 
 # Associate displays to the player
-scoreboard players operation @e[tag=prophunt.entity.new] prophunt.parent_SUID = @s SUID
+scoreboard players operation @e[tag=prophunt.entity.new] parent.SUID = @s SUID

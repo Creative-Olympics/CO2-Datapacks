@@ -1,5 +1,5 @@
 # Executed as and at an entity
-# tellraw @a {"text":"prophunt:utils/shift_prop_display"}
+# tellraw @a [{"selector":"@s"},{"text":" > prophunt:features/prop_display/shift_blocks","color":"gray"}]
 
 execute as @e[tag=prophunt.current.display,tag=prophunt.display.shift.x-2] at @s run tp @s ^-2 ^ ^
 execute as @e[tag=prophunt.current.display,tag=prophunt.display.shift.x-1] at @s run tp @s ^-1 ^ ^

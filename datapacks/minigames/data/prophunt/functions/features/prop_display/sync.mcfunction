@@ -1,5 +1,5 @@
 # Executed as and at the player
-# tellraw @a {"text":"prophunt:animations/sync_prop"}
+# tellraw @a [{"selector":"@s"},{"text":" > prophunt:features/prop_display/sync","color":"gray"}]
 
 function prophunt:utils/get_associated_entities
 

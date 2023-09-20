@@ -4,8 +4,8 @@
 # Switch ----------------------------------------------------------------------
 
 scoreboard players operation #dash_cooldown data = @s prophunt.dash_cooldown
-# execute if score @s prophunt.ultimate_timer matches 1.. run scoreboard players operation #dash_cooldown data /= 2 data
-scoreboard players operation #dash_cooldown data /= 20 data
+# execute if score @s prophunt.ultimate_timer matches 1.. run scoreboard players operation #dash_cooldown data /= 2 const
+scoreboard players operation #dash_cooldown data /= 20 const
 scoreboard players add #dash_cooldown data 1
 
 # Can use it
@@ -18,11 +18,11 @@ execute as @s[scores={prophunt.drop_trigger=1..}] run data modify storage prophu
 # Ultimate --------------------------------------------------------------------
 
 scoreboard players operation #ultimate_progress data = @s prophunt.ultimate_points
-scoreboard players operation #ultimate_progress data *= 100 data
+scoreboard players operation #ultimate_progress data *= 100 const
 scoreboard players operation #ultimate_progress data /= $prophunt.ultimate_cost data
 
 scoreboard players operation #ultimate_timer data = @s prophunt.ultimate_timer
-scoreboard players operation #ultimate_timer data /= 20 data
+scoreboard players operation #ultimate_timer data /= 20 const
 scoreboard players add #ultimate_timer data 1
 
 # Can enrage

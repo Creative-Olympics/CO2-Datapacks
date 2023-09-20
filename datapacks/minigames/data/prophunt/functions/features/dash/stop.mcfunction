@@ -1,8 +1,8 @@
 # Executed as and at the player
-# tellraw @a {"text":"prophunt:features/dash/stop"}
+# tellraw @a [{"selector":"@s"},{"text":" > prophunt:features/dash/stop","color":"gray"}]
 
 tag @s add prophunt.dash.player
-execute as @e[tag=prophunt.dash] if score @s prophunt.parent_SUID = @p[tag=prophunt.dash.player] SUID run kill @s
+execute as @e[tag=prophunt.dash] if score @s parent.SUID = @p[tag=prophunt.dash.player] SUID run kill @s
 
 execute at @s align xyz run tp @s ~0.5 ~0.5 ~0.5
 

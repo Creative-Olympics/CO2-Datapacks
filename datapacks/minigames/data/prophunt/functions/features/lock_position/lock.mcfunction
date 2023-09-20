@@ -11,7 +11,7 @@ execute if entity @s[y_rotation=135..225] as @e[tag=prophunt.locker.new] at @s r
 execute if entity @s[y_rotation=225..315] as @e[tag=prophunt.locker.new] at @s run tp @s ~ ~ ~ 270 0
 
 # Associate the locker to the player
-execute align xz run scoreboard players operation @e[tag=prophunt.locker.new,limit=1,sort=nearest] prophunt.parent_SUID = @s SUID
+execute align xz run scoreboard players operation @e[tag=prophunt.locker.new,limit=1,sort=nearest] parent.SUID = @s SUID
 tag @e remove prophunt.locker.new
 
 # Stop climb

@@ -32,8 +32,6 @@ scoreboard objectives add prophunt.use_item_trigger minecraft.used:minecraft.car
 scoreboard objectives add prophunt.ultimate_points dummy
 scoreboard objectives add prophunt.ultimate_timer dummy
 
-scoreboard objectives add prophunt.parent_SUID dummy
-
 team add prophunt
 team modify prophunt collisionRule never
 team modify prophunt color blue
@@ -42,10 +40,10 @@ team modify prophunt nametagVisibility never
 team modify prophunt seeFriendlyInvisibles false
 
 function prophunt:stop
-function prophunt:start
+# function prophunt:start
 
-scoreboard players set 2 data 2
-scoreboard players set 3 data 3
-scoreboard players set 4 data 4
-scoreboard players set 20 data 20
-scoreboard players set 100 data 100
+scoreboard players set 2 const 2
+scoreboard players set 3 const 3
+scoreboard players set 4 const 4
+scoreboard players set 20 const 20
+scoreboard players set 100 const 100

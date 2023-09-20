@@ -15,7 +15,7 @@ effect give @s jump_boost infinite 5 true
 tag @s add prophunt.switch_prop.player
 
 # Kill entities that belong to the player
-execute as @e[tag=prophunt.entity] if score @s prophunt.parent_SUID = @p[tag=prophunt.switch_prop.player] SUID run kill @s 
+execute as @e[tag=prophunt.entity] if score @s parent.SUID = @p[tag=prophunt.switch_prop.player] SUID run kill @s 
 
 # Remove identification tag
 tag @s remove prophunt.switch_prop.player
