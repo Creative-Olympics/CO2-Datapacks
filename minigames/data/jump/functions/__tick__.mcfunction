@@ -32,3 +32,4 @@ execute as @a[x=-312,y=97,z=18,distance=..2,scores={jump.time=3},tag=jump.restar
 execute as @a[x=-336,y=111,z=1,distance=..1,tag=jump.complete] at @s run tellraw @a[distance=..30] ["",{"text":"JUMP > ","color":"yellow"},{"selector":"@s","color":"gray"},{"text":" finished the MiniMarket's jumping course in ","color":"gray"},{"score":{"name":"@s","objective":"jump.timeM"},"color":"yellow"},{"text":" minutes and ","color":"gray"},{"score":{"name":"@s","objective":"jump.timeS"},"color":"yellow"},{"text":" seconds.","color":"gray"}]
 
 execute as @a[tag=jump.complete] at @s run summon firework_rocket ~ ~10 ~ {LifeTime:40,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:1,Flicker:1,Trail:1,Colors:[I;11743532,4312372,14602026,6719955],FadeColors:[I;11743532,4312372,14602026,6719955]}],Flight:0}}}}
+execute as @a[tag=jump.complete] run function #global:endgame_title {type:"finish"}
