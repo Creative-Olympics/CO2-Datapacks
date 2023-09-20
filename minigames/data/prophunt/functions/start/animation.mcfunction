@@ -36,7 +36,12 @@ scoreboard players add #prophunt:start_anim data 1
 # End of animation ------------------------------------------------------------
 
 # Start game
-execute if score #prophunt:start_anim data matches 100 run function prophunt:start/start
+scoreboard players set #prophunt.player_count data 0
+execute as @a[x=112,y=82,z=66,distance=..5.5] run scoreboard players add #prophunt.player_count data 1
+execute if score #prophunt:start_anim data matches 100 if score #prophunt.player_count data matches 2.. run function prophunt:start/start
+execute if score #prophunt:start_anim data matches 100 unless score #prophunt.player_count data matches 2.. run tellraw @a[x=112,y=82,z=66,distance=..5.5] ["",{"text":"PROPHUNT > ","color":"blue"},{"text":"Not enough players to start the game :/","color":"gray"}]
+execute if score #prophunt:start_anim data matches 100 unless score #prophunt.player_count data matches 2.. run playsound block.sand.step master @a[x=112,y=82,z=66,distance=..5.5] 112 82 66 2 2 1
+execute if score #prophunt:start_anim data matches 100 unless score #prophunt.player_count data matches 2.. run function prophunt:start/place_starting_sign
 
 # Clear entity
 execute if score #prophunt:start_anim data matches 100.. run kill @e[type=marker,tag=prophunt.start_anim]
