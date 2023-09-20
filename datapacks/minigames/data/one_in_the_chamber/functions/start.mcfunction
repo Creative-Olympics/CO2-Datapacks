@@ -1,5 +1,5 @@
 # Executed globally
-tellraw @a {"text":"oitc:start"}
+# tellraw @a {"text":"oitc:start"}
 
 # Abort if a game is already started
 # execute if score #OITC_game_started data matches 1 run return 1
