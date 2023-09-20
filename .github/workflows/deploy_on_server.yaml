@@ -1,7 +1,7 @@
 name: Deploy
 on:
   push:
-    branches: main
+    branches: Datapacks
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,5 +17,5 @@ jobs:
           port: ${{ secrets.SFTP_PORT }}
           user: ${{ secrets.SFTP_USER }}
           password: ${{ secrets.SFTP_PASSWORD }}
-          remote_path: /Creative_Olympics/
+          remote_path: /Creative_Olympics/datapacks
           ignore: .github/**,.gitignore,**/.gitignore,**/.git/**, entities/**, poi/**, region/**, README.md, icon.png, level.dat, session.lock
