@@ -8,7 +8,7 @@ playsound minecraft:entity.ender_dragon.flap master @a[distance=..30] ~ ~ ~ 2 2 
 effect give @s invisibility infinite 1 true
 
 
-summon armor_stand ~ ~ ~ {Tags:["prophunt.dash","prophunt.dash.new"],Invisible:1b,Marker:1b,Small:1b}
+summon armor_stand ~ ~ ~ {Tags:["prophunt.entity","prophunt.dash","prophunt.dash.new"],Invisible:1b,Marker:1b,Small:1b}
 execute at @s anchored eyes positioned ^ ^ ^ run tp @e[tag=prophunt.dash.new] ~ ~ ~ ~ ~
 ride @s mount @e[tag=prophunt.dash.new,limit=1,sort=nearest]
 scoreboard players operation @e[tag=prophunt.dash.new] parent.SUID = @s SUID

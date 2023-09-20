@@ -14,6 +14,3 @@ execute as @a[tag=prophunt.current.actor,tag=prophunt.current.player] at @s run 
 
 # Remove identification tag
 tag @a remove prophunt.current.actor
-
-# Remove interaction
-data remove entity @s interaction

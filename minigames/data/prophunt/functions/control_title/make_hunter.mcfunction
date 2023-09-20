@@ -12,8 +12,10 @@ scoreboard players add #dash_cooldown data 1
 execute as @s[scores={prophunt.drop_trigger=0,prophunt.dash_cooldown=0}] run data modify storage prophunt:controls dash set value '{"text":"Press ","color":"white"},{"keybind":"key.drop","color":"dark_aqua"},{"text":" to dash","color":"white"}'
 # Cooldown
 execute as @s[scores={prophunt.dash_cooldown=1..}] run data modify storage prophunt:controls dash set value '{"text":"Dash ","color":"red"},{"score":{"name":"#dash_cooldown","objective":"data"},"color":"red"},{"text":"s","color":"red"}'
-# Switching prop
+# Dashing
 execute as @s[scores={prophunt.drop_trigger=1..}] run data modify storage prophunt:controls dash set value '{"text":"Press ","color":"red"},{"keybind":"key.drop","color":"red"},{"text":" to dash","color":"red"}'
+# Stuned
+execute as @s[scores={prophunt.stuned=1..}] run data modify storage prophunt:controls dash set value '{"text":"Press ","color":"red"},{"keybind":"key.drop","color":"red"},{"text":" to dash","color":"red"}'
 
 # Ultimate --------------------------------------------------------------------
 

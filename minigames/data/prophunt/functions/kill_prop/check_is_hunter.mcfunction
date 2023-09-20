@@ -7,4 +7,4 @@ execute store result score #check_UUID data run data get entity @s attack.player
 # Identify the attacker
 tag @a remove prophunt.current.hunter
 execute as @a[tag=prophunt.is_hunter] if score @s UUID = #check_UUID data run tag @s add prophunt.current.hunter
-execute if entity @a[tag=prophunt.current.hunter] run function prophunt:kill_prop/run
+execute if entity @a[tag=prophunt.current.hunter,scores={prophunt.stuned=0}] run function prophunt:kill_prop/run

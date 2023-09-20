@@ -44,6 +44,8 @@ scoreboard players set @a[tag=prophunt.is_prop] prophunt.dash_cooldown 0
 
 scoreboard players set $prophunt.game_started data 1
 
+scoreboard players set @a[tag=prophunt.is_hunter] prophunt.stuned 200
+
 
 setblock 112 82 66 air destroy
 setblock 111 82 66 air destroy
