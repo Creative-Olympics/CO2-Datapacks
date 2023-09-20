@@ -1,5 +1,5 @@
 {
     "values": [
-        "prophunt:features/ping/trigger"
+        "prophunt:ping/trigger"
     ]
 }

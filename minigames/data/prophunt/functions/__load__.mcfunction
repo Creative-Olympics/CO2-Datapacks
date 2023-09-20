@@ -39,7 +39,9 @@ team modify prophunt friendlyFire false
 team modify prophunt nametagVisibility never
 team modify prophunt seeFriendlyInvisibles false
 
-function prophunt:stop
+function prophunt:stop/stop
+schedule clear prophunt:start/place_starting_sign
+function prophunt:start/place_starting_sign
 # function prophunt:start
 
 scoreboard players set 2 const 2

@@ -6,5 +6,5 @@ title @s subtitle ["",{"text":"to the","color":"blue"},{"text":" Creative","colo
 title @s title {"text":"Welcome","bold":true,"color":"white"}
 playsound minecraft:ui.toast.challenge_complete master @s
 
-function global:events/join
+function #global:join
 
