@@ -20,6 +20,8 @@ function #prophunt:climb
 
 function #prophunt:kill_prop
 
+function #prophunt:timer
+
 # Clear -----------------------------------------------------------------------
 
 execute as @e[tag=prophunt.interaction] run data remove entity @s attack

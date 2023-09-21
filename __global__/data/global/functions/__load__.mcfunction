@@ -34,6 +34,8 @@ scoreboard objectives add health health {"text":"❤","color":"red"}
 # Features
 #==============================================================================
 
+function #bs.sidebar:reset
+
 # Endgame title ---------------------------------------------------------------
 
 scoreboard objectives add global.endgame_title.timer dummy
