@@ -1,5 +1,6 @@
 {
  "values": [
+    "jump:__load__",
     "thimble:__load__",
 	"tnt_run:__load__",
     "one_in_the_chamber:__load__",

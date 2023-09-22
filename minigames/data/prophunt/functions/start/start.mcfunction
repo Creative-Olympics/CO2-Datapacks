@@ -30,6 +30,7 @@ scoreboard players add @a[tag=prophunt.is_prop] prophunt.taunt_timer 600
 effect give @a[tag=prophunt.is_prop] minecraft:invisibility infinite 1 true
 
 execute as @a[tag=prophunt.is_prop] at @s run function prophunt:switch_prop/stop
+execute as @a[tag=prophunt.is_prop] at @s run scoreboard players set @s prophunt.prop_switch_cooldown 0
 execute as @a[tag=prophunt.is_hunter] at @s run function prophunt:utils/give_items/hunter
 
 

@@ -1,7 +1,7 @@
 
 function #bs.sidebar:create { \
     id:"prophunt.timer", \
-    name:'{"text":"PROPHUNT","color":"blue","bold":true}', \
+    name:'{"text":"PROPHUNT","color":"blue","bold":true,"italic":true}', \
     contents: [ \
         '{"text":" "}', \
         '[{"text":" "},{"score":{"name":"#prophunt.prop_count","objective":"data"}},{"text":" prop(s) left"}]', \
