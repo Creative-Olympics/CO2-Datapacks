@@ -38,7 +38,6 @@ team modify prophunt color blue
 team modify prophunt friendlyFire false
 team modify prophunt nametagVisibility never
 team modify prophunt seeFriendlyInvisibles false
-team modify prophunt prefix [{"text":"PROPHUNT","italic":true,"bold":true,"color":"gray"},{"text":" | ","italic":false,"bold":false,"color":"gray"}]
 
 function prophunt:stop/stop
 schedule clear prophunt:start/place_starting_sign

@@ -8,7 +8,7 @@ execute as @a[team=magma_run] at @s run stopsound @s music
 execute as @a[team=magma_run] at @s run playsound magma_run:theme music @s
 execute as @a[team=magma_run] at @s run tellraw @s {"text":"Music by Oleksii Holubiev from Pixabay"}
 
-effect give @a[team=magma_run] speed infinite 4 true
+effect give @a[team=magma_run] speed infinite 2 true
 scoreboard players set $magma_run.game_started data 1
 
 setblock -236 101 17 minecraft:air

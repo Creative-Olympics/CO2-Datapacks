@@ -1,4 +1,3 @@
-
 scoreboard players operation #jump.time_left.seconds data = @s jump.time_left
 scoreboard players operation #jump.time_left.seconds data /= 20 const
 scoreboard players add #jump.time_left.seconds data 1
