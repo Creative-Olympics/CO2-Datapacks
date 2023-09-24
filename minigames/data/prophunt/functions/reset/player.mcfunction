@@ -19,3 +19,4 @@ tag @s remove prophunt.was_prop
 tag @s remove prophunt.dash.player
 tag @s remove prophunt.current.player
 tag @s remove prophunt.current.locker
+tag @s remove prophunt.current.hunter
