@@ -25,12 +25,13 @@ execute as @e[scores={UUID=0}] store result score @s UUID run data get entity @s
 # Animations ------------------------------------------------------------------
 
 function global:features/relocalize/main
-execute if entity @a[scores={global.endgame_title.timer=1..}] run function global:features/endgame_title/animation
+execute if entity @a[scores={global.animated_title.timer=1..}] run function global:animated_title/animation
 
 # Listen triggers -------------------------------------------------------------
 
-function global:triggers/drop
-function global:triggers/join
+function #global:drop
+function #global:join
+function #global:kill_items
 
 # Others ----------------------------------------------------------------------
 
@@ -55,6 +56,6 @@ execute as @a[scores={pos.y=..0}] at @s run function #global:relocalize {x:-44,y
 # Player status ---------------------------------------------------------------
 
 ### ⏲️ TEMPORARY: anyone can start games
-tag @a add canLaunchGames
+tag @a add global.can_start_games
 
 

@@ -47,6 +47,12 @@ scoreboard players set $prophunt.game_started data 1
 
 scoreboard players set @a[tag=prophunt.is_hunter] prophunt.stuned 200
 
+stopsound @a[team=prophunt] music
+execute as @a[team=prophunt] at @s run playsound prophunt:theme music @s
+tellraw @a[team=prophunt] {"text":"Music by Ashot Danielyan from Pixabay"}
+
+execute as @a[team=prophunt] at @s run function #global:animated_title {type:"start"}
+
 function prophunt:timer/start
 
 setblock 112 82 66 air destroy

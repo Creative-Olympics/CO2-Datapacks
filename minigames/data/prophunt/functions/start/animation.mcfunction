@@ -14,11 +14,11 @@ execute if score #prophunt:start_anim data matches 1 run playsound minecraft:blo
 # Animation -------------------------------------------------------------------
 
 # Titles
-execute if score #prophunt:start_anim data matches 1 run tellraw @a[x=112,y=82,z=66,distance=..35] ["",{"text":"PROPHUNT > ","color":"blue"},{"text":"A game will start, please stay in the zone if you want to play.","color":"gray"}]
-execute if score #prophunt:start_anim data matches 40 run tellraw @a[x=112,y=82,z=66,distance=..35] ["",{"text":"PROPHUNT > ","color":"blue"},{"text":"The game will start in 3s","color":"gray"}]
-execute if score #prophunt:start_anim data matches 60 run tellraw @a[x=112,y=82,z=66,distance=..35] ["",{"text":"PROPHUNT > ","color":"blue"},{"text":"The game will start in 2s","color":"gray"}]
-execute if score #prophunt:start_anim data matches 80 run tellraw @a[x=112,y=82,z=66,distance=..35] ["",{"text":"PROPHUNT > ","color":"blue"},{"text":"The game will start in 1s","color":"gray"}]
-execute if score #prophunt:start_anim data matches 100 run tellraw @a[x=112,y=82,z=66,distance=..35] ["",{"text":"PROPHUNT > ","color":"blue"},{"text":"Game is started! Good luck have fun!","color":"gray"}]
+execute if score #prophunt:start_anim data matches 1 run tellraw @a[x=112,y=82,z=66,distance=..35] ["",{"text":"PROPHUNT > ","color":"blue","bold":true,"italic":true},{"text":"A game will start, please stay in the zone if you want to play.","color":"gray"}]
+execute if score #prophunt:start_anim data matches 40 run tellraw @a[x=112,y=82,z=66,distance=..35] ["",{"text":"PROPHUNT > ","color":"blue","bold":true,"italic":true},{"text":"The game will start in 3s","color":"gray"}]
+execute if score #prophunt:start_anim data matches 60 run tellraw @a[x=112,y=82,z=66,distance=..35] ["",{"text":"PROPHUNT > ","color":"blue","bold":true,"italic":true},{"text":"The game will start in 2s","color":"gray"}]
+execute if score #prophunt:start_anim data matches 80 run tellraw @a[x=112,y=82,z=66,distance=..35] ["",{"text":"PROPHUNT > ","color":"blue","bold":true,"italic":true},{"text":"The game will start in 1s","color":"gray"}]
+execute if score #prophunt:start_anim data matches 100 run tellraw @a[x=112,y=82,z=66,distance=..35] ["",{"text":"PROPHUNT > ","color":"blue","bold":true,"italic":true},{"text":"Game is started! Good luck have fun!","color":"gray"}]
 
 # Sound effect
 execute if score #prophunt:start_anim data matches 40 run playsound minecraft:entity.experience_orb.pickup master @a[x=112,y=82,z=66,distance=..35] ~ ~ ~ 2 2 1
@@ -39,7 +39,7 @@ scoreboard players add #prophunt:start_anim data 1
 scoreboard players set #prophunt.player_count data 0
 execute as @a[x=112,y=82,z=66,distance=..5.5] run scoreboard players add #prophunt.player_count data 1
 execute if score #prophunt:start_anim data matches 100 if score #prophunt.player_count data matches 2.. run function prophunt:start/start
-execute if score #prophunt:start_anim data matches 100 unless score #prophunt.player_count data matches 2.. run tellraw @a[x=112,y=82,z=66,distance=..5.5] ["",{"text":"PROPHUNT > ","color":"blue"},{"text":"Not enough players to start the game :/","color":"gray"}]
+execute if score #prophunt:start_anim data matches 100 unless score #prophunt.player_count data matches 2.. run tellraw @a[x=112,y=82,z=66,distance=..5.5] ["",{"text":"PROPHUNT > ","color":"blue","bold":true,"italic":true},{"text":"Not enough players to start the game :/","color":"gray"}]
 execute if score #prophunt:start_anim data matches 100 unless score #prophunt.player_count data matches 2.. run playsound block.sand.step master @a[x=112,y=82,z=66,distance=..5.5] 112 82 66 2 2 1
 execute if score #prophunt:start_anim data matches 100 unless score #prophunt.player_count data matches 2.. run function prophunt:start/place_starting_sign
 

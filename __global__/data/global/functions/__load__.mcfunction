@@ -7,9 +7,6 @@ gamerule naturalRegeneration false
 gamerule showDeathMessages false
 gamerule fallDamage false
 
-
-
-
 #==============================================================================
 # GLOBAL DATA
 #==============================================================================
@@ -38,7 +35,7 @@ function #bs.sidebar:reset
 
 # Endgame title ---------------------------------------------------------------
 
-scoreboard objectives add global.endgame_title.timer dummy
+scoreboard objectives add global.animated_title.timer dummy
 
 # Living time -----------------------------------------------------------------
 
@@ -55,8 +52,8 @@ scoreboard objectives add reloc.vy dummy
 scoreboard objectives add reloc.vz dummy
 
 # Trigger scores
-scoreboard objectives add trigger_join minecraft.custom:minecraft.leave_game
-scoreboard objectives add trigger_drop minecraft.custom:minecraft.drop
+scoreboard objectives add global.join_trigger minecraft.custom:minecraft.leave_game
+scoreboard objectives add global.drop_trigger minecraft.custom:minecraft.drop
 
 
 # Global teams ----------------------------------------------------------------
