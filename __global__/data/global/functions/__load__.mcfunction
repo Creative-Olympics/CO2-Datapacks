@@ -39,7 +39,7 @@ scoreboard objectives add global.animated_title.timer dummy
 
 # Living time -----------------------------------------------------------------
 
-scoreboard objectives add living_time minecraft.custom:minecraft.time_since_death
+scoreboard objectives add living_time dummy
 
 # Relocalization --------------------------------------------------------------
 

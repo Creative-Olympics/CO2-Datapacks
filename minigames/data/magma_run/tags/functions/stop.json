@@ -1,5 +1,5 @@
 {
     "values": [
-        "magma_run:stop/stop"
+        "magma_run:stop/trigger"
     ]
 }

@@ -19,23 +19,17 @@ execute as @e[scores={SUID=0}] store result score @s SUID run scoreboard players
 execute as @e[scores={UUID=0}] store result score @s UUID run data get entity @s UUID[0]
 
 #==============================================================================
-# TICKIGN FEATURES
+# TICKING FEATURES
 #==============================================================================
 
 # Animations ------------------------------------------------------------------
 
 function global:relocalize/main
 execute if entity @a[scores={global.animated_title.timer=1..}] run function global:animated_title/animation
-
-# Listen triggers -------------------------------------------------------------
-
 function #global:drop
 function #global:join
 function #global:kill_items
-
-# Others ----------------------------------------------------------------------
-
-function global:features/living_time/main
+function #global:living_time
 
 #==============================================================================
 # LOBBY
