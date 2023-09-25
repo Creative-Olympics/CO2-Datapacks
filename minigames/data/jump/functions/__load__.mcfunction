@@ -11,5 +11,6 @@ team add jump
 team modify jump color dark_purple
 team modify jump collisionRule never
 team modify jump friendlyFire false
+team modify jump seeFriendlyInvisibles true
 
 function jump:checkpoint/place_all
