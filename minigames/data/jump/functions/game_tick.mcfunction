@@ -5,4 +5,5 @@ function #jump:timer
 function #jump:stop
 function #jump:checkpoint
 
-scoreboard players add @a[scores={jump.time_left=1..}] jump.timer 1
+scoreboard players add @a[team=jump] jump.timer 1
+scoreboard players add @a[team=jump] jump.checkpoint_timer 1

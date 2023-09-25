@@ -11,6 +11,6 @@ scoreboard players operation #jump.time.first_decimal data = @s jump.timer
 scoreboard players operation #jump.time.first_decimal data %= 20 const
 scoreboard players operation #jump.time.first_decimal data /= 2 const
 
-tellraw @s [{"text":"\nJUMP > ","bold":true,"italic":true,"color":"dark_purple"},{"text":"You completed the jump in ","bold":false,"italic":false,"color":"gray"},{"score":{"name":"#jump.time.minutes","objective":"data"},"bold":true,"italic":false,"color":"gold"},{"text":"m and ","bold":false,"italic":false,"color":"gray"},{"score":{"name":"#jump.time.seconds","objective":"data"},"bold":true,"italic":false,"color":"gold"},{"text":".","bold":true,"italic":false,"color":"gold"},{"score":{"name":"#jump.time.first_decimal","objective":"data"},"bold":true,"italic":false,"color":"gold"},{"text":"s!\n","bold":false,"italic":false,"color":"gray"}]
+tellraw @s [{"text":"\nJUMP > ","bold":true,"italic":true,"color":"dark_purple"},{"text":"You completed the jump in ","bold":false,"italic":false,"color":"gray"},{"score":{"name":"#jump.time.minutes","objective":"data"},"bold":true,"italic":false,"color":"green"},{"text":"m and ","bold":false,"italic":false,"color":"gray"},{"score":{"name":"#jump.time.seconds","objective":"data"},"bold":true,"italic":false,"color":"green"},{"text":".","bold":true,"italic":false,"color":"green"},{"score":{"name":"#jump.time.first_decimal","objective":"data"},"bold":true,"italic":false,"color":"green"},{"text":"s!\n","bold":false,"italic":false,"color":"gray"}]
 
 function #jump:reset_player
