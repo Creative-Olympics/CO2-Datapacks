@@ -6,7 +6,7 @@ function prophunt:utils/get_associated_entities
 tag @p[tag=prophunt.current.player] add prophunt.was_prop
 tag @p[tag=prophunt.current.player] remove prophunt.is_prop
 
-tellraw @a[team=prophunt] [{"text":"PROPHUNT > ","color":"blue"},{"selector":"@p[tag=prophunt.current.hunter]","color":"gray"},{"text":" ⚔ ","color":"gray"},{"selector":"@p[tag=prophunt.current.player]","color":"gray"}]
+tellraw @a[team=prophunt] [{"text":"PROPHUNT > ","color":"blue","bold":true,"italic":true},{"selector":"@p[tag=prophunt.current.hunter]","bold":false,"italic":false},{"text":" found ","color":"gray","bold":false,"italic":false},{"selector":"@p[tag=prophunt.current.player]","bold":false,"italic":false},{"text":"!","color":"gray","bold":false,"italic":false}]
 
 # Remaining props title
 scoreboard players set #prophunt.prop_count data 0
