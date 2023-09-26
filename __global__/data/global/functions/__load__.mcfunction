@@ -58,17 +58,19 @@ scoreboard objectives add global.drop_trigger minecraft.custom:minecraft.drop
 
 # Global teams ----------------------------------------------------------------
 
-team add Lobby
-team modify Lobby color white
-team modify Lobby friendlyFire false
-team modify Lobby seeFriendlyInvisibles true
-team join Lobby @a
+team add lobby
+team modify lobby color white
+team modify lobby friendlyFire false
+team modify lobby seeFriendlyInvisibles true
+team join lobby @a
 
 # Constants
 scoreboard players set 10 const 10
 scoreboard players set 20 const 20
 scoreboard players set 1000 const 1000
 
+
+kill @e[type=!player,type=!item_frame,type=!painting,tag=!permanent]
 
 ### TO REMOVE
 scoreboard players set SERVER_START data 1

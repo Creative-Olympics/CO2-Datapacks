@@ -38,11 +38,11 @@ function #global:inventory
 
 # Global player effects -------------------------------------------------------
 
-team join Lobby @a[team=]
-effect give @a[team=Lobby] saturation infinite 255 true
-effect give @a[team=Lobby] resistance infinite 255 true
-effect give @a[team=Lobby] weakness 1000000 255 true
-effect give @a[team=Lobby] resistance infinite 255 true
+team join lobby @a[team=]
+effect give @a[team=lobby] saturation infinite 255 true
+effect give @a[team=lobby] resistance infinite 255 true
+effect give @a[team=lobby] weakness 1000000 255 true
+effect give @a[team=lobby] resistance infinite 255 true
 
 # Prevent players to jump in the void -----------------------------------------
 

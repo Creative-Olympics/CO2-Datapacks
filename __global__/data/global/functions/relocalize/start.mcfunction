@@ -3,7 +3,7 @@
 # Note: the relocalization will take 3 seconds
 # tellraw @a [{"selector":"@s"},{"text":" > global:features/relocalize/start","color":"gray"}]
 
-team join Lobby @s
+team join lobby @s
 
 $scoreboard players set @s reloc.x $(x)
 $scoreboard players set @s reloc.y $(y)
