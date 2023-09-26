@@ -1,6 +1,7 @@
 {
  "values": [
 	"global:__tick__",
-    "environment:__tick__"
+	"lobby:__tick__",
+	"environment:__tick__"
  ]
 }

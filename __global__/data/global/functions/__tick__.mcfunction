@@ -30,6 +30,7 @@ function #global:drop
 function #global:join
 function #global:kill_items
 function #global:living_time
+function #global:inventory
 
 #==============================================================================
 # LOBBY

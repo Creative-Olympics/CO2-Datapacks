@@ -61,7 +61,7 @@ scoreboard objectives add global.drop_trigger minecraft.custom:minecraft.drop
 team add Lobby
 team modify Lobby color white
 team modify Lobby friendlyFire false
-team modify Lobby seeFriendlyInvisibles false
+team modify Lobby seeFriendlyInvisibles true
 team join Lobby @a
 
 # Constants

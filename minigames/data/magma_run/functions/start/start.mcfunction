@@ -1,5 +1,7 @@
 
 execute at @e[tag=magma_run.start_anim] run team join magma_run @a[distance=..21]
+execute at @e[tag=magma_run.start_anim] run kill @e[tag=global.lobby_horse,distance=..21]
+clear @a[team=magma_run]
 
 tellraw @a[team=magma_run] ["",{"text":"MAGMA RUN > ","color":"gold","bold":true,"italic":true},{"text":"Game is started! Good luck have fun!","color":"gray"}]
 

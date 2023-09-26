@@ -22,6 +22,8 @@ function #prophunt:kill_prop
 
 function #prophunt:timer
 
+execute at @a[team=prophunt] as @e[tag=lobby.horse,distance=..3] run function lobby:horse/kill
+
 # Clear -----------------------------------------------------------------------
 
 execute as @e[tag=prophunt.interaction] run data remove entity @s attack

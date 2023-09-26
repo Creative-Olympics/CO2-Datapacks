@@ -1,1 +1,0 @@
-/item replace entity @a[team=Lobby] hotbar.0 with minecraft:horse_spawn_egg{EntityTag:{id:"minecraft:horse",Variant:0,Tags:["test"],Tame:1,SaddleItem:{id:"minecraft:saddle",Count:1}}} 1
