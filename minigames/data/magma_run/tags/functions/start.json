@@ -1,5 +1,5 @@
 {
     "values": [
-        "magma_run:start/animation"
+        "magma_run:start/pre_start"
     ]
 }

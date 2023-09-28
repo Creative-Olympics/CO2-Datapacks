@@ -1,5 +1,6 @@
 {
  "values": [
+	"lib:__load__",
 	"global:__load__",
 	"lobby:__load__",
 	"environment:__load__"

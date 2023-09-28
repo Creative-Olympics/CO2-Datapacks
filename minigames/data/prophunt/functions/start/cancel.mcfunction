@@ -1,0 +1,2 @@
+
+function prophunt:map/place_starting_sign
