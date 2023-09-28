@@ -5,7 +5,6 @@ $execute as @a[distance=..$(size)] run scoreboard players add #lib.start_animati
 
 # If there is enough players, start te game
 $execute if score #lib.start_animation.player_count data matches 2.. run tellraw @a[distance=..$(size)] ["",{"text":"$(minigame) > ","color":"$(color)","bold":true,"italic":true},{"text":"The game has started!","color":"gray"}]
-$execute if score #lib.start_animation.player_count data matches 2.. as @a[distance=..$(size)] run function #global:animated_title {type:"start"}
 $execute if score #lib.start_animation.player_count data matches 2.. run function $(start_callback)
 
 # Otherwise, display an error message

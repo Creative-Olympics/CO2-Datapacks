@@ -1,15 +1,11 @@
 # Executed globally
 # tellraw @a {"text":"oitc:stop"}
 
+function one_in_the_chamber:reset/map
 
 # Reset players
-clear @a[team=oitc]
-effect clear @a[team=oitc]
-scoreboard players reset * oitc_kills
-scoreboard players reset * oitc_kills_memory
-gamemode adventure @a[team=oitc]
 spreadplayers -187 -86 0 3 false @a[team=oitc]
-team join lobby @a[team=oitc]
+execute as @e[team=oitc] run function one_in_the_chamber:reset/player
 
 # Reset global data
 scoreboard players set #OITC:game_started data 0

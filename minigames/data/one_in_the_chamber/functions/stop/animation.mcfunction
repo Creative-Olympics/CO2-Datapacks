@@ -10,4 +10,4 @@ execute at @a[team=oitc] run spectate @s @p[team=oitc]
 # Increment end game timer
 scoreboard players add #OITC:end_game_timer data 1
 
-execute if score #OITC:end_game_timer data matches 100.. run function one_in_the_chamber:stop
+execute if score #OITC:end_game_timer data matches 100.. run function #one_in_the_chamber:stop

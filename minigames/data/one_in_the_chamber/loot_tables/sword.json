@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone_sword",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"text\":\"For when you are fucked...\",\"color\":\"red\",\"bold\":true,\"italic\":true,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}',Lore:['{\"text\":\"This is your chance to kill enemies without arrow...\\\\nThere is a knockback but it deals more damage\\\\nthan your hand so it\\'s up to you to decide what\\\\ndesesperate weapon you want to use.\"}']},HideFlags:1,Unbreakable:1b,Enchantments:[{id:\"minecraft:knockback\",lvl:1s},{id:\"minecraft:sharpness\",lvl:1s}]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

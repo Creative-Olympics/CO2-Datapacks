@@ -7,7 +7,7 @@
 execute as @a[team=oitc] run scoreboard players operation @s oitc_kills_memory -= @s oitc_kills
 
 # Run kill event if kill count has increased
-execute as @a[team=oitc,scores={oitc_kills_memory=-1}] at @s run function one_in_the_chamber:events/kill
+execute as @a[team=oitc,scores={oitc_kills_memory=-1}] at @s run function one_in_the_chamber:kill/run
 
 # Reset kill count memory for the next tick
 execute as @a[team=oitc] run scoreboard players operation @s oitc_kills_memory = @s oitc_kills
