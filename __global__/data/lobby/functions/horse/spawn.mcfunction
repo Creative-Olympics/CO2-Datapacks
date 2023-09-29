@@ -19,7 +19,9 @@ effect give @e[tag=lobby.horse.new,limit=1,sort=nearest] resistance infinite 127
 effect give @e[tag=lobby.horse.new,limit=1,sort=nearest] regeneration infinite 127 true
 
 data modify entity @e[tag=lobby.horse.new,limit=1,sort=nearest] CustomName set value ''
-data modify entity @e[tag=lobby.horse.new,limit=1,sort=nearest] NoAI set value 1
 data modify entity @e[tag=lobby.horse.new,limit=1,sort=nearest] Attributes set value [{Name:generic.max_health,Base:20},{Name:generic.movement_speed,Base:0.5}]
+
+execute store result entity @e[tag=lobby.horse.new,limit=1,sort=nearest] Variant int 1 run random value 0..1000
+data modify entity @e[tag=lobby.horse.new,limit=1,sort=nearest] CustomName set value ''
 
 tag @e[tag=lobby.horse.new,limit=1,sort=nearest] remove lobby.horse.new
