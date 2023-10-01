@@ -42,7 +42,12 @@ scoreboard players set #dropper.didnt_jump_players data 0
 execute as @a[team=dropper,tag=!dropper.jump_complete] run scoreboard players add #dropper.didnt_jump_players data 1
 execute if score #dropper.timer_before_jump_reset data matches 1.. run scoreboard players add #dropper.timer_before_jump_reset data 1
 execute if score #dropper.timer_before_jump_reset data matches 0 if score #dropper.didnt_jump_players data matches 0 if entity @a[team=dropper] run scoreboard players add #dropper.timer_before_jump_reset data 1
+
+execute if score #dropper.timer_before_jump_reset data matches 1 run execute as @a[team=dropper] at @s run playsound block.stone_button.click_on master @s ~ ~ ~ 1 2 0
+execute if score #dropper.timer_before_jump_reset data matches 1 run tellraw @a[team=dropper] [{"text":"\nDROPPER > ","color":"green","bold":true,"italic":true},{"text":" Round complete!\n","color":"gray","bold":false,"italic":false}]
+
 execute if score #dropper.timer_before_jump_reset data matches 66 run scoreboard players add #dropper.round data 1
 execute if score #dropper.timer_before_jump_reset data matches 66 run function dropper:obstacles/generate
+
 execute if score #dropper.timer_before_jump_reset data matches 33 run function dropper:zone/refill
 execute if score #dropper.timer_before_jump_reset data matches 100.. run function dropper:jump/reset

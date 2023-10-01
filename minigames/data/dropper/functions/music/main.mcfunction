@@ -9,7 +9,7 @@ execute if score #dropper.music_timer data matches 1780 as @a[team=dropper] at @
 
 # Third theme (1m 6s)
 execute if score #dropper.music_timer data matches 3120 as @a[team=dropper] at @s run stopsound @s music
-execute if score #dropper.music_timer data matches 3120 as @a[team=dropper] at @s run playsound dropper:theme-2 music @s ~ ~ ~ 0.5 1 0
+execute if score #dropper.music_timer data matches 3120 as @a[team=dropper] at @s run playsound dropper:theme-3 music @s ~ ~ ~ 0.5 1 0
 
 
 scoreboard players add #dropper.music_timer data 1
