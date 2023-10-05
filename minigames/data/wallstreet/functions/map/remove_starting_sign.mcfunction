@@ -1,0 +1,1 @@
+setblock -115 100 107 minecraft:air destroy

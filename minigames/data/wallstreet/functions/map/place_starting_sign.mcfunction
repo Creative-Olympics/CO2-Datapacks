@@ -1,0 +1,2 @@
+function wallstreet:map/remove_starting_sign
+setblock -115 100 107 minecraft:bamboo_wall_sign[facing=south,waterlogged=false]{back_text:{color:"black",has_glowing_text:0b,messages:['{"text":""}','{"text":""}','{"text":""}','{"text":""}']},front_text:{has_glowing_text:0b,messages:['{"clickEvent":{"action":"run_command","value":"function #wallstreet:start"},"color":"yellow","text":" "}','{"color":"yellow","text":"Start","bold":true,"italic":true}','{"color":"yellow","text":"WALLSTREET","bold":true,"italic":true}','{"text":""}']},is_waxed:0b}

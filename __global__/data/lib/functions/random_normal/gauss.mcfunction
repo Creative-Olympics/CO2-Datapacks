@@ -26,10 +26,3 @@ scoreboard players operation #gauss.norm tmp /= 2507 const
 scoreboard players operation #gauss.output tmp = #gauss.norm tmp
 scoreboard players operation #gauss.output tmp *= 1000 const
 scoreboard players operation #gauss.output tmp /= #math.exp bs.out
-
-# tellraw @a [{"text":"x: ","color":"gray"},{"score":{"name":"#gauss.input","objective":"tmp"}}]
-# tellraw @a [{"text":"arg: ","color":"gray"},{"score":{"name":"#gauss.arg","objective":"tmp"}}]
-# tellraw @a [{"text":"1/exp(arg): ","color":"gray"},{"score":{"name":"#math.exp","objective":"bs.out"}}]
-# tellraw @a [{"text":"norm: ","color":"gray"},{"score":{"name":"#gauss.norm","objective":"tmp"}}]
-# tellraw @a [{"text":"gauss: ","color":"gray"},{"score":{"name":"#gauss","objective":"tmp"}}]
-# tellraw @a [{"text":" "}]

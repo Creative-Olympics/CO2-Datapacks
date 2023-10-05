@@ -1,0 +1,8 @@
+
+# Buying mode
+execute if entity @s[tag=!wallstreet.villager.sell] as @p[tag=wallstreet.villager.client] if predicate wallstreet:villager/gui/hover/sell run data modify entity @e[tag=wallstreet.villager.gui.display.trade_mode,sort=nearest,limit=1] text set value '[{"text":"BUY    ","color":"gold","bold":true,"italic":true,"underlined":false},{"text":"SELL","color":"#3296fa","bold":false,"italic":false,"underlined":true}]'
+execute if entity @s[tag=!wallstreet.villager.sell] as @p[tag=wallstreet.villager.client] unless predicate wallstreet:villager/gui/hover/sell run data modify entity @e[tag=wallstreet.villager.gui.display.trade_mode,sort=nearest,limit=1] text set value '[{"text":"BUY    ","color":"gold","bold":true,"italic":true,"underlined":false},{"text":"SELL","color":"#3296fa","bold":false,"italic":false,"underlined":false}]'
+
+#Selling mode
+execute if entity @s[tag=wallstreet.villager.sell] as @p[tag=wallstreet.villager.client] if predicate wallstreet:villager/gui/hover/buy run data modify entity @e[tag=wallstreet.villager.gui.display.trade_mode,sort=nearest,limit=1] text set value '[{"text":"BUY","color":"#3296fa","bold":false,"italic":false,"underlined":true},{"text":"    SELL","color":"gold","bold":true,"italic":true,"underlined":false}]'
+execute if entity @s[tag=wallstreet.villager.sell] as @p[tag=wallstreet.villager.client] unless predicate wallstreet:villager/gui/hover/buy run data modify entity @e[tag=wallstreet.villager.gui.display.trade_mode,sort=nearest,limit=1] text set value '[{"text":"BUY","color":"#3296fa","bold":false,"italic":false,"underlined":false},{"text":"    SELL","color":"gold","bold":true,"italic":true,"underlined":false}]'

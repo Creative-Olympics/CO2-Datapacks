@@ -26,14 +26,6 @@ execute store result score #r tmp run random value 0..1000
 execute if score #r tmp < #a tmp run scoreboard players operation #x tmp = #new_x tmp
 execute if score #r tmp < #a tmp run scoreboard players operation #p_o tmp = #p_n tmp
 
-# tellraw @a [{"text":"dx: "},{"score":{"name":"#dx","objective":"tmp"}}]
-# tellraw @a [{"text":"p_n: "},{"score":{"name":"#p_n","objective":"tmp"}}]
-# tellraw @a [{"text":"p_o: "},{"score":{"name":"#p_o","objective":"tmp"}}]
-# tellraw @a [{"text":"a: ","color":"red"},{"score":{"name":"#a","objective":"tmp"}}]
-# tellraw @a [{"text":"r: ","color":"red"},{"score":{"name":"#r","objective":"tmp"}}]
-# tellraw @a [{"text":"x: ","color":"gold","bold":true},{"score":{"name":"#x","objective":"tmp"}}]
-# tellraw @a [{"text":"----------"}]
-
 scoreboard players add #loop tmp 1
 execute unless score #loop tmp matches 5.. run function lib:random_normal/loop
 
