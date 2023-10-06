@@ -1,4 +1,3 @@
-
 tag @s add wallstreet.clear
 execute at @s run tag @e[tag=wallstreet.villager,distance=..2] add wallstreet.clear
 
@@ -10,6 +9,3 @@ execute as @e[tag=wallstreet.clear] at @s run tp @s ~ 0 ~
 kill @e[tag=wallstreet.clear]
 
 scoreboard players remove #wallstreet.villager_count data 1
-
-
-say clear/one

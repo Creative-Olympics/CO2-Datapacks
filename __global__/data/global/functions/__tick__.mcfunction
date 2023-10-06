@@ -15,8 +15,8 @@ execute as @e store result score @s pos.z run data get entity @s Pos[2] 1000
 
 scoreboard players add @e SUID 0
 scoreboard players add @e UUID 0
-execute as @e[scores={SUID=0}] run function lib:get_id
-execute as @e[scores={UUID=0}] run function lib:get_id
+execute as @e[scores={SUID=0}] run function #lib:get_id
+execute as @e[scores={UUID=0}] run function #lib:get_id
 
 #==============================================================================
 # TICKING FEATURES
