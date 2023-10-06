@@ -1,8 +1,10 @@
 
 scoreboard players set #wallstreet.game_started data 1
+scoreboard players set #wallstreet.timer data 6000
 
+function wallstreet:economy_model/get_global_stocks
+function wallstreet:economy_model/get_global_prices
 function wallstreet:villager/summon/all
-
 
 execute at @e[tag=lib.start_animation.wallstreet] run team join wallstreet @a[distance=..13]
 
@@ -23,19 +25,33 @@ scoreboard players set @a[team=wallstreet] wallstreet.diamond_quantity 0
 
 execute as @a[team=wallstreet] run function #global:animated_title {type:"start"}
 
+scoreboard players operation #wallstreet.model.wood_global_price_rounded data = #wallstreet.model.wood_global_price data
+scoreboard players operation #wallstreet.model.stone_global_price_rounded data = #wallstreet.model.stone_global_price data
+scoreboard players operation #wallstreet.model.leather_global_price_rounded data = #wallstreet.model.leather_global_price data
+scoreboard players operation #wallstreet.model.iron_global_price_rounded data = #wallstreet.model.iron_global_price data
+scoreboard players operation #wallstreet.model.diamond_global_price_rounded data = #wallstreet.model.diamond_global_price data
+
+scoreboard players operation #wallstreet.model.wood_global_price_rounded data /= 1000 const
+scoreboard players operation #wallstreet.model.stone_global_price_rounded data /= 1000 const
+scoreboard players operation #wallstreet.model.leather_global_price_rounded data /= 1000 const
+scoreboard players operation #wallstreet.model.iron_global_price_rounded data /= 1000 const
+scoreboard players operation #wallstreet.model.diamond_global_price_rounded data /= 1000 const
+
 # Register a new sidebar
 function #bs.sidebar:create { \
     id:"wallstreet", \
     name:'{"text":"WALL STREET","color":"yellow","bold":true,"italic":true}', \
     contents: [ \
         '{"text":" "}', \
-        '{"text":" Global market prices:","color":"white"}', \
+        '{"text":" Market price index:","color":"white"}', \
         '{"text":" "}', \
-        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"$global","objective":"wallstreet.wood_price"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
-        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"$global","objective":"wallstreet.stone_price"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
-        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"$global","objective":"wallstreet.leather_price"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
-        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"$global","objective":"wallstreet.iron_price"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
-        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"$global","objective":"wallstreet.diamond_price"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
+        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.wood_global_price_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
+        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.stone_global_price_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
+        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.leather_global_price_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
+        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.iron_global_price_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
+        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.diamond_global_price_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
+        '{"text":" "}', \
+        '[{"text":" Time left: ","color":"white"},{"score":{"name":"#wallstreet.timer.minutes","objective":"data"}},{"text":"m ","color":"white"},{"score":{"name":"#wallstreet.timer.seconds","objective":"data"}},{"text":"s","color":"white"}]', \
         '{"text":" "}' \
     ], \
 }

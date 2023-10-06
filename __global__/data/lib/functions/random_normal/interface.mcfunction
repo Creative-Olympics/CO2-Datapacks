@@ -1,14 +1,31 @@
-
 scoreboard players operation #x tmp = #mean tmp
 scoreboard players operation #delta tmp = #std tmp
 scoreboard players operation #delta tmp *= 2 const
 scoreboard players set #loop tmp 0
 
-# Computing starting prob
-scoreboard players operation #gauss.input tmp = #x tmp
-function lib:random_normal/gauss
-scoreboard players operation #p_o tmp = #gauss.output tmp
+scoreboard players set #x tmp 0
 
-function lib:random_normal/loop
+execute store result score #guess tmp run random value -500..500
+scoreboard players operation #x tmp += #guess tmp
+execute store result score #guess tmp run random value -500..500
+scoreboard players operation #x tmp += #guess tmp
+execute store result score #guess tmp run random value -500..500
+scoreboard players operation #x tmp += #guess tmp
+execute store result score #guess tmp run random value -500..500
+scoreboard players operation #x tmp += #guess tmp
+execute store result score #guess tmp run random value -500..500
+scoreboard players operation #x tmp += #guess tmp
+execute store result score #guess tmp run random value -500..500
+scoreboard players operation #x tmp += #guess tmp
+execute store result score #guess tmp run random value -500..500
+scoreboard players operation #x tmp += #guess tmp
+execute store result score #guess tmp run random value -500..500
+scoreboard players operation #x tmp += #guess tmp
+execute store result score #guess tmp run random value -500..500
+scoreboard players operation #x tmp += #guess tmp
+execute store result score #guess tmp run random value -500..500
+scoreboard players operation #x tmp += #guess tmp
 
-tellraw @a [{"text":"Result:","color":"green","bold":true},{"score":{"name":"#x","objective":"tmp"}}]
+scoreboard players operation #x tmp *= #std tmp
+scoreboard players operation #x tmp /= 1000 const
+scoreboard players operation #x tmp += #mean tmp

@@ -30,10 +30,13 @@ $setblock $(sign_x) $(sign_y) $(sign_z) minecraft:bamboo_wall_hanging_sign[facin
 $execute positioned $(chair_x) $(chair_y) $(chair_z) run setblock ~ ~ ~ minecraft:bamboo_fence[east=false,north=false,south=false,waterlogged=false,west=false]
 $execute positioned $(chair_x) $(chair_y) $(chair_z) run setblock ~ ~1 ~ minecraft:bamboo_pressure_plate[powered=false]
 
-execute as @e[tag=wallstreet.villager_marker.new] run function wallstreet:villager/refresh_price with entity @s data.wallstreet
+execute unless score #wallstreet.generate_all data matches 1 as @e[tag=wallstreet.villager_marker.new] at @s run function wallstreet:economy_model/initial_resources_supply
 
 scoreboard players set @e[tag=wallstreet.villager_marker.new] wallstreet.selected_quantity 0
 scoreboard players set @e[tag=wallstreet.villager_marker.new] wallstreet.selected_resource 0
 
+
 tag @e[tag=wallstreet.villager_marker.new] remove wallstreet.villager_marker.new
 tag @e[tag=wallstreet.villager.new] remove wallstreet.villager.new
+
+scoreboard players add #wallstreet.villager_count data 1

@@ -1,0 +1,15 @@
+# Select max in buy mode
+execute as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] unless entity @s[tag=wallstreet.villager.sell] if score @s wallstreet.selected_resource matches 0 run scoreboard players operation @s wallstreet.selected_quantity = @s wallstreet.wood_quantity
+execute as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] unless entity @s[tag=wallstreet.villager.sell] if score @s wallstreet.selected_resource matches 1 run scoreboard players operation @s wallstreet.selected_quantity = @s wallstreet.stone_quantity
+execute as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] unless entity @s[tag=wallstreet.villager.sell] if score @s wallstreet.selected_resource matches 2 run scoreboard players operation @s wallstreet.selected_quantity = @s wallstreet.leather_quantity
+execute as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] unless entity @s[tag=wallstreet.villager.sell] if score @s wallstreet.selected_resource matches 3 run scoreboard players operation @s wallstreet.selected_quantity = @s wallstreet.iron_quantity
+execute as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] unless entity @s[tag=wallstreet.villager.sell] if score @s wallstreet.selected_resource matches 4 run scoreboard players operation @s wallstreet.selected_quantity = @s wallstreet.diamond_quantity
+
+# Select max in sell mode
+execute as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] if entity @s[tag=wallstreet.villager.sell] if score @s wallstreet.selected_resource matches 0 run scoreboard players operation @s wallstreet.selected_quantity = @p[tag=wallstreet.villager.client] wallstreet.wood_quantity
+execute as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] if entity @s[tag=wallstreet.villager.sell] if score @s wallstreet.selected_resource matches 1 run scoreboard players operation @s wallstreet.selected_quantity = @p[tag=wallstreet.villager.client] wallstreet.stone_quantity
+execute as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] if entity @s[tag=wallstreet.villager.sell] if score @s wallstreet.selected_resource matches 2 run scoreboard players operation @s wallstreet.selected_quantity = @p[tag=wallstreet.villager.client] wallstreet.leather_quantity
+execute as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] if entity @s[tag=wallstreet.villager.sell] if score @s wallstreet.selected_resource matches 3 run scoreboard players operation @s wallstreet.selected_quantity = @p[tag=wallstreet.villager.client] wallstreet.iron_quantity
+execute as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] if entity @s[tag=wallstreet.villager.sell] if score @s wallstreet.selected_resource matches 4 run scoreboard players operation @s wallstreet.selected_quantity = @p[tag=wallstreet.villager.client] wallstreet.diamond_quantity
+
+execute as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] run scoreboard players add @s wallstreet.selected_quantity 1
