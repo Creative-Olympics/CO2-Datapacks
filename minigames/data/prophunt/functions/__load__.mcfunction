@@ -42,11 +42,5 @@ team modify prophunt seeFriendlyInvisibles false
 function prophunt:stop/stop
 schedule clear prophunt:start/place_starting_sign
 function prophunt:start/place_starting_sign
-# function prophunt:start
 
-scoreboard players set 2 const 2
-scoreboard players set 3 const 3
-scoreboard players set 4 const 4
-scoreboard players set 20 const 20
-scoreboard players set 60 const 60
-scoreboard players set 100 const 100
+scoreboard players set #prophunt:start_anim data 0

@@ -33,8 +33,8 @@ execute as @a[tag=prophunt.is_prop] at @s run function prophunt:switch_prop/stop
 execute as @a[tag=prophunt.is_prop] at @s run scoreboard players set @s prophunt.prop_switch_cooldown 0
 execute as @a[tag=prophunt.is_hunter] at @s run function prophunt:utils/give_items/hunter
 
-
-scoreboard players set $prophunt.game_time data 2400
+# Game time to 5min
+scoreboard players set $prophunt.game_time data 6000
 scoreboard players operation $prophunt.remaining_time data = $prophunt.game_time data
 
 scoreboard players operation $prophunt.ultimate_cost data = $prophunt.game_time data
