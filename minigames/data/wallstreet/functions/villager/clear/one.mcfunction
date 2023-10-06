@@ -10,3 +10,6 @@ execute as @e[tag=wallstreet.clear] at @s run tp @s ~ 0 ~
 kill @e[tag=wallstreet.clear]
 
 scoreboard players remove #wallstreet.villager_count data 1
+
+
+say clear/one
