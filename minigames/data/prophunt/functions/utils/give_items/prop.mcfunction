@@ -2,7 +2,7 @@
 # tellraw @a {"text":"prophunt:events/give_prop_items"}
 
 clear @s
-item replace entity @s hotbar.0 with ghast_tear{display:{Name:'{"text":" "}'}}
+item replace entity @s hotbar.0 with ghast_tear{display:{Name:'{"text":" "}'},CustomModelData:1}
 item replace entity @s hotbar.1 from entity @s hotbar.0
 item replace entity @s hotbar.2 from entity @s hotbar.0
 item replace entity @s hotbar.3 from entity @s hotbar.0
