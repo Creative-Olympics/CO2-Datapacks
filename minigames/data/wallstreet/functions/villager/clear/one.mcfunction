@@ -1,4 +1,5 @@
 tag @s add wallstreet.clear
+function wallstreet:villager/talk/stop
 execute at @s run tag @e[tag=wallstreet.villager,distance=..2] add wallstreet.clear
 
 $execute positioned $(sign_x) $(sign_y) $(sign_z) run setblock ~ ~ ~ minecraft:moving_piston
