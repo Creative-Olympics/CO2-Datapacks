@@ -27,22 +27,23 @@ scoreboard players operation #wallstreet.get_price.price data *= #wallstreet.get
 scoreboard players operation #wallstreet.get_price.price data /= 1000 const
 scoreboard players operation #wallstreet.get_price.price data /= 1000 const
 
-# Randomize
-# scoreboard players operation #mean tmp = #wallstreet.get_price.price data
-# scoreboard players operation #std tmp = #mean tmp
-# scoreboard players operation #std tmp /= 10 const
-# function #lib:random_normal
-# scoreboard players operation #wallstreet.get_price.price data = #mean tmp
-
 # Apply limits
-# scoreboard players operation #wallstreet.get_price.max_price data = #wallstreet.get_price.global_price data
-# scoreboard players operation #wallstreet.get_price.max_price data *= 1500 const
-# scoreboard players operation #wallstreet.get_price.max_price data /= 1000 const
-# scoreboard players operation #wallstreet.get_price.max_price data /= 1000 const
-# scoreboard players operation #wallstreet.get_price.price data < #wallstreet.get_price.max_price data
+scoreboard players operation #wallstreet.get_price.max_price data = #wallstreet.get_price.global_price data
+scoreboard players operation #wallstreet.get_price.max_price data *= 1500 const
+scoreboard players operation #wallstreet.get_price.max_price data /= 1000 const
+scoreboard players operation #wallstreet.get_price.max_price data /= 1000 const
+scoreboard players operation #wallstreet.get_price.price data < #wallstreet.get_price.max_price data
 
-# scoreboard players operation #wallstreet.get_price.min_price data = #wallstreet.get_price.global_price data
-# scoreboard players operation #wallstreet.get_price.min_price data /= 2 const
-# scoreboard players operation #wallstreet.get_price.max_price data /= 1000 const
-# scoreboard players operation #wallstreet.get_price.min_price data < 1 const
-# scoreboard players operation #wallstreet.get_price.price data > #wallstreet.get_price.min_price data
+scoreboard players operation #wallstreet.get_price.min_price data = #wallstreet.get_price.global_price data
+scoreboard players operation #wallstreet.get_price.min_price data /= 2 const
+scoreboard players operation #wallstreet.get_price.min_price data /= 1000 const
+scoreboard players operation #wallstreet.get_price.price data > #wallstreet.get_price.min_price data
+
+# Randomize
+scoreboard players operation #mean tmp = #wallstreet.get_price.price data
+scoreboard players operation #std tmp = #mean tmp
+scoreboard players operation #std tmp /= 10 const
+function #lib:random_normal
+scoreboard players operation #wallstreet.get_price.price data = #x tmp
+
+scoreboard players operation #wallstreet.get_price.price data > 1 const
