@@ -116,7 +116,6 @@ execute if score @s prophunt.prop_type matches 11 if score @s prophunt.prop_vari
 execute if score @s prophunt.prop_type matches 11 if score @s prophunt.prop_variation matches 1 run summon block_display ~ ~ ~ {brightness:{sky:15,block:15},block_state:{Name:"dark_oak_stairs",Properties:{facing:"east"}},teleport_duration:1,Tags:["prophunt.entity","prophunt.entity.new","prophunt.display","prophunt.display.shift.x+1"]}
 execute if score @s prophunt.prop_type matches 11 if score @s prophunt.prop_variation matches 1 run summon block_display ~ ~ ~ {brightness:{sky:15,block:15},block_state:{Name:"dark_oak_stairs",Properties:{facing:"south"}},teleport_duration:1,Tags:["prophunt.entity","prophunt.entity.new","prophunt.display","prophunt.display.shift.z+1"]}
 
-
-
 # Associate displays to the player
 scoreboard players operation @e[tag=prophunt.entity.new] parent.SUID = @s SUID
+tag @e[tag=prophunt.entity.new] remove prophunt.entity.new

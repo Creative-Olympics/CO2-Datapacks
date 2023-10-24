@@ -23,5 +23,6 @@ execute if score @s prophunt.prop_type matches 7 run summon interaction ~ ~ ~ {T
 execute unless score @s prophunt.prop_type matches 6..7 run summon interaction ~ ~ ~ {Tags:["prophunt.entity","prophunt.entity.new","prophunt.interaction","prophunt.interaction.bottom","prophunt.interaction.top"],width:2.5f,height:2.5f}
 
 scoreboard players operation @e[tag=prophunt.entity.new] parent.SUID = @s SUID
+tag @e[tag=prophunt.entity.new] remove prophunt.entity.new
 
 scoreboard players set @s prophunt.prop_switch_cooldown 100
