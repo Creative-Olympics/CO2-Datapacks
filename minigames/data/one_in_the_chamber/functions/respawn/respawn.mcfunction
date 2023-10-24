@@ -29,3 +29,5 @@ execute if score @s tmp matches 11 run tp @s -196 97 -75 90 0
 execute if score @s tmp matches 12 run tp @s -211 97 -70 -135 0
 execute if score @s tmp matches 13 run tp @s -166 97 -90 0 0
 execute if score @s tmp matches 14 run tp @s -164 97 -76 180 0
+
+effect give @s minecraft:instant_health 1 100
