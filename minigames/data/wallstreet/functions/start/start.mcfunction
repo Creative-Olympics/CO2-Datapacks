@@ -1,6 +1,8 @@
 
+function wallstreet:start/load_config
+
 scoreboard players set #wallstreet.game_started data 1
-scoreboard players set #wallstreet.timer data 6000
+scoreboard players operation #wallstreet.timer data = #wallstreet.game_time data
 
 function wallstreet:economy_model/get_global_stocks
 function wallstreet:economy_model/get_global_prices

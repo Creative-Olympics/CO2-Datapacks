@@ -1,5 +1,10 @@
 # Executed as & at the villager marker
 
+execute store result entity @s data.wallstreet.set_lock.user int 1 run scoreboard players get @p[tag=wallstreet.villager.client] SUID
+function wallstreet:villager/lock/set with entity @s data.wallstreet.set_lock
+
+tag @p[tag=wallstreet.villager.client] remove wallstreet.villager.client
+
 playsound minecraft:entity.villager.no master @a[distance=..10] ~ ~ ~ 1 1 0
 function lib:id/get_child
 kill @e[tag=wallstreet.villager.gui,distance=..5]

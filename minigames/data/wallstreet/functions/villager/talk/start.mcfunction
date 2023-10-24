@@ -46,3 +46,6 @@ execute as @e[tag=wallstreet.sit.new] run scoreboard players operation @s vel.z 
 tag @e[tag=wallstreet.interacted_villager] remove wallstreet.interacted_villager
 
 tag @e[tag=wallstreet.sit.new] remove wallstreet.sit.new
+
+# Identify the client
+execute as @e[tag=wallstreet.sit] on passengers run tag @s add wallstreet.villager.client

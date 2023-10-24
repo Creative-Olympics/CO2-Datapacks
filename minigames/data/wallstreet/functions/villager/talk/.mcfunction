@@ -1,9 +1,5 @@
 # Executed globally
 
-# Identify the client
-tag @a[tag=wallstreet.villager.client] remove wallstreet.villager.client
-execute as @e[tag=wallstreet.sit] on passengers run tag @s add wallstreet.villager.client
-
 # Enter GUI animation
 execute as @e[tag=wallstreet.sit,scores={living_time=..10}] at @s run function wallstreet:villager/talk/animation
 
@@ -15,7 +11,12 @@ tag @e[tag=wallstreet.sit] add walstreet.sit.to_remove
 execute as @e[tag=wallstreet.sit] on passengers on vehicle run tag @s remove walstreet.sit.to_remove
 execute at @e[tag=walstreet.sit.to_remove] as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] at @s run function wallstreet:villager/talk/stop
 # Exit GUI if he run out of time
-execute at @e[tag=wallstreet.sit,scores={living_time=620..}] as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] at @s run function wallstreet:villager/talk/stop
+execute as @e[tag=wallstreet.sit,scores={living_time=320..}] \
+        at @s \
+        if score @s living_time > #wallstreet.villager.interaction_time data \
+        as @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] \
+        at @s \
+    run function wallstreet:villager/talk/stop
 
 # GUI tick
 function wallstreet:villager/gui/
