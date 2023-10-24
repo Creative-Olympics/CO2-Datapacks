@@ -54,3 +54,6 @@ execute as @a[scores={pos.y=..0}] at @s run function #global:relocalize {x:-44,y
 tag @a add global.can_start_games
 
 
+# Clear music of all in-game players ------------------------------------------
+
+stopsound @a[team=!lobby] music

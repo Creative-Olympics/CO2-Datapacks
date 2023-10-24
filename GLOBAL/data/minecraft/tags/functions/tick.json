@@ -3,6 +3,7 @@
 	"lib:__tick__",
 	"global:__tick__",
 	"lobby:__tick__",
-	"environment:__tick__"
- ]
+	"environment:__tick__",
+    "coc:tick"
+]
 }
