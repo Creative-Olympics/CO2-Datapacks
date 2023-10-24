@@ -2,7 +2,7 @@
 # tellraw @a {"text":"prophunt:stop"}
 
 execute as @a[tag=prophunt.is_prop,scores={prophunt.drop_trigger=1..}] run function prophunt:switch_prop/stop
-stopsound @a[team=prophunt] music
+stopsound @a[team=prophunt] record
 
 kill @e[tag=prophunt.entity]
 execute as @a[team=prophunt] at @s run function #prophunt:reset_player

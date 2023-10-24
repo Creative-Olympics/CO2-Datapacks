@@ -4,7 +4,7 @@ execute at @e[tag=lib.start_animation.magma_run] run kill @e[tag=global.lobby_ho
 clear @a[team=magma_run]
 
 execute as @a[team=magma_run] at @s run function #global:animated_title {type:"start"}
-execute as @a[team=magma_run] at @s run stopsound @s music
+execute as @a[team=magma_run] at @s run stopsound @s record
 execute as @a[team=magma_run] at @s run playsound magma_run:theme record @s
 execute as @a[team=magma_run] at @s run tellraw @s {"text":"Music by Oleksii Holubiev from Pixabay"}
 

@@ -6,4 +6,4 @@ scoreboard players reset * oitc_kills
 scoreboard players reset * oitc_kills_memory
 gamemode adventure @s
 team join lobby @s
-stopsound @s music
+stopsound @s record

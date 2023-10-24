@@ -1,4 +1,4 @@
 
 team leave @s
-stopsound @s music
+stopsound @s record
 effect clear @s speed

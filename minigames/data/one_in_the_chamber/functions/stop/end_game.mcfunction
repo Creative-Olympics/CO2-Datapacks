@@ -19,7 +19,7 @@ scoreboard players set @a[team=oitc] oitc_time_since_death 100
 # Set gamemode to spectator
 gamemode spectator @a[team=oitc]
 
-stopsound @a[team=oitc] music
+stopsound @a[team=oitc] record
 
 # Start end game timer
 scoreboard players set #OITC:end_game_timer data 1
