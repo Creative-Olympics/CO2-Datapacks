@@ -34,7 +34,7 @@ execute if entity @s[tag=wallstreet.villager.gui.interaction.0] run \
     scoreboard players set @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] wallstreet.selected_quantity 0
 
 execute if entity @s[tag=wallstreet.villager.gui.interaction.max] run function wallstreet:villager/gui/interact/apply/max
-execute if entity @s[tag=wallstreet.villager.gui.interaction.confirm] run function wallstreet:villager/gui/interact/apply/confirm
+execute if entity @s[tag=wallstreet.villager.gui.interaction.confirm] unless score @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] wallstreet.selected_quantity matches 0 run function wallstreet:villager/gui/interact/apply/confirm
 execute if entity @s[tag=wallstreet.villager.gui.interaction.leave] run function wallstreet:villager/gui/interact/apply/leave
 
 execute if entity @s[tag=!wallstreet.villager.gui.interaction.leave,tag=!wallstreet.villager.gui.interaction.confirm] run particle dust 0.196 0.588 0.980 0.3 ~ ~0.1 ~ 0.1 0.1 0.1 1 10 normal
