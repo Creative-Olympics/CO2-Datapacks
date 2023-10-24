@@ -69,7 +69,9 @@ scoreboard players set 10 const 10
 scoreboard players set 20 const 20
 scoreboard players set 1000 const 1000
 
-
+tag B5-0-0-0-1 add permanent
+tag B5-0-0-0-2 add permanent
+tag B5-0-0-0-3 add permanent
 kill @e[type=!player,type=!item_frame,type=!painting,tag=!permanent]
 
 ### TO REMOVE
