@@ -5,7 +5,7 @@ clear @a[team=magma_run]
 
 execute as @a[team=magma_run] at @s run function #global:animated_title {type:"start"}
 execute as @a[team=magma_run] at @s run stopsound @s music
-execute as @a[team=magma_run] at @s run playsound magma_run:theme music @s
+execute as @a[team=magma_run] at @s run playsound magma_run:theme record @s
 execute as @a[team=magma_run] at @s run tellraw @s {"text":"Music by Oleksii Holubiev from Pixabay"}
 
 effect give @a[team=magma_run] speed infinite 2 true
