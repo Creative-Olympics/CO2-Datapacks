@@ -11,7 +11,7 @@ scoreboard players set @s jump.step 1
 
 stopsound @s record
 playsound jump:theme record @s
-tellraw @s {"text":"Music by Alexi Action from Pixabay"}
+tellraw @s {"text":"Music by Alexi Action","hoverEvent":{"action":"show_text","value":[{"text":"Played on the \"record\" audio source"}]}}
 
 clear @s
 

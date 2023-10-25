@@ -59,3 +59,5 @@ function #bs.sidebar:create { \
 }
 
 scoreboard objectives setdisplay sidebar.team.yellow bs.sidebar.wallstreet
+
+function wallstreet:music/start

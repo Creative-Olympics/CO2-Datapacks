@@ -24,4 +24,4 @@ scoreboard players set #OITC:game_started data 1
 scoreboard players set #OITC:end_game_timer data 0
 scoreboard players set #oitc.musics.timer data 0
 
-tellraw @a[team=oitc] {"text": "Musics by Alew Cristoforetti and Yoav Alyagon"}
+tellraw @a[team=oitc] {"text": "Musics by Alew Cristoforetti and Yoav Alyagon","hoverEvent":{"action":"show_text","value":[{"text":"Played on the \"record\" audio source"}]}}

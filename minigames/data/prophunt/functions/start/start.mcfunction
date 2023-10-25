@@ -49,7 +49,7 @@ scoreboard players set @a[tag=prophunt.is_hunter] prophunt.stuned 200
 
 stopsound @a[team=prophunt] record
 execute as @a[team=prophunt] at @s run playsound prophunt:theme record @s
-tellraw @a[team=prophunt] {"text":"Music by Ashot Danielyan from Pixabay"}
+tellraw @a[team=prophunt] {"text":"Music by Ashot Danielyan","hoverEvent":{"action":"show_text","value":[{"text":"Played on the \"record\" audio source"}]}}
 
 execute as @a[team=prophunt] at @s run function #global:animated_title {type:"start"}
 

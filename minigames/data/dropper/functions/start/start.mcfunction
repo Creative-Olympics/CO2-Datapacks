@@ -12,4 +12,4 @@ scoreboard players set #dropper.round data 0
 
 execute as @a[team=dropper] run function #global:animated_title {type:"start"}
 
-tellraw @a[team=dropper] {"text":"Musics by Yrii Semchyshyn, Oleksandr Stepanov and QubeSounds"}
+tellraw @a[team=dropper] {"text":"Musics by Yrii Semchyshyn, Oleksandr Stepanov and QubeSounds","hoverEvent":{"action":"show_text","value":[{"text":"Played on the \"record\" audio source"}]}}

@@ -6,7 +6,7 @@ clear @a[team=magma_run]
 execute as @a[team=magma_run] at @s run function #global:animated_title {type:"start"}
 execute as @a[team=magma_run] at @s run stopsound @s record
 execute as @a[team=magma_run] at @s run playsound magma_run:theme record @s
-execute as @a[team=magma_run] at @s run tellraw @s {"text":"Music by Oleksii Holubiev from Pixabay"}
+execute as @a[team=magma_run] at @s run tellraw @s {"text":"Music by Oleksii Holubiev","hoverEvent":{"action":"show_text","value":[{"text":"Played on the \"record\" audio source"}]}}
 
 effect give @a[team=magma_run] speed infinite 2 true
 scoreboard players set $magma_run.game_started data 1
