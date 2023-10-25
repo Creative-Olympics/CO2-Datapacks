@@ -7,4 +7,4 @@ setblock 128 80 0 minecraft:cobblestone
 setblock 128 80 -10 minecraft:cobblestone
 setblock 118 80 -10 minecraft:cobblestone
 setblock 118 80 0 minecraft:cobblestone
-place template dropper:dropper_platform 120 195 1
+place template dropper:dropper_platform 120 185 1
