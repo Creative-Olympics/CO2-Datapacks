@@ -1,5 +1,5 @@
 # Executed as and at the player that need to be relocalized
-# Usage: execute as [...] run function #global:relocalize {x:<x_location>, y:<y_location>, z:<z_location>}
+# Usage: execute as [...] run function #lib:relocalize {x:<x_location>, y:<y_location>, z:<z_location>}
 # Note: the relocalization will take 3 seconds
 # tellraw @a [{"selector":"@s"},{"text":" > global:features/relocalize/start","color":"gray"}]
 
@@ -35,3 +35,5 @@ scoreboard players set @s reloc.timer 1
 playsound minecraft:block.portal.travel master @s ~ ~ ~ 0.2 1.5 0
 
 particle cloud ~ ~1 ~ 0 0.5 0 0.1 100 normal @a[distance=0.1..30]
+
+tag @s add lib.relocalizing

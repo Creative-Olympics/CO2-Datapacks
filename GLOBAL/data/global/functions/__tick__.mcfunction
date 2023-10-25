@@ -24,7 +24,6 @@ execute as @e[scores={UUID=0}] run function #lib:get_id
 
 # Animations ------------------------------------------------------------------
 
-function global:relocalize/main
 execute if entity @a[scores={global.animated_title.timer=1..}] run function global:animated_title/animation
 function #global:drop
 function #global:join
@@ -46,7 +45,7 @@ effect give @a[team=lobby] resistance infinite 255 true
 
 # Prevent players to jump in the void -----------------------------------------
 
-execute as @a[scores={pos.y=..0}] at @s run function #global:relocalize {x:-44,y:100,z:-137}
+execute as @a[scores={pos.y=..0},tag=!lib.relocalizing] at @s run function #lib:relocalize {x:-44,y:100,z:-137}
 
 # Player status ---------------------------------------------------------------
 
