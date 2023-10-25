@@ -18,8 +18,8 @@ execute as @a[team=lobby,scores={tmp=2..}] run clear @s compass
 execute as @a[team=lobby] store result score @s tmp run clear @s compass 0
 
 # Cycle limits
-scoreboard players set @a[team=lobby,scores={lobby.compass.select=5..}] lobby.compass.select 0
-scoreboard players set @a[team=lobby,scores={lobby.compass.select=..-1}] lobby.compass.select 4
+scoreboard players set @a[team=lobby,scores={lobby.compass.select=6..}] lobby.compass.select 0
+scoreboard players set @a[team=lobby,scores={lobby.compass.select=..-1}] lobby.compass.select 5
 
 # Give compass ----------------------------------------------------------------
 
@@ -37,3 +37,6 @@ item replace entity @a[team=lobby,scores={tmp=0,lobby.compass.select=3}] hotbar.
 
 # Dropper
 item replace entity @a[team=lobby,scores={tmp=0,lobby.compass.select=4}] hotbar.8 with compass{display:{Name:'{"text":"DROPPER","color":"green","bold":true,"italic":true}',Lore:['{"text":"This compass indicate the minigame location","color":"white","italic":false}','{"text":"Drop item to select the next minigame","color":"white","italic":false}','{"text":"Swap it from hands to select the previous one","color":"white","italic":false}']},LodestoneDimension:"minecraft:overworld",LodestoneTracked:0b,LodestonePos:{X:123,Y:99,Z:9},HideFlags:255}
+
+# Wallstreet
+item replace entity @a[team=lobby,scores={tmp=0,lobby.compass.select=5}] hotbar.8 with compass{display:{Name:'{"text":"WALLSTREET","color":"yellow","bold":true,"italic":true}',Lore:['{"text":"This compass indicate the minigame location","color":"white","italic":false}','{"text":"Drop item to select the next minigame","color":"white","italic":false}','{"text":"Swap it from hands to select the previous one","color":"white","italic":false}']},LodestoneDimension:"minecraft:overworld",LodestoneTracked:0b,LodestonePos:{X:-115,Y:100,Z:107},HideFlags:255}
