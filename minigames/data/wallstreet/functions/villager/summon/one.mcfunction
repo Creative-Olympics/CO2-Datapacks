@@ -35,8 +35,7 @@ execute unless score #wallstreet.generate_all data matches 1 as @e[tag=wallstree
 scoreboard players set @e[tag=wallstreet.villager_marker.new] wallstreet.selected_quantity 0
 scoreboard players set @e[tag=wallstreet.villager_marker.new] wallstreet.selected_resource 0
 
+execute store result score @e[tag=wallstreet.villager_marker.new] wallstreet.compass.select run scoreboard players add #wallstreet.villager_count data 1
 
 tag @e[tag=wallstreet.villager_marker.new] remove wallstreet.villager_marker.new
 tag @e[tag=wallstreet.villager.new] remove wallstreet.villager.new
-
-scoreboard players add #wallstreet.villager_count data 1

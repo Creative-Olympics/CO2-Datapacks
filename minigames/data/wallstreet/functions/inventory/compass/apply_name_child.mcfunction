@@ -1,0 +1,1 @@
+$title @s actionbar [{"text":"Where is ","color":"gray","bold":false,"italic":false},{"text":"$(name)","color":"yellow","bold":true,"italic":true},{"text":"?","color":"gray","bold":false,"italic":false}]

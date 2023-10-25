@@ -1,6 +1,7 @@
 
 function wallstreet:villager/
 function wallstreet:inventory/
+function wallstreet:compass/
 
 execute store result score #wallstreet.timer.seconds data \
         store result score #wallstreet.timer.modulo data \
