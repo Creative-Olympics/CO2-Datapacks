@@ -23,7 +23,7 @@ scoreboard players remove #wallstreet.timer data 1
 scoreboard players operation #wallstreet.time_left.modulo data = #wallstreet.timer data
 scoreboard players operation #wallstreet.time_left.modulo data %= 20 const
 execute if score #wallstreet.timer data matches 1..1200 if score #wallstreet.time_left.modulo data matches 0 as @a[team=wallstreet] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.5 2 0
-execute if score #wallstreet.timer data matches 1..100 if score #wallstreet.time_left.modulo data matches 0 as @a[team=wallstreet] at @s run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 1 2 0
+execute if score #wallstreet.timer data matches 1..200 if score #wallstreet.time_left.modulo data matches 0 as @a[team=wallstreet] at @s run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 1 2 0
 execute if score #wallstreet.timer data matches 100 run function #bs.sidebar:destroy {id:"wallstreet"}
 execute if score #wallstreet.timer data matches 100 run function #bs.sidebar:create { \
     id:"wallstreet", \
