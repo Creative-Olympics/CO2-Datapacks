@@ -1,3 +1,3 @@
 
-setblock 112 82 66 air destroy
-setblock 111 82 66 air destroy
+setblock -236 101 17 minecraft:air destroy
+setblock -196 101 17 minecraft:air destroy
