@@ -1,4 +1,8 @@
 
+
+# Kill horses that enter in the zone
+$execute as @e[type=horse,distance=..$(size)] run function lobby:horse/kill
+
 # Count players in start area
 scoreboard players set #lib.start_animation.player_count data 0
 $execute as @a[distance=..$(size)] run scoreboard players add #lib.start_animation.player_count data 1

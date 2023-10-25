@@ -13,9 +13,6 @@ $execute if score #lib.start_animation.$(id) data matches 40 run playsound entit
 $execute if score #lib.start_animation.$(id) data matches 60 run playsound entity.experience_orb.pickup master @a[distance=..35] ~ ~ ~ 2 2 1
 $execute if score #lib.start_animation.$(id) data matches 80 run playsound entity.experience_orb.pickup master @a[distance=..35] ~ ~ ~ 2 2 1
 
-# Kill horses that enter in the zone
-$execute as @e[type=horse,distance=..$(size)] run function lobby:horse/kill
-
 # Particle circle
 $particle totem_of_undying ^ ^ ^$(size) 0.1 0.1 0.1 0.1 10 force
 $particle totem_of_undying ^ ^ ^-$(size) 0.1 0.1 0.1 0.1 10 force
