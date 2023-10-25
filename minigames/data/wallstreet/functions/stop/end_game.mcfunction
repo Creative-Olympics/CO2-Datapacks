@@ -1,4 +1,5 @@
 
+function wallstreet:print_score/run
 scoreboard players set #richest tmp 0
 scoreboard players operation #richest tmp > @a[team=wallstreet] wallstreet.budget
 
