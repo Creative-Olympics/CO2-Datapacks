@@ -1,1 +1,2 @@
 function wallstreet:config
+
