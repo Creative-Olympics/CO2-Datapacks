@@ -15,6 +15,12 @@ scoreboard objectives add wallstreet.leather_quantity dummy
 scoreboard objectives add wallstreet.iron_quantity dummy
 scoreboard objectives add wallstreet.diamond_quantity dummy
 
+scoreboard objectives add wallstreet.wood_max_quantity dummy
+scoreboard objectives add wallstreet.stone_max_quantity dummy
+scoreboard objectives add wallstreet.leather_max_quantity dummy
+scoreboard objectives add wallstreet.iron_max_quantity dummy
+scoreboard objectives add wallstreet.diamond_max_quantity dummy
+
 scoreboard objectives add wallstreet.selected_quantity dummy
 scoreboard objectives add wallstreet.selected_resource dummy
 scoreboard objectives add wallstreet.budget dummy

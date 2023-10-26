@@ -4,20 +4,20 @@
 
 # Inputs:
 # - #wallstreet.get_price.quantity data
-# - #wallstreet.get_price.global_quantity data
+# - #wallstreet.get_price.max_quantity data
 # - #wallstreet.get_price.global_price
 
 # Outputs:
 # - #wallstreet.get_price.price data
 
 # Apply model
-scoreboard players operation #wallstreet.get_price.average_quantity data = #wallstreet.get_price.global_quantity data
-scoreboard players operation #wallstreet.get_price.average_quantity data /= #wallstreet.villager_count data
+scoreboard players operation #wallstreet.get_price.mid_quantity data = #wallstreet.get_price.max_quantity data
+scoreboard players operation #wallstreet.get_price.mid_quantity data /= 2 const
 
 scoreboard players operation #wallstreet.get_price.delta data = #wallstreet.get_price.quantity data
-scoreboard players operation #wallstreet.get_price.delta data -= #wallstreet.get_price.average_quantity data
+scoreboard players operation #wallstreet.get_price.delta data -= #wallstreet.get_price.mid_quantity data
 scoreboard players operation #wallstreet.get_price.delta data *= 1000 const
-scoreboard players operation #wallstreet.get_price.delta data /= #wallstreet.get_price.average_quantity data
+scoreboard players operation #wallstreet.get_price.delta data /= #wallstreet.get_price.mid_quantity data
 
 scoreboard players operation #wallstreet.get_price.x data = 1000 const
 scoreboard players operation #wallstreet.get_price.x data -= #wallstreet.get_price.delta data
