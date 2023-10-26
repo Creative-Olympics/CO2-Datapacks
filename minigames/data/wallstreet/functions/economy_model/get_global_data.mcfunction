@@ -93,7 +93,7 @@ scoreboard players operation #std input = #wallstreet.model.stone.price_index da
 scoreboard players operation #std input /= 10 const
 function #lib:random_normal
 scoreboard players operation #wallstreet.model.stone.price_index data = #x output
-scoreboard players operation #wallstreet.model.stone .price_index data > 1 const
+scoreboard players operation #wallstreet.model.stone.price_index data > 1 const
 
 scoreboard players operation #mean input = #wallstreet.model.leather.price_index data
 scoreboard players operation #std input = #wallstreet.model.leather.price_index data
