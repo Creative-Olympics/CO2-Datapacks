@@ -1,32 +1,32 @@
-scoreboard players operation #wallstreet.get_price.quantity data = @s wallstreet.wood_quantity
-scoreboard players operation #wallstreet.get_price.max_quantity data = @s wallstreet.wood_max_quantity
-scoreboard players operation #wallstreet.get_price.global_price data = #wallstreet.model.wood_global_price data
+scoreboard players operation #current_stock input = @s wallstreet.wood_current_stock
+scoreboard players operation #max_stock input = @s wallstreet.wood_max_stock
+scoreboard players operation #price_index input = #wallstreet.model.wood.price_index data
 function wallstreet:economy_model/get_price
-scoreboard players operation @s wallstreet.wood_price = #wallstreet.get_price.price data
+scoreboard players operation @s wallstreet.wood_price = #price output
 
-scoreboard players operation #wallstreet.get_price.quantity data = @s wallstreet.stone_quantity
-scoreboard players operation #wallstreet.get_price.max_quantity data = @s wallstreet.stone_max_quantity
-scoreboard players operation #wallstreet.get_price.global_price data = #wallstreet.model.stone_global_price data
+scoreboard players operation #current_stock input = @s wallstreet.stone_current_stock
+scoreboard players operation #max_stock input = @s wallstreet.stone_max_stock
+scoreboard players operation #price_index input = #wallstreet.model.stone.price_index data
 function wallstreet:economy_model/get_price
-scoreboard players operation @s wallstreet.stone_price = #wallstreet.get_price.price data
+scoreboard players operation @s wallstreet.stone_price = #price output
 
-scoreboard players operation #wallstreet.get_price.quantity data = @s wallstreet.leather_quantity
-scoreboard players operation #wallstreet.get_price.max_quantity data = @s wallstreet.leather_max_quantity
-scoreboard players operation #wallstreet.get_price.global_price data = #wallstreet.model.leather_global_price data
+scoreboard players operation #current_stock input = @s wallstreet.leather_current_stock
+scoreboard players operation #max_stock input = @s wallstreet.leather_max_stock
+scoreboard players operation #price_index input = #wallstreet.model.leather.price_index data
 function wallstreet:economy_model/get_price
-scoreboard players operation @s wallstreet.leather_price = #wallstreet.get_price.price data
+scoreboard players operation @s wallstreet.leather_price = #price output
 
-scoreboard players operation #wallstreet.get_price.quantity data = @s wallstreet.iron_quantity
-scoreboard players operation #wallstreet.get_price.max_quantity data = @s wallstreet.iron_max_quantity
-scoreboard players operation #wallstreet.get_price.global_price data = #wallstreet.model.iron_global_price data
+scoreboard players operation #current_stock input = @s wallstreet.iron_current_stock
+scoreboard players operation #max_stock input = @s wallstreet.iron_max_stock
+scoreboard players operation #price_index input = #wallstreet.model.iron.price_index data
 function wallstreet:economy_model/get_price
-scoreboard players operation @s wallstreet.iron_price = #wallstreet.get_price.price data
+scoreboard players operation @s wallstreet.iron_price = #price output
 
-scoreboard players operation #wallstreet.get_price.quantity data = @s wallstreet.diamond_quantity
-scoreboard players operation #wallstreet.get_price.max_quantity data = @s wallstreet.diamond_max_quantity
-scoreboard players operation #wallstreet.get_price.global_price data = #wallstreet.model.diamond_global_price data
+scoreboard players operation #current_stock input = @s wallstreet.diamond_current_stock
+scoreboard players operation #max_stock input = @s wallstreet.diamond_max_stock
+scoreboard players operation #price_index input = #wallstreet.model.diamond.price_index data
 function wallstreet:economy_model/get_price
-scoreboard players operation @s wallstreet.diamond_price = #wallstreet.get_price.price data
+scoreboard players operation @s wallstreet.diamond_price = #price output
 
 scoreboard players operation #wood_price data = @s wallstreet.wood_price
 scoreboard players operation #stone_price data = @s wallstreet.stone_price

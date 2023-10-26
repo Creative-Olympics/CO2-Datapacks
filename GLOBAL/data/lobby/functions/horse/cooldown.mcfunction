@@ -5,7 +5,7 @@ scoreboard players add #lobby.horse.cooldown.seconds data 1
 
 item modify entity @s container.7 lobby:horse/cooldown
 
-execute store result score @s tmp run clear @s ghast_tear{display:{Name:'{"text":"Spawn horse (cooldown)","color":"red","bold":true,"italic":true}'}} 0
-execute if score @s tmp > #lobby.horse.cooldown.seconds data run clear @s ghast_tear{display:{Name:'{"text":"Spawn horse (cooldown)","color":"red","bold":true,"italic":true}'}}
+execute store result score @s ctx run clear @s ghast_tear{display:{Name:'{"text":"Spawn horse (cooldown)","color":"red","bold":true,"italic":true}'}} 0
+execute if score @s ctx > #lobby.horse.cooldown.seconds data run clear @s ghast_tear{display:{Name:'{"text":"Spawn horse (cooldown)","color":"red","bold":true,"italic":true}'}}
 
 scoreboard players remove @s lobby.horse.cooldown 1

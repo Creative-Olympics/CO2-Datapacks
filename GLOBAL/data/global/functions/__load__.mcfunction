@@ -14,7 +14,9 @@ gamerule fallDamage false
 # Common ----------------------------------------------------------------------
 
 scoreboard objectives add data dummy
-scoreboard objectives add tmp dummy
+scoreboard objectives add input dummy
+scoreboard objectives add output dummy
+scoreboard objectives add ctx dummy
 function lib:constants
 
 # Continuous informations -----------------------------------------------------

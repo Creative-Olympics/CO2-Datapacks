@@ -3,13 +3,13 @@ summon marker 119 80 -9 {Tags:["dropper.zone.refill"]}
 
 # Random X pos
 execute as @e[tag=dropper.zone.refill] store result score @s data run data get entity @s Pos[0] 1
-execute as @e[tag=dropper.zone.refill] store result score @s tmp run random value 0..8
-execute as @e[tag=dropper.zone.refill] store result entity @s Pos[0] double 1 run scoreboard players operation @s data += @s tmp
+execute as @e[tag=dropper.zone.refill] store result score @s ctx run random value 0..8
+execute as @e[tag=dropper.zone.refill] store result entity @s Pos[0] double 1 run scoreboard players operation @s data += @s ctx
 
 # Random Z pos
 execute as @e[tag=dropper.zone.refill] store result score @s data run data get entity @s Pos[2] 1
-execute as @e[tag=dropper.zone.refill] store result score @s tmp run random value 0..8
-execute as @e[tag=dropper.zone.refill] store result entity @s Pos[2] double 1 run scoreboard players operation @s data += @s tmp
+execute as @e[tag=dropper.zone.refill] store result score @s ctx run random value 0..8
+execute as @e[tag=dropper.zone.refill] store result entity @s Pos[2] double 1 run scoreboard players operation @s data += @s ctx
 
 execute at @e[tag=dropper.zone.refill] run setblock ~ ~ ~ water destroy
 

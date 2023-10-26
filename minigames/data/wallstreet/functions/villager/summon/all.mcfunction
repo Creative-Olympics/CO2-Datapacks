@@ -68,7 +68,5 @@ function wallstreet:villager/summon/one { \
     chair_z: 141 \
 }
 
-
-
 scoreboard players set #wallstreet.generate_all data 0
 execute as @e[tag=wallstreet.villager_marker] at @s run function wallstreet:economy_model/initial_resources_supply

@@ -1,10 +1,10 @@
 
-scoreboard players set #richest tmp 0
-scoreboard players operation #richest tmp > @a[team=wallstreet] wallstreet.budget
+scoreboard players set #richest ctx 0
+scoreboard players operation #richest ctx > @a[team=wallstreet] wallstreet.budget
 
-execute as @a[team=wallstreet] at @s if score @s wallstreet.budget >= #richest tmp run tag @s add wallstreet.winner
+execute as @a[team=wallstreet] at @s if score @s wallstreet.budget >= #richest ctx run tag @s add wallstreet.winner
 execute as @a[tag=wallstreet.winner] at @s run function #global:animated_title {type:"victory"}
-execute as @a[team=wallstreet] at @s if score @s wallstreet.budget < #richest tmp run function #global:animated_title {type:"defeat"}
+execute as @a[team=wallstreet] at @s if score @s wallstreet.budget < #richest ctx run function #global:animated_title {type:"defeat"}
 
 function wallstreet:print_score/run
 

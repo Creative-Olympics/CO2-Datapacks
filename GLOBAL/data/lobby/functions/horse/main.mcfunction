@@ -3,8 +3,8 @@ item replace entity @a[team=lobby,scores={lobby.horse.cooldown=0}] hotbar.7 with
 
 item replace entity @a[team=lobby,scores={lobby.horse.cooldown=1..}] hotbar.7 with minecraft:ghast_tear{display:{Name:'{"text":"Spawn horse (cooldown)","color":"red","bold":true,"italic":true}'},CustomModelData:1}
 
-execute as @a[team=lobby] store result score @s tmp run clear @s horse_spawn_egg 0
-execute as @a[team=lobby] if score @s tmp matches 2.. run clear @s
+execute as @a[team=lobby] store result score @s ctx run clear @s horse_spawn_egg 0
+execute as @a[team=lobby] if score @s ctx matches 2.. run clear @s
 clear @a[team=lobby,scores={lobby.horse.cooldown=0}] ghast_tear{display:{Name:'{"text":"Spawn horse (cooldown)","color":"red","bold":true,"italic":true}'},HideFlags:255}
 
 

@@ -9,17 +9,17 @@ scoreboard objectives add wallstreet.leather_price dummy
 scoreboard objectives add wallstreet.iron_price dummy
 scoreboard objectives add wallstreet.diamond_price dummy
 
-scoreboard objectives add wallstreet.wood_quantity dummy
-scoreboard objectives add wallstreet.stone_quantity dummy
-scoreboard objectives add wallstreet.leather_quantity dummy
-scoreboard objectives add wallstreet.iron_quantity dummy
-scoreboard objectives add wallstreet.diamond_quantity dummy
+scoreboard objectives add wallstreet.wood_current_stock dummy
+scoreboard objectives add wallstreet.stone_current_stock dummy
+scoreboard objectives add wallstreet.leather_current_stock dummy
+scoreboard objectives add wallstreet.iron_current_stock dummy
+scoreboard objectives add wallstreet.diamond_current_stock dummy
 
-scoreboard objectives add wallstreet.wood_max_quantity dummy
-scoreboard objectives add wallstreet.stone_max_quantity dummy
-scoreboard objectives add wallstreet.leather_max_quantity dummy
-scoreboard objectives add wallstreet.iron_max_quantity dummy
-scoreboard objectives add wallstreet.diamond_max_quantity dummy
+scoreboard objectives add wallstreet.wood_max_stock dummy
+scoreboard objectives add wallstreet.stone_max_stock dummy
+scoreboard objectives add wallstreet.leather_max_stock dummy
+scoreboard objectives add wallstreet.iron_max_stock dummy
+scoreboard objectives add wallstreet.diamond_max_stock dummy
 
 scoreboard objectives add wallstreet.selected_quantity dummy
 scoreboard objectives add wallstreet.selected_resource dummy

@@ -33,11 +33,11 @@ execute if score #wallstreet.timer data matches 100 run function #bs.sidebar:cre
         '{"text":" "}', \
         '{"text":" Market price index:","color":"white"}', \
         '{"text":" "}', \
-        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.wood_global_price_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
-        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.stone_global_price_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
-        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.leather_global_price_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
-        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.iron_global_price_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
-        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.diamond_global_price_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
+        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.wood.price_index_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
+        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.stone.price_index_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
+        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.leather.price_index_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
+        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.iron.price_index_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
+        '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.diamond.price_index_rounded","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
         '{"text":" "}', \
         '[{"text":" Time left: ","color":"red","bold":true,"italic":true},{"score":{"name":"#wallstreet.timer.minutes","objective":"data"},"color":"red","bold":true,"italic":true},{"text":"m ","color":"red","bold":true,"italic":true},{"score":{"name":"#wallstreet.timer.seconds","objective":"data"},"color":"red","bold":true,"italic":true},{"text":"s","color":"red","bold":true,"italic":true}]', \
         '{"text":" "}' \

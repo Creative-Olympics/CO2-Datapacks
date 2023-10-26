@@ -16,9 +16,9 @@ execute as @a[team=wallstreet] if score @s wallstreet.compass.select > #wallstre
 execute as @a[team=wallstreet] if score @s wallstreet.compass.select matches ..0 run scoreboard players operation @s wallstreet.compass.select = #wallstreet.villager_count data
 
 # Count number of possessed compassed compass
-scoreboard players set @a[team=wallstreet] tmp 0
-execute as @a[team=wallstreet] store result score @s tmp run clear @s compass 0
-tag @a[team=wallstreet,scores={tmp=0}] add wallstreet.compass.update
+scoreboard players set @a[team=wallstreet] ctx 0
+execute as @a[team=wallstreet] store result score @s ctx run clear @s compass 0
+tag @a[team=wallstreet,scores={ctx=0}] add wallstreet.compass.update
 
 execute as @a[tag=wallstreet.compass.update] at @s run function wallstreet:inventory/compass/update
 

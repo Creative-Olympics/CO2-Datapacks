@@ -6,7 +6,7 @@ execute on target \
 execute on target \
         at @s \
         if entity @s[tag=wallstreet.villager.client] \
-        if score #lock_time tmp matches 0..300 \
+        if score #lock_time ctx matches 0..300 \
     run function wallstreet:villager/gui/interact/locked
 
 execute on target \
