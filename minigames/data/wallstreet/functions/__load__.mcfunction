@@ -28,7 +28,7 @@ scoreboard objectives add wallstreet.budget dummy
 scoreboard objectives add wallstreet.compass.select dummy
 scoreboard objectives add wallstreet.compass.drop_trigger minecraft.custom:minecraft.drop
 
-function wallstreet:stop/stop
+function wallstreet:stop/end_game
 
 team add wallstreet
 team modify wallstreet color yellow
