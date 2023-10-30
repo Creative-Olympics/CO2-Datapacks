@@ -2,16 +2,15 @@
 
 function wallstreet:villager/utils/get_transaction_value
 function wallstreet:villager/utils/get_client_purchase_price
+function wallstreet:villager/utils/get_client_stock
 
-scoreboard players operation #old_purchase_price ctx = #purchase_price ctx
+# Computing the new average price
+scoreboard players operation #old ctx = #client_stock ctx
+scoreboard players operation #old ctx *= #purchase_price ctx
 
 scoreboard players operation #purchase_price ctx = #transaction_value ctx
 scoreboard players operation #purchase_price ctx *= 1000 const
 scoreboard players operation #purchase_price ctx /= #quantity ctx
-
-# Computing the new average price
-scoreboard players operation #old ctx = #old_quantity ctx
-scoreboard players operation #old ctx *= #old_purchase_price ctx
 
 scoreboard players operation #new ctx = #quantity ctx
 scoreboard players operation #new ctx *= #purchase_price ctx
@@ -19,7 +18,7 @@ scoreboard players operation #new ctx *= #purchase_price ctx
 scoreboard players operation #weighted_sum ctx = #old ctx
 scoreboard players operation #weighted_sum ctx += #new ctx
 
-scoreboard players operation #total_weights ctx = #old_quantity ctx
+scoreboard players operation #total_weights ctx = #client_stock ctx
 scoreboard players operation #total_weights ctx += #quantity ctx
 
 scoreboard players operation #average_price ctx = #weighted_sum ctx
