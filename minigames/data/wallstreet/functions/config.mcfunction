@@ -1,7 +1,7 @@
 
 scoreboard players set #wallstreet.game_time data 7200
 scoreboard players set #wallstreet.villager.lock_time data 600
-scoreboard players set #wallstreet.villager.interaction_time data 400
+scoreboard players set #wallstreet.villager.interaction_time data 440
 
 scoreboard players set #wallstreet.model.starting_money data 5000
 scoreboard players set #wallstreet.model.buy_power data 500

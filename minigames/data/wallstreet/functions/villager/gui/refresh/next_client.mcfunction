@@ -4,7 +4,7 @@ scoreboard players operation #seconds ctx = @e[tag=wallstreet.sit,limit=1,sort=n
 scoreboard players operation #seconds ctx -= #wallstreet.villager.interaction_time data
 scoreboard players operation #seconds ctx *= -1 const
 scoreboard players operation #seconds ctx /= 20 const
-scoreboard players operation #seconds ctx += 1 const
+scoreboard players operation #seconds ctx -= 1 const
 
 scoreboard players operation #modulo ctx = @e[tag=wallstreet.sit,limit=1,sort=nearest] living_time
 scoreboard players operation #modulo ctx %= 20 const
