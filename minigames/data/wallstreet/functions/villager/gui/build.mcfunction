@@ -40,8 +40,10 @@ execute as @e[tag=wallstreet.villager.talking,limit=1,sort=nearest] at @s anchor
 execute as @e[tag=wallstreet.villager.talking,limit=1,sort=nearest] at @s anchored eyes positioned ^ ^0.27 ^1 run summon text_display ~ ~ ~ {text:'[{"text":"➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖","color":"dark_gray","bold":false,"italic":true}]',transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.4f,0.4f,1f]},Tags:["wallstreet.villager.gui","wallstreet.villager.gui.new"],background:0}
 # Quantity
 execute as @e[tag=wallstreet.villager.talking,limit=1,sort=nearest] at @s anchored eyes positioned ^-0.6 ^0.08 ^1 run summon text_display ~ ~ ~ {text:'{"text":"placeholder"}',transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.5f,0.5f,1f]},Tags:["wallstreet.villager.gui","wallstreet.villager.gui.new","wallstreet.villager.gui.display.quantity_selection"],alignment:"center",background:0}
-# Quantity
+# Price
 execute as @e[tag=wallstreet.villager.talking,limit=1,sort=nearest] at @s anchored eyes positioned ^-0.6 ^0 ^1 run summon text_display ~ ~ ~ {text:'{"text":"placeholder"}',transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.3f,0.3f,1f]},Tags:["wallstreet.villager.gui","wallstreet.villager.gui.new","wallstreet.villager.gui.display.transaction_value"],alignment:"left",background:0}
+# Tax
+execute as @e[tag=wallstreet.villager.talking,limit=1,sort=nearest] at @s anchored eyes positioned ^-0.25 ^ ^1 run summon text_display ~ ~ ~ {text:'{"text":"placeholder"}',transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0.2f,1f],translation:[0f,0f,0f],scale:[0.4f,0.4f,1f]},Tags:["wallstreet.villager.gui","wallstreet.villager.gui.new","wallstreet.villager.gui.display.tax"],alignment:"left",background:0}
 # Add quantity display
 execute as @e[tag=wallstreet.villager.talking,limit=1,sort=nearest] at @s anchored eyes positioned ^0.5 ^0.12 ^1 run summon text_display ~ ~ ~ {text:'{"text":"placeholder"}',transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0.4f,0.4f,1f]},Tags:["wallstreet.villager.gui","wallstreet.villager.gui.new","wallstreet.villager.gui.display.increase_quantity"],alignment:"left",background:0}
 # Remove quantity display

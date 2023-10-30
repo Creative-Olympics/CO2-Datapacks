@@ -1,14 +1,7 @@
 
-# Get price
-execute if entity @s[scores={wallstreet.selected_resource=0}] run scoreboard players operation #price ctx = @s wallstreet.wood_price
-execute if entity @s[scores={wallstreet.selected_resource=1}] run scoreboard players operation #price ctx = @s wallstreet.stone_price
-execute if entity @s[scores={wallstreet.selected_resource=2}] run scoreboard players operation #price ctx = @s wallstreet.leather_price
-execute if entity @s[scores={wallstreet.selected_resource=3}] run scoreboard players operation #price ctx = @s wallstreet.iron_price
-execute if entity @s[scores={wallstreet.selected_resource=4}] run scoreboard players operation #price ctx = @s wallstreet.diamond_price
-scoreboard players operation #price ctx *= 1000 const
+function wallstreet:villager/utils/get_transaction_value
 
-# Get quantity
-scoreboard players operation #quantity ctx = @s wallstreet.selected_quantity
+scoreboard players operation #price ctx *= 1000 const
 
 # Update villager quantity
 execute if entity @s[scores={wallstreet.selected_resource=0}] run scoreboard players operation @s wallstreet.wood_current_stock += #quantity ctx
@@ -31,21 +24,18 @@ execute if entity @s[scores={wallstreet.selected_resource=2}] run scoreboard pla
 execute if entity @s[scores={wallstreet.selected_resource=3}] run scoreboard players operation @p[tag=wallstreet.villager.client] wallstreet.iron_current_stock -= #quantity ctx
 execute if entity @s[scores={wallstreet.selected_resource=4}] run scoreboard players operation @p[tag=wallstreet.villager.client] wallstreet.diamond_current_stock -= #quantity ctx
 
-# Update player budget
-scoreboard players operation #billing_3 ctx = #quantity ctx
-scoreboard players operation #billing_3 ctx *= #price ctx
-scoreboard players operation #billing ctx = #billing_3 ctx
-scoreboard players operation #billing ctx /= 1000 const
-scoreboard players operation @p[tag=wallstreet.villager.client] wallstreet.budget += #billing ctx
+# Credit client
+scoreboard players operation @p[tag=wallstreet.villager.client] wallstreet.budget += #transaction_value ctx
 
 scoreboard players operation #profit ctx = #quantity ctx
 scoreboard players operation #profit ctx *= #average_value ctx
 scoreboard players operation #profit ctx *= -1 const
 scoreboard players operation #profit ctx /= 1000 const
-scoreboard players operation #profit ctx += #billing ctx
+scoreboard players operation #profit ctx += #transaction_value ctx
 
 # Relative diff
-scoreboard players operation #diff ctx = #billing_3 ctx
+scoreboard players operation #diff ctx = #transaction_value ctx
+scoreboard players operation #diff ctx *= 1000 const
 scoreboard players operation #diff ctx /= #quantity ctx
 scoreboard players operation #diff ctx *= 100 const
 scoreboard players operation #diff ctx /= #average_value ctx

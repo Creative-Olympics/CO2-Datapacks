@@ -13,6 +13,7 @@ execute as @e[tag=wallstreet.villager.talking,limit=1,sort=nearest] at @s run su
 
 scoreboard players set @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] wallstreet.selected_quantity 0
 scoreboard players set @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] wallstreet.selected_resource 0
+scoreboard players set @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] wallstreet.taxe 0
 tag @e[tag=wallstreet.villager_marker,limit=1,sort=nearest] remove wallstreet.villager.sell
 
 # Summoning chair 

@@ -3,16 +3,15 @@
 tag @s remove wallstreet.villager.quantity.limited_by_player_stock
 tag @s remove wallstreet.villager.quantity.limited_by_villager_stock
 tag @s remove wallstreet.villager.quantity.limited_by_villager_max_stock
-tag @s remove wallstreet.villager.quantity.limited_by_client_budget
+
 execute if entity @s[tag=!wallstreet.villager.sell] run function wallstreet:villager/gui/refresh/quantity_limit_buy
 execute if entity @s[tag=wallstreet.villager.sell] run function wallstreet:villager/gui/refresh/quantity_limit_sell
+
 scoreboard players set @s[scores={wallstreet.selected_quantity=..-1}] wallstreet.selected_quantity 0
 
 execute if entity @s[tag=wallstreet.villager.quantity.limited_by_player_stock] run \
     playsound minecraft:block.note_block.cow_bell master @p[tag=wallstreet.villager.client] ~ ~ ~ 1 2 0
 execute if entity @s[tag=wallstreet.villager.quantity.limited_by_villager_stock] run \
-    playsound minecraft:block.note_block.cow_bell master @p[tag=wallstreet.villager.client] ~ ~ ~ 1 2 0
-execute if entity @s[tag=wallstreet.villager.quantity.limited_by_client_budget] run \
     playsound minecraft:block.note_block.cow_bell master @p[tag=wallstreet.villager.client] ~ ~ ~ 1 2 0
 execute if entity @s[tag=wallstreet.villager.quantity.limited_by_villager_max_stock] run \
     playsound minecraft:block.note_block.cow_bell master @p[tag=wallstreet.villager.client] ~ ~ ~ 1 2 0

@@ -1,0 +1,1 @@
+scoreboard players operation #quantity ctx = @s wallstreet.selected_quantity

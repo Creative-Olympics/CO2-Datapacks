@@ -24,6 +24,7 @@ scoreboard objectives add wallstreet.diamond_max_stock dummy
 scoreboard objectives add wallstreet.selected_quantity dummy
 scoreboard objectives add wallstreet.selected_resource dummy
 scoreboard objectives add wallstreet.budget dummy
+scoreboard objectives add wallstreet.wood_price dummy
 
 scoreboard objectives add wallstreet.compass.select dummy
 scoreboard objectives add wallstreet.compass.drop_trigger minecraft.custom:minecraft.drop
