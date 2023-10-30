@@ -3,9 +3,20 @@
 
 # Set gamerules ---------------------------------------------------------------
 
+gamerule announceAdvancements false
+gamerule disableRaids true
+gamerule doDaylightCycle false
+gamerule doInsomnia false
+gamerule doImmediateRespawn true
+gamerule doMobSpawning false
+gamerule doPatrolSpawning false
+gamerule doWeatherCycle false
+gamerule drowningDamage false
+gamerule fallDamage true
+gamerule fireDamage false
+gamerule keepInventory true
 gamerule naturalRegeneration false
 gamerule showDeathMessages false
-gamerule fallDamage false
 
 #==============================================================================
 # GLOBAL DATA

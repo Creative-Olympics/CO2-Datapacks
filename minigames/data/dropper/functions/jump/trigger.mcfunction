@@ -28,8 +28,9 @@ execute as @a[team=dropper,scores={pos.x=118500..128500,pos.y=70000..120000,pos.
 execute as @a[team=dropper,scores={pos.y=70000..120000},tag=!dropper.jump_complete] at @s if block ~ ~ ~ #dropper:water run function dropper:jump/missed_zone
 
 # If the player fall on a block -> fail
-execute as @a[team=dropper,scores={pos.y=70000..180000},tag=!dropper.jump_complete] at @s if score @s dropper.pos_y.memory <= @s pos.y run function dropper:jump/fell_on_block
-execute as @e[team=dropper] run scoreboard players operation @s dropper.pos_y.memory = @s pos.y
+execute as @a[team=dropper,scores={pos.y=70000..180000,dropper.fall_damage=1..},tag=!dropper.jump_complete] at @s run function dropper:jump/fell_on_block
+execute as @a[team=dropper,scores={pos.y=70000..180000},gamemode=creative,nbt={OnGround:1b},tag=!dropper.jump_complete] at @s run function dropper:jump/fell_on_block
+execute as @e[team=dropper] run scoreboard players set @s dropper.fall_damage 0
 
 
 # If the player didn't jumped after 10s -> fail
