@@ -60,6 +60,7 @@ scoreboard objectives add reloc.timer dummy
 scoreboard objectives add reloc.x dummy
 scoreboard objectives add reloc.y dummy
 scoreboard objectives add reloc.z dummy
+scoreboard objectives add reloc.rot dummy
 scoreboard objectives add reloc.vx dummy
 scoreboard objectives add reloc.vy dummy
 scoreboard objectives add reloc.vz dummy

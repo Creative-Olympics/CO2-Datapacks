@@ -1,5 +1,5 @@
 # Executed as and at the player that need to be relocalized
-# Usage: execute as [...] run function #lib:relocalize {x:<x_location>, y:<y_location>, z:<z_location>}
+# Usage: execute as [...] run function #lib:relocalize {x:<x_location>, y:<y_location>, z:<z_location>, rot:<rotation>}
 # Note: the relocalization will take 3 seconds
 # tellraw @a [{"selector":"@s"},{"text":" > global:features/relocalize/start","color":"gray"}]
 
@@ -8,6 +8,7 @@ team join lobby @s
 $scoreboard players set @s reloc.x $(x)
 $scoreboard players set @s reloc.y $(y)
 $scoreboard players set @s reloc.z $(z)
+$scoreboard players set @s reloc.rot $(rot)
 
 scoreboard players operation @s reloc.x *= 1000 const
 scoreboard players operation @s reloc.y *= 1000 const
@@ -20,6 +21,9 @@ scoreboard players add @s reloc.z 500
 gamemode spectator @s
 
 summon block_display ~ ~ ~ {Tags:["reloc","reloc.new"],teleport_duration:1}
+
+execute as @e[tag=reloc.new] at @s run tp @s ~ ~ ~ ~180 ~
+
 scoreboard players operation @e[tag=reloc.new] parent.SUID = @s SUID
 scoreboard players set @e[tag=reloc.new] living_time -100
 tag @e[tag=reloc.new] remove reloc.new

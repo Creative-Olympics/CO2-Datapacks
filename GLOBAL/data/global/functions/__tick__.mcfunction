@@ -45,7 +45,7 @@ effect give @a[team=lobby] resistance infinite 255 true
 
 # Prevent players to jump in the void -----------------------------------------
 
-execute as @a[scores={pos.y=..0},tag=!lib.relocalizing] at @s run function #lib:relocalize {x:-44,y:100,z:-137}
+execute as @a[scores={pos.y=..0},tag=!lib.relocalizing] at @s run function #lib:relocalize {x:-44,y:100,z:-137,rot:0}
 
 # Player status ---------------------------------------------------------------
 
