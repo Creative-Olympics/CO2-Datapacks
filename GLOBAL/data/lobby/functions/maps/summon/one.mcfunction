@@ -50,30 +50,15 @@ execute at @e[tag=lobby.map.origin.new] run summon interaction ^2.55 ^2.8 ^ {Glo
 execute at @e[tag=lobby.map.origin.new] run summon interaction ^3.05 ^2.3 ^ {Glowing:1b,width:0.5f,height:0.5f,response:1b,Tags:["lobby.map","lobby.map.interaction","lobby.map.goto.port"]}
 execute at @e[tag=lobby.map.origin.new] run summon interaction ^3.05 ^2.8 ^ {Glowing:1b,width:0.5f,height:0.5f,response:1b,Tags:["lobby.map","lobby.map.interaction","lobby.map.goto.port"]}
 
-
-execute as @e[tag=lobby.map.origin.new] run tellraw @a [{"text":"----------"}]
-
 execute as @e[tag=lobby.map.origin.new] at @s run function bs.position:get_pos/all {scale:1000}
-
-execute as @e[tag=lobby.map.origin.new] run tellraw @a [{"score":{"name":"@s","objective":"bs.pos.x"}},{"text":" - "},{"score":{"name":"@s","objective":"bs.pos.z"}}]
-
 execute as @e[tag=lobby.map.origin.new] run scoreboard players set 783 const 783
 execute as @e[tag=lobby.map.origin.new] run scoreboard players operation @s bs.pos.x *= 783 const
 execute as @e[tag=lobby.map.origin.new] run scoreboard players operation @s bs.pos.z *= 783 const
 execute as @e[tag=lobby.map.origin.new] run scoreboard players operation @s bs.pos.z *= -1 const
-
-execute as @e[tag=lobby.map.origin.new] run tellraw @a [{"score":{"name":"@s","objective":"bs.pos.x"}},{"text":" - "},{"score":{"name":"@s","objective":"bs.pos.z"}}]
-
 execute as @e[tag=lobby.map.origin.new] run scoreboard players operation @s bs.pos.x /= 100000 const
 execute as @e[tag=lobby.map.origin.new] run scoreboard players operation @s bs.pos.z /= 100000 const
-
-execute as @e[tag=lobby.map.origin.new] run tellraw @a [{"score":{"name":"@s","objective":"bs.pos.x"}},{"text":" - "},{"score":{"name":"@s","objective":"bs.pos.z"}}]
-
 execute as @e[tag=lobby.map.origin.new] run execute store result storage lobby:maps current_loc.x float 0.001 run scoreboard players add @s bs.pos.x 3000
 execute as @e[tag=lobby.map.origin.new] run execute store result storage lobby:maps current_loc.y float 0.001 run scoreboard players add @s bs.pos.z 2000
-
-execute as @e[tag=lobby.map.origin.new] run tellraw @a [{"score":{"name":"@s","objective":"bs.pos.x"}},{"text":" - "},{"score":{"name":"@s","objective":"bs.pos.z"}}]
-
 execute as @e[tag=lobby.map.origin.new] at @s run function lobby:maps/summon/current_loc_marker with storage lobby:maps current_loc
 
 execute as @e[tag=lobby.map.origin.new] at @s run fill ^ ^ ^ ^5 ^3 ^ light
