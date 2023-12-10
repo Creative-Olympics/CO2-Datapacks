@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"One in the chamber\",\"color\":\"red\",\"bold\":true,\"italic\":true,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}',Lore:['{\"text\":\"Use this crossbow to one-shot your opponents\"}']},HideFlags:1,Enchantments:[{id:\"minecraft:unbreaking\",lvl:127s},{id:\"minecraft:power\",lvl:127s}]}"
+                "tag": "{display:{Name:'{\"text\":\"The Mighty Bow\",\"color\":\"red\",\"bold\":true,\"italic\":true,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}',Lore:['{\"text\":\"Use this crossbow to one-shot your opponents\"}']},HideFlags:1,Enchantments:[{id:\"minecraft:unbreaking\",lvl:127s},{id:\"minecraft:power\",lvl:127s}]}"
               }
             ]
           }
