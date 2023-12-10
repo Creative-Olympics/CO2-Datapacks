@@ -11,7 +11,3 @@ function #lib:start_animation {\
     start_callback: "magma_run:start/start",\
     cancel_callback: "magma_run:map/place_starting_signs"\
 }
-
-execute at @e[tag=lib.start_animation.magma_run] run title @a[distance=..21] times 0 90 5
-execute at @e[tag=lib.start_animation.magma_run] run title @a[distance=..21] title {"text":" "}
-execute at @e[tag=lib.start_animation.magma_run] run title @a[distance=..21] subtitle {"text":"START TO RUN!","color":"gold","bold":true,"italic":true}
