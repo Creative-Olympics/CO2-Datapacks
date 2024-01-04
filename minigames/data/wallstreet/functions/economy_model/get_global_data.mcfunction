@@ -1,48 +1,48 @@
 
 # Variation of the global resource stock
-scoreboard players operation #mean input = #wallstreet.model.wood.global_stock data
-scoreboard players operation #std input = #wallstreet.model.wood.global_stock data
+scoreboard players operation #mean input = #wallstreet.model.wood.ideal_stock data
+scoreboard players operation #std input = #wallstreet.model.wood.ideal_stock data
 scoreboard players operation #std input /= 10 const
 function #lib:random_normal
-scoreboard players operation #wallstreet.model.wood.global_stock data = #x output
+scoreboard players operation #wallstreet.model.wood.ideal_stock data = #x output
 
-scoreboard players operation #mean input = #wallstreet.model.stone.global_stock data
-scoreboard players operation #std input = #wallstreet.model.stone.global_stock data
+scoreboard players operation #mean input = #wallstreet.model.stone.ideal_stock data
+scoreboard players operation #std input = #wallstreet.model.stone.ideal_stock data
 scoreboard players operation #std input /= 10 const
 function #lib:random_normal
-scoreboard players operation #wallstreet.model.stone.global_stock data = #x output
+scoreboard players operation #wallstreet.model.stone.ideal_stock data = #x output
 
-scoreboard players operation #mean input = #wallstreet.model.leather.global_stock data
-scoreboard players operation #std input = #wallstreet.model.leather.global_stock data
+scoreboard players operation #mean input = #wallstreet.model.leather.ideal_stock data
+scoreboard players operation #std input = #wallstreet.model.leather.ideal_stock data
 scoreboard players operation #std input /= 10 const
 function #lib:random_normal
-scoreboard players operation #wallstreet.model.leather.global_stock data = #x output
+scoreboard players operation #wallstreet.model.leather.ideal_stock data = #x output
 
-scoreboard players operation #mean input = #wallstreet.model.iron.global_stock data
-scoreboard players operation #std input = #wallstreet.model.iron.global_stock data
+scoreboard players operation #mean input = #wallstreet.model.iron.ideal_stock data
+scoreboard players operation #std input = #wallstreet.model.iron.ideal_stock data
 scoreboard players operation #std input /= 10 const
 function #lib:random_normal
-scoreboard players operation #wallstreet.model.iron.global_stock data = #x output
+scoreboard players operation #wallstreet.model.iron.ideal_stock data = #x output
 
-scoreboard players operation #mean input = #wallstreet.model.diamond.global_stock data
-scoreboard players operation #std input = #wallstreet.model.diamond.global_stock data
+scoreboard players operation #mean input = #wallstreet.model.diamond.ideal_stock data
+scoreboard players operation #std input = #wallstreet.model.diamond.ideal_stock data
 scoreboard players operation #std input /= 10 const
 function #lib:random_normal
-scoreboard players operation #wallstreet.model.diamond.global_stock data = #x output
+scoreboard players operation #wallstreet.model.diamond.ideal_stock data = #x output
 
 # ---
 
-scoreboard players operation #wallstreet.model.total_resource_stock data = #wallstreet.model.wood.global_stock data
-scoreboard players operation #wallstreet.model.total_resource_stock data += #wallstreet.model.stone.global_stock data
-scoreboard players operation #wallstreet.model.total_resource_stock data += #wallstreet.model.leather.global_stock data
-scoreboard players operation #wallstreet.model.total_resource_stock data += #wallstreet.model.iron.global_stock data
-scoreboard players operation #wallstreet.model.total_resource_stock data += #wallstreet.model.diamond.global_stock data
+scoreboard players operation #wallstreet.model.total_resource_stock data = #wallstreet.model.wood.ideal_stock data
+scoreboard players operation #wallstreet.model.total_resource_stock data += #wallstreet.model.stone.ideal_stock data
+scoreboard players operation #wallstreet.model.total_resource_stock data += #wallstreet.model.leather.ideal_stock data
+scoreboard players operation #wallstreet.model.total_resource_stock data += #wallstreet.model.iron.ideal_stock data
+scoreboard players operation #wallstreet.model.total_resource_stock data += #wallstreet.model.diamond.ideal_stock data
 
-scoreboard players operation #wallstreet.model.wood.abundance_ratio(pcm) data = #wallstreet.model.wood.global_stock data
-scoreboard players operation #wallstreet.model.stone.abundance_ratio(pcm) data = #wallstreet.model.stone.global_stock data
-scoreboard players operation #wallstreet.model.leather.abundance_ratio(pcm) data = #wallstreet.model.leather.global_stock data
-scoreboard players operation #wallstreet.model.iron.abundance_ratio(pcm) data = #wallstreet.model.iron.global_stock data
-scoreboard players operation #wallstreet.model.diamond.abundance_ratio(pcm) data = #wallstreet.model.diamond.global_stock data
+scoreboard players operation #wallstreet.model.wood.abundance_ratio(pcm) data = #wallstreet.model.wood.ideal_stock data
+scoreboard players operation #wallstreet.model.stone.abundance_ratio(pcm) data = #wallstreet.model.stone.ideal_stock data
+scoreboard players operation #wallstreet.model.leather.abundance_ratio(pcm) data = #wallstreet.model.leather.ideal_stock data
+scoreboard players operation #wallstreet.model.iron.abundance_ratio(pcm) data = #wallstreet.model.iron.ideal_stock data
+scoreboard players operation #wallstreet.model.diamond.abundance_ratio(pcm) data = #wallstreet.model.diamond.ideal_stock data
 
 scoreboard players operation #wallstreet.model.wood.abundance_ratio(pcm) data *= 1000 const
 scoreboard players operation #wallstreet.model.stone.abundance_ratio(pcm) data *= 1000 const
