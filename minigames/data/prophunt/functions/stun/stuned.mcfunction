@@ -15,4 +15,4 @@ effect give @s mining_fatigue infinite 128 true
 effect give @s jump_boost infinite 128 true
 effect give @s blindness infinite 255 true
 
-scoreboard players remove @a[scores={prophunt.stuned=1..}] prophunt.stuned 1
+scoreboard players remove @s[scores={prophunt.stuned=1..}] prophunt.stuned 1
