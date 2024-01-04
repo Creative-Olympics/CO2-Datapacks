@@ -1,2 +1,2 @@
-setblock 123 99 8 minecraft:andesite_wall[east=low,north=none,south=none,up=true,waterlogged=false,west=low] destroy
-setblock 123 99 9 minecraft:air destroy
+setblock 135 85 -4 minecraft:air destroy
+setblock 135 85 -3 minecraft:air destroy

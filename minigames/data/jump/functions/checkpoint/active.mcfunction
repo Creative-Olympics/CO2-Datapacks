@@ -11,10 +11,11 @@ $execute as @a[team=jump,scores={jump.step=0}] unless data entity @s Inventory[{
 execute store result score #jump.y_limit data run data get entity @s data.jump.checkpoint_properties.y_limit 1000
 execute as @a[team=jump,scores={jump.step=0}] if score @s pos.y < #jump.y_limit data run tag @s add jump.fall
 scoreboard players operation @e[tag=jump.checkpoint,distance=0.1..] jump.step -= @s jump.step
-execute as @a[tag=jump.fall] at @s run particle dust 0.565 0.000 1.000 1 ~ ~1 ~ 0.3 0.7 0.3 0 50 normal @s
+execute as @a[tag=jump.fall] at @s run particle dust 0.565 0.000 1.000 1 ~ ~1 ~ 0.3 0.7 0.3 0 50 normal @a
+
 execute as @a[tag=jump.fall] at @s positioned as @e[tag=jump.checkpoint,scores={jump.step=-1}] run tp @s ~ ~1 ~
-execute as @a[tag=jump.fall] at @s positioned as @e[tag=jump.checkpoint,scores={jump.step=-1}] if block ~ ~ ~ air run tp @s ~ ~ ~
-execute as @a[tag=jump.fall] at @s run particle dust 0.565 0.000 1.000 1 ~ ~1 ~ 0.5 1 0.5 0 100 normal @s
+
+execute as @a[tag=jump.fall] at @s run particle dust 0.565 0.000 1.000 1 ~ ~1 ~ 0.5 1 0.5 0 100 normal @a
 execute as @a[tag=jump.fall] at @s run playsound entity.enderman.teleport master @s ~ ~ ~ 1 2 0
 scoreboard players operation @e[tag=jump.checkpoint,distance=0.1..] jump.step += @s jump.step
 tag @a[tag=jump.fall] remove jump.fall
