@@ -19,7 +19,7 @@ $summon marker $(x) $(y) $(z) {Tags:["wallstreet.entity","wallstreet.villager_ma
 
 execute as @e[tag=wallstreet.villager_marker.new] run function #lib:get_id
 
-$execute at @e[tag=wallstreet.villager_marker.new] run summon minecraft:villager ~ ~ ~ {CustomName:'{"text":"$(name)","color":"yellow","bold":true,"italic":true}',CustomNameVisible:1b,VillagerData:{profession:"$(profession)",type:"$(type)"},Tags:["wallstreet.entity","wallstreet.villager","wallstreet.villager.new"], NoAI:1}
+$execute at @e[tag=wallstreet.villager_marker.new] run summon minecraft:villager ~ ~ ~ {CustomName:'{"text":"$(name)","color":"yellow","bold":true,"italic":true}',CustomNameVisible:1b,VillagerData:{profession:"$(profession)",type:"$(type)"},Tags:["wallstreet.entity","wallstreet.villager","wallstreet.villager.new"], NoAI:1,Offers:{}}
 
 effect give @e[tag=wallstreet.villager] minecraft:slowness infinite 127 true
 scoreboard players operation @e[tag=wallstreet.villager.new] parent.SUID = @e[tag=wallstreet.villager_marker.new] SUID
