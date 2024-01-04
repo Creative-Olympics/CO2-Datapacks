@@ -45,13 +45,16 @@ scoreboard players set @a[tag=prophunt.is_prop] prophunt.dash_cooldown 0
 
 scoreboard players set $prophunt.game_started data 1
 
-scoreboard players set @a[tag=prophunt.is_hunter] prophunt.stuned 200
+scoreboard players set @a[tag=prophunt.is_hunter] prophunt.stuned 400
 
 stopsound @a[team=prophunt] record
 execute as @a[team=prophunt] at @s run playsound prophunt:theme record @s
 tellraw @a[team=prophunt] {"text":"Music by Ashot Danielyan","hoverEvent":{"action":"show_text","value":[{"text":"Played on the \"record\" audio source"}]}}
 
-execute as @a[team=prophunt] at @s run function #global:animated_title {type:"start"}
+# execute as @a[team=prophunt] at @s run function #global:animated_title {type:"start"}
+
+tp @e[team=prophunt,tag=prophunt.is_hunter] 134 88 59
+tp @e[team=prophunt,tag=prophunt.is_prop] 117 83 54
 
 function prophunt:timer/start
 
