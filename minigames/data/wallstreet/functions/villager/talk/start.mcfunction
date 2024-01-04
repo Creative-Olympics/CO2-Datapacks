@@ -1,5 +1,8 @@
 # Executed as and at the interacting player
 
+# If the player is not part of the wallstreet game, he can't interact
+execute if entity @s[team=!wallstreet] run return 0
+
 # Confirmation sound and particles
 playsound ui.button.click master @s ~ ~ ~ 1 1
 # particle minecraft:cloud ~ ~ ~ 0 0 0 1 100 force
