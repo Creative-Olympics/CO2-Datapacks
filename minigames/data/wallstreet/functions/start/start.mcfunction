@@ -48,3 +48,8 @@ function #bs.sidebar:create { \
 scoreboard objectives setdisplay sidebar.team.yellow bs.sidebar.wallstreet
 
 function wallstreet:music/start
+
+
+effect give @a[team=wallstreet] resistance infinite 127 true
+effect give @a[team=wallstreet] regeneration infinite 127 true
+effect give @a[team=wallstreet] weakness infinite 127 true
