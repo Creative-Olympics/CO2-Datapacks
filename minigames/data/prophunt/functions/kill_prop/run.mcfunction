@@ -6,6 +6,8 @@ function prophunt:utils/get_associated_entities
 tag @p[tag=prophunt.current.player] add prophunt.was_prop
 tag @p[tag=prophunt.current.player] remove prophunt.is_prop
 
+scoreboard players remove @a[tag=prophunt.current.hunter] prophunt.ultimate_points 600
+
 tellraw @a[team=prophunt] [{"text":"PROPHUNT > ","color":"blue","bold":true,"italic":true},{"selector":"@p[tag=prophunt.current.hunter]","bold":false,"italic":false},{"text":" found ","color":"gray","bold":false,"italic":false},{"selector":"@p[tag=prophunt.current.player]","bold":false,"italic":false},{"text":"!","color":"gray","bold":false,"italic":false}]
 
 # Remaining props title
