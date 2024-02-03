@@ -51,6 +51,12 @@ stopsound @a[team=prophunt] record
 execute as @a[team=prophunt] at @s run playsound prophunt:theme record @s
 tellraw @a[team=prophunt] {"text":"Music by Ashot Danielyan","hoverEvent":{"action":"show_text","value":[{"text":"Played on the \"record\" audio source"}]}}
 
+title @a[team=prophunt] times 0 100 20
+title @a[team=prophunt,tag=prophunt.is_prop] title {"text":"Prop","color":"blue","bold":true,"italic":true}
+title @a[team=prophunt,tag=prophunt.is_prop] subtitle {"text":"Find a place to hide!","color":"blue"}
+title @a[team=prophunt,tag=prophunt.is_hunter] title {"text":"Hunter","color":"red","bold":true,"italic":true}
+title @a[team=prophunt,tag=prophunt.is_hunter] subtitle {"text":"Find all the props!","color":"red"}
+
 # execute as @a[team=prophunt] at @s run function #global:animated_title {type:"start"}
 
 tp @e[team=prophunt,tag=prophunt.is_hunter] 134 88 59
