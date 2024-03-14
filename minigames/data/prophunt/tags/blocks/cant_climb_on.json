@@ -23,7 +23,7 @@
 		"minecraft:void_air",
 		"minecraft:light",
 		"minecraft:moving_piston",
-        "grass",
+        "short_grass",
         "tall_grass",
         "fern",
         "large_fern"

@@ -17,9 +17,6 @@ scoreboard players set * closing 0
 
 tellraw @a[team=0config] ["",{"text":"COC : Reseted\n\nSetup "},{"text":"opening","clickEvent":{"action":"run_command","value":"/scoreboard players set setup setup 1"}},{"text":" / "},{"text":"closing","clickEvent":{"action":"run_command","value":"/scoreboard players set setup setup 2"}}]
 
-
-team
-
 team add 1staff
 team modify 1staff color gray
 team modify 1staff prefix {"text":"[Staff] ","color":"blue"}
