@@ -27,6 +27,8 @@ scoreboard objectives add prophunt.dash_cooldown dummy
 
 # Ping
 scoreboard objectives add prophunt.use_item_trigger minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add prophunt.ping_cooldown dummy
+scoreboard objectives add prophunt.ping_stack dummy
 
 # Ultimate
 scoreboard objectives add prophunt.ultimate_points dummy
