@@ -14,7 +14,7 @@ scoreboard players add @a prophunt.climb 0
 scoreboard players add @a prophunt.prop_type 0
 scoreboard players add @a prophunt.stun_hunters_cooldown 0
 scoreboard players set @a prophunt.stop.timer 0
-scoreboard players set @a prophunt.ping_stack 0
+scoreboard players set @a prophunt.ping_stack 5
 scoreboard players set @a prophunt.ping_cooldown 0
 
 # Make teams
