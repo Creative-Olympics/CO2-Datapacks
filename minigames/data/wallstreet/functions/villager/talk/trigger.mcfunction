@@ -6,4 +6,4 @@ function wallstreet:villager/lock/check
 execute if entity @s[tag=!wallstreet.villager.locked] run function wallstreet:villager/talk/start
 
 # Revoking advancement
-advancement revoke @s only wallstreet:villager/talk
+advancement revoke @s only wallstreet:villager_talk

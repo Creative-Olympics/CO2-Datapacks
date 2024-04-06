@@ -2,8 +2,6 @@ execute as @e[tag=wallstreet.sit,scores={living_time=20}] at @s as @e[tag=wallst
 
 execute as @e[tag=wallstreet.villager_marker.talking] at @s run function wallstreet:villager/gui/refresh/
 
-execute as @e[type=interaction,tag=wallstreet.villager.gui,nbt={interaction:{}}] at @s run function wallstreet:villager/gui/interact/
-
 execute as @e[tag=wallstreet.villager.gui.deal] at @s run tp @s ^ ^0.01 ^-0.001
 execute as @e[tag=wallstreet.villager.gui.benefits] at @s run tp @s ^ ^0.01 ^-0.001
 execute as @e[tag=wallstreet.villager.gui.give] at @s run tp @s ^ ^ ^-0.05

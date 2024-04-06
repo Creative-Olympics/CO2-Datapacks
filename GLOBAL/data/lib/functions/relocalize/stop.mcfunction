@@ -12,7 +12,7 @@ kill @e[tag=global.current.entity]
 particle cloud ~ ~1 ~ 0 0.5 0 0.1 100 normal @a[distance=0.1..30]
 
 scoreboard players operation @s bs.rot.h = @s reloc.rot
-function bs.position:set_rot/h {scale: 1}
+function #bs.position:set_rot_h {scale: 1}
 
 # Remove identification tag
 tag @a[tag=global.current.player] remove global.current.player

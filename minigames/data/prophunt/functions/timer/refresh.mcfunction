@@ -6,4 +6,4 @@ execute store result score #prophunt.timer.minutes data run scoreboard players a
 scoreboard players operation #prophunt.timer.minutes data /= 60 const
 scoreboard players operation #prophunt.timer.seconds data %= 60 const
 
-function #bs.sidebar:refresh {id:"prophunt.timer"}
+function #bs.sidebar:refresh {objective:"prophunt.timer"}

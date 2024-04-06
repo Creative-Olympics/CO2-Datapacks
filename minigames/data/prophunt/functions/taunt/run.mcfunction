@@ -11,7 +11,8 @@ execute as @a[tag=prophunt.is_hunter] run scoreboard players operation @s ctx = 
 execute as @a[tag=prophunt.is_hunter] at @s run function #bs.position:get_rot_h {scale:1}
 execute as @a[tag=prophunt.is_hunter] run scoreboard players operation @s ctx -= @s bs.rot.h
 execute as @a[tag=prophunt.is_hunter] run scoreboard players operation @s bs.rot.h = @s ctx
-execute as @a[tag=prophunt.is_hunter] run function #bs.position:normalize_rot
+execute as @a[tag=prophunt.is_hunter] run scoreboard players operation @s bs.rot.v %= 180 const
+execute as @a[tag=prophunt.is_hunter] run scoreboard players operation @s bs.rot.h %= 360 const
 
 # Show an arrow pointing to the prop
 execute as @a[tag=prophunt.is_hunter] run title @s times 0 10 10

@@ -44,7 +44,6 @@ scoreboard objectives add health health {"text":"❤","color":"red"}
 # Features
 #==============================================================================
 
-function #bs.sidebar:reset
 
 # Endgame title ---------------------------------------------------------------
 
@@ -81,6 +80,8 @@ team join lobby @a
 # Constants
 scoreboard players set 10 const 10
 scoreboard players set 20 const 20
+scoreboard players set 180 const 180
+scoreboard players set 360 const 360
 scoreboard players set 1000 const 1000
 
 tag B5-0-0-0-1 add permanent
