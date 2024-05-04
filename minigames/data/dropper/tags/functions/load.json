@@ -1,0 +1,6 @@
+{
+  "values": [
+    "#dropper:events/stop",
+    "dropper:__load__"
+  ]
+}

@@ -1,11 +1,13 @@
 {
 	"replace": true,
 	"values": [
-	"minecraft:water",
-	"minecraft:seagrass",
-	"minecraft:tall_seagrass",
-	"minecraft:kelp",
-	"minecraft:kelp_plant",
-	"minecraft:air"
+		"minecraft:water",
+		"minecraft:seagrass",
+		"minecraft:tall_seagrass",
+		"minecraft:kelp",
+		"minecraft:kelp_plant",
+		"minecraft:air",
+    "minecraft:void_air",
+    "minecraft:cave_air"
 	]
 }

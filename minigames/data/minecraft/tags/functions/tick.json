@@ -1,10 +1,10 @@
 {
- "values": [
-	"jump:__tick__",
-	"dropper:__tick__",
-	"magma_run:__tick__",
+  "values": [
+    "#dropper:tick",
+    "jump:__tick__",
+    "magma_run:__tick__",
     "one_in_the_chamber:__tick__",
     "prophunt:__tick__",
     "wallstreet:__tick__"
- ]
+  ]
 }

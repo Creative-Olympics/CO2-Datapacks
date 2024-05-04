@@ -1,3 +1,2 @@
-scoreboard players set #dropper.living_player data 0
-execute as @a[team=dropper] run scoreboard players add #dropper.living_player data 1
-execute if score #dropper.living_player data matches ..1 run function dropper:stop/end_game
+execute store result score #dropper.players data if entity @a[team=dropper]
+execute if score #dropper.players data matches ..1 run function dropper:stop/stop

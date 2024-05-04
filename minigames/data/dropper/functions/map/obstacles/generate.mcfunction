@@ -1,7 +1,6 @@
+function dropper:map/obstacles/remove_all
 
-function dropper:obstacles/remove_all
-
-execute if score #dropper.timer_before_jump_reset data matches 66 run execute as @a[team=dropper] at @s run playsound block.stone_button.click_on master @s ~ ~ ~ 1 2 0
+execute as @a[team=dropper] at @s run playsound block.stone_button.click_on master @s ~ ~ ~ 1 2 0
 
 # During the two first rounds, there is no bottom obstacle
 execute if score #dropper.round data matches 1..2 run scoreboard players set #dropper.obstacle data 0

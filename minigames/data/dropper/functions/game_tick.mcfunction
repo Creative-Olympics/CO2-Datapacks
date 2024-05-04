@@ -1,8 +1,8 @@
-
+effect give @a[predicate=dropper:in_dropzone] invisibility 1 1 true
 execute at @a[team=dropper] run effect give @a[distance=0.001..3] invisibility 1 1 true
 
-function #dropper:jump
-function #dropper:end_game
-function #dropper:music
+# Display timer ---------------------------------------------------------------
 
-effect give @a[x=118,y=75,z=-10,dx=10,dy=10,dz=10] invisibility 1 1 true
+execute store result score #dropper.timer.seconds data store result score #dropper.timer.modulo data run scoreboard players remove #dropper.timer data 1
+scoreboard players operation #dropper.timer.modulo data %= 20 const
+execute if score #dropper.timer.modulo data matches 0 run function dropper:timer/display
