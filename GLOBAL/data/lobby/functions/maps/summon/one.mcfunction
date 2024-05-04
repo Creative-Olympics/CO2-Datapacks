@@ -50,7 +50,7 @@ execute at @e[tag=lobby.map.origin.new] run summon interaction ^2.55 ^2.8 ^ {Glo
 execute at @e[tag=lobby.map.origin.new] run summon interaction ^3.05 ^2.3 ^ {Glowing:1b,width:0.5f,height:0.5f,response:1b,Tags:["lobby.map","lobby.map.interaction","lobby.map.goto.port"]}
 execute at @e[tag=lobby.map.origin.new] run summon interaction ^3.05 ^2.8 ^ {Glowing:1b,width:0.5f,height:0.5f,response:1b,Tags:["lobby.map","lobby.map.interaction","lobby.map.goto.port"]}
 
-execute as @e[tag=lobby.map.origin.new] at @s run function bs.position:get_pos/all {scale:1000}
+execute as @e[tag=lobby.map.origin.new] at @s run function #bs.position:get_pos {scale:1000}
 execute as @e[tag=lobby.map.origin.new] run scoreboard players set 783 const 783
 execute as @e[tag=lobby.map.origin.new] run scoreboard players operation @s bs.pos.x *= 783 const
 execute as @e[tag=lobby.map.origin.new] run scoreboard players operation @s bs.pos.z *= 783 const

@@ -1,6 +1,6 @@
 
 function #bs.sidebar:create { \
-    id:"prophunt.timer", \
+    objective:"prophunt.timer", \
     name:'{"text":"PROPHUNT","color":"blue","bold":true,"italic":true}', \
     contents: [ \
         '{"text":" "}', \
@@ -11,4 +11,4 @@ function #bs.sidebar:create { \
     ], \
 }
 
-scoreboard objectives setdisplay sidebar.team.blue bs.sidebar.prophunt.timer
+scoreboard objectives setdisplay sidebar.team.blue prophunt.timer

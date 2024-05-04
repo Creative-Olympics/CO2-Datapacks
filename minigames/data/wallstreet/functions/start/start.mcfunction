@@ -28,11 +28,11 @@ execute as @a[team=wallstreet] run function #global:animated_title {type:"start"
 
 # Register a new sidebar
 function #bs.sidebar:create { \
-    id:"wallstreet", \
+    objective:"wallstreet.sidebar", \
     name:'{"text":"WALL STREET","color":"yellow","bold":true,"italic":true}', \
     contents: [ \
         '{"text":" "}', \
-        '{"text":" Market price index:","color":"white"}', \
+        '{"text":" Market price index: ","color":"white"}', \
         '{"text":" "}', \
         '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.wood.price_index","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
         '[{"text":"   ","color":"white","bold":false},{"score":{"name":"#wallstreet.model.stone.price_index","objective":"data"},"color":"yellow","bold":true},{"text":"","color":"white","bold":false},{"text":"/item","color":"gray","bold":false}]', \
@@ -45,7 +45,7 @@ function #bs.sidebar:create { \
     ], \
 }
 
-scoreboard objectives setdisplay sidebar.team.yellow bs.sidebar.wallstreet
+scoreboard objectives setdisplay sidebar.team.yellow wallstreet.sidebar
 
 function wallstreet:music/start
 

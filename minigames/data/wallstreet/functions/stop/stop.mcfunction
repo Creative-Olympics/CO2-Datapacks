@@ -9,4 +9,4 @@ kill @e[tag=wallstreet.entity]
 
 scoreboard players set #wallstreet.game_started data 0
 
-function #bs.sidebar:destroy {id:"wallstreet"}
+scoreboard objectives remove wallstreet.sidebar
