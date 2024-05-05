@@ -1,4 +1,4 @@
-execute as @a[team=dropper] at @s run function #global:animated_title {type:"victory"}
+execute as @a[team=dropper] at @s run function #lib:animated_title {type:"victory"}
 
 scoreboard players set #dropper.game_started data 0
 

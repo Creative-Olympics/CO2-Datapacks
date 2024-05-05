@@ -59,7 +59,7 @@ title @a[team=prophunt,tag=prophunt.is_prop] subtitle {"text":"Find a place to h
 title @a[team=prophunt,tag=prophunt.is_hunter] title {"text":"Hunter","color":"red","bold":true,"italic":true}
 title @a[team=prophunt,tag=prophunt.is_hunter] subtitle {"text":"Find all the props!","color":"red"}
 
-# execute as @a[team=prophunt] at @s run function #global:animated_title {type:"start"}
+# execute as @a[team=prophunt] at @s run function #lib:animated_title {type:"start"}
 
 tp @e[team=prophunt,tag=prophunt.is_hunter] 134 88 59
 tp @e[team=prophunt,tag=prophunt.is_prop] 117 83 54

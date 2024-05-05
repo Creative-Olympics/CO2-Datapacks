@@ -1,7 +1,7 @@
 {
   "values": [
     "#dropper:tick",
-    "jump:__tick__",
+    "#jump:tick",
     "magma_run:__tick__",
     "one_in_the_chamber:__tick__",
     "prophunt:__tick__",

@@ -1,6 +1,7 @@
 {
- "values": [
-	"global:__join__",
-	"lobby:__join__"
- ]
+  "values": [
+    "lib:animated_title/reset",
+    "global:__join__",
+    "lobby:__join__"
+  ]
 }

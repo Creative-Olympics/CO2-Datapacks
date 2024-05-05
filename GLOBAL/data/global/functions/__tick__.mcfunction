@@ -24,7 +24,6 @@ execute as @e[scores={UUID=0}] run function #lib:get_id
 
 # Animations ------------------------------------------------------------------
 
-execute if entity @a[scores={global.animated_title.timer=1..}] run function global:animated_title/animation
 function #global:drop
 function #global:join
 function #global:kill_items

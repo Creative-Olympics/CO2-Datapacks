@@ -1,6 +1,6 @@
 {
-	"pack": {
-		"pack_format": 3,
-		"description": "Datapack gérant les mini-jeux sur la map."
-	}
+  "pack": {
+    "pack_format": 41,
+    "description": "Datapack gérant les mini-jeux sur la map."
+  }
 }

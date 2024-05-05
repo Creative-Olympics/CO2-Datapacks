@@ -10,8 +10,8 @@ scoreboard players set #OITC:best_score data 0
 scoreboard players operation #OITC:best_score data > @a[team=oitc] oitc_kills
 
 # Victory screen
-execute as @a[team=oitc] if score @s oitc_kills = #OITC:best_score data run function #global:animated_title {type:"victory"}
-execute as @a[team=oitc] unless score @s oitc_kills = #OITC:best_score data run function #global:animated_title {type:"defeat"}
+execute as @a[team=oitc] if score @s oitc_kills = #OITC:best_score data run function #lib:animated_title {type:"victory"}
+execute as @a[team=oitc] unless score @s oitc_kills = #OITC:best_score data run function #lib:animated_title {type:"defeat"}
 
 # Prevent dead people to respawn
 scoreboard players set @a[team=oitc] oitc_time_since_death 100

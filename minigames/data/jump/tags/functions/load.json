@@ -1,0 +1,7 @@
+{
+  "values": [
+    "#jump:events/stop",
+    "jump:__load__",
+    "jump:checkpoint/place/all"
+  ]
+}

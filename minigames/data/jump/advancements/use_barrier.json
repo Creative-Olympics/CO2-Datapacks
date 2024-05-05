@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:barrier"
+          ],
+          "components": {
+            "minecraft:custom_data": {
+              "jump": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jump:hotbar/use_barrier"
+  }
+}

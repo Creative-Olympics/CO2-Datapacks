@@ -24,7 +24,7 @@ scoreboard players set @a[team=wallstreet] wallstreet.leather_current_stock 0
 scoreboard players set @a[team=wallstreet] wallstreet.iron_current_stock 0
 scoreboard players set @a[team=wallstreet] wallstreet.diamond_current_stock 0
 
-execute as @a[team=wallstreet] run function #global:animated_title {type:"start"}
+execute as @a[team=wallstreet] run function #lib:animated_title {type:"start"}
 
 # Register a new sidebar
 function #bs.sidebar:create { \

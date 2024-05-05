@@ -1,7 +1,7 @@
 {
   "values": [
     "#dropper:load",
-    "jump:__load__",
+    "#jump:load",
     "magma_run:__load__",
     "one_in_the_chamber:__load__",
     "prophunt:__load__",

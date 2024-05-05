@@ -47,7 +47,7 @@ scoreboard objectives add health health {"text":"❤","color":"red"}
 
 # Endgame title ---------------------------------------------------------------
 
-scoreboard objectives add global.animated_title.timer dummy
+
 
 # Living time -----------------------------------------------------------------
 
@@ -75,7 +75,7 @@ team add lobby
 team modify lobby color white
 team modify lobby friendlyFire false
 team modify lobby seeFriendlyInvisibles true
-team join lobby @a
+#team join lobby @a
 
 # Constants
 scoreboard players set 10 const 10

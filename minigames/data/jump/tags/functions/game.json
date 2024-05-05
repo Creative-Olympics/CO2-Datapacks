@@ -1,0 +1,7 @@
+{
+  "values": [
+    "jump:game_tick",
+    "#jump:triggers/checkpoint",
+    "#jump:triggers/stop"
+  ]
+}

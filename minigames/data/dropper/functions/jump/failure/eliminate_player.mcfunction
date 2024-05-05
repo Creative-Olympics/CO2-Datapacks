@@ -1,6 +1,6 @@
 execute as @a[team=dropper] at @s run playsound block.stone_button.click_off master @s ~ ~ ~ 1 2 0
 
-function #global:animated_title {type:"defeat"}
+function #lib:animated_title {type:"defeat"}
 
 team leave @s
 stopsound @s record

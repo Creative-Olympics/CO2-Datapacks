@@ -17,7 +17,7 @@ effect give @a[team=oitc] minecraft:regeneration infinite 0 true
 clear @a[team=oitc]
 execute as @a[team=oitc] at @s run function one_in_the_chamber:respawn/respawn
 
-execute as @a[team=oitc] at @s run function #global:animated_title {type:"start"}
+execute as @a[team=oitc] at @s run function #lib:animated_title {type:"start"}
 
 # Setup global variables
 scoreboard players set #OITC:game_started data 1
