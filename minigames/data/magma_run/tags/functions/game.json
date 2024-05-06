@@ -1,0 +1,7 @@
+{
+  "values": [
+    "magma_run:game_tick",
+    "#magma_run:triggers/fall",
+    "#magma_run:triggers/stop"
+  ]
+}

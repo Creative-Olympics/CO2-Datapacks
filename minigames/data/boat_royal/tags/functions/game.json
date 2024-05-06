@@ -1,0 +1,6 @@
+{
+  "values": [
+    "boat_royal:game_tick",
+    "#boat_royal:triggers/stop"
+  ]
+}

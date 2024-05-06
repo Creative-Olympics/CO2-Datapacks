@@ -1,0 +1,8 @@
+{
+  "values": [
+    "magma_run:stop/stop",
+    "magma_run:map/reset",
+    "magma_run:map/unlock",
+    "magma_run:map/place_starting_signs"
+  ]
+}

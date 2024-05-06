@@ -1,4 +1,3 @@
-
 # Lock entrances
 fill -218 100 -4 -214 100 -4 sandstone_wall
 fill -219 101 -4 -213 101 -4 barrier

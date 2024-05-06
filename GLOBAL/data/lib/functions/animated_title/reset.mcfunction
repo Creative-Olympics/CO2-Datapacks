@@ -8,4 +8,4 @@ tag @s remove lib.animated_title.finish
 tag @s remove lib.animated_title.timesup
 tag @s remove lib.animated_title.start
 
-scoreboard players reset @s animated_title.timer
+scoreboard players reset @s animated_title.frame

@@ -1,11 +1,7 @@
-function #lib:start_animation {\
-    id: "dropper",\
-    minigame: "DROPPER",\
-    color: "green",\
-    x: 135.5,\
-    y: 85.5,\
-    z: -3.5,\
-    size: 5,\
-    start_callback: "#dropper:events/start",\
-    cancel_callback: "#dropper:events/cancel"\
+execute positioned 135.5 85.5 -3.5 run function #lib:start_animation { \
+    minigame: "DROPPER", \
+    color: "green", \
+    size: 5, \
+    start_callback: "#dropper:events/start", \
+    cancel_callback: "#dropper:events/cancel", \
 }

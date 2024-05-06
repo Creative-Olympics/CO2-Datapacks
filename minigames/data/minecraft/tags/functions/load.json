@@ -1,8 +1,9 @@
 {
   "values": [
+    "#boat_royal:load",
     "#dropper:load",
     "#jump:load",
-    "magma_run:__load__",
+    "#magma_run:load",
     "one_in_the_chamber:__load__",
     "prophunt:__load__",
     "wallstreet:__load__"

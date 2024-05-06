@@ -1,5 +1,6 @@
 clear @s
 $item replace entity @s hotbar.4 with minecraft:compass[ \
+  minecraft:enchantment_glint_override=false, \
   minecraft:item_name='[{"text":"Next checkpoint","color":"dark_purple","bold":true,"italic":true}]', \
   minecraft:lodestone_tracker={target:{pos:$(pos),dimension:"minecraft:overworld"},tracked:false}, \
 ]

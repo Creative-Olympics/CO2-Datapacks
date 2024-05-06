@@ -1,6 +1,7 @@
 {
   "values": [
     "dropper:start/start",
+    "dropper:jump/reset/round",
     "dropper:map/build",
     "dropper:music/play"
   ]

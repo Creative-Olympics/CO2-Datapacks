@@ -11,4 +11,4 @@ scoreboard players operation #jump.timer.seconds data %= 60 const
 tellraw @s [{"text":"\nJUMP > ","bold":true,"italic":true,"color":"dark_purple"},{"text":"You completed the jump in ","bold":false,"italic":false,"color":"gray"},{"score":{"name":"#jump.timer.minutes","objective":"data"},"bold":true,"italic":false,"color":"green"},{"text":"m and ","bold":false,"italic":false,"color":"gray"},{"score":{"name":"#jump.timer.seconds","objective":"data"},"bold":true,"italic":false,"color":"green"},{"text":".","bold":true,"italic":false,"color":"green"},{"score":{"name":"#jump.timer.deciseconds","objective":"data"},"bold":true,"italic":false,"color":"green"},{"text":"s!\n","bold":false,"italic":false,"color":"gray"}]
 
 function #lib:animated_title {type:"finish"}
-function jump:stop/reset_player
+function jump:stop/leave

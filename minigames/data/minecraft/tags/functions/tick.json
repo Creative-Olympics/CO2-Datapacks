@@ -1,8 +1,9 @@
 {
   "values": [
+    "#boat_royal:tick",
     "#dropper:tick",
     "#jump:tick",
-    "magma_run:__tick__",
+    "#magma_run:tick",
     "one_in_the_chamber:__tick__",
     "prophunt:__tick__",
     "wallstreet:__tick__"

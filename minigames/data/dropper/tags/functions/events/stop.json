@@ -1,5 +1,7 @@
 {
   "values": [
-    "dropper:stop/stop"
+    "dropper:stop/stop",
+    "dropper:map/reset",
+    "dropper:map/place_starting_sign"
   ]
 }

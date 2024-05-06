@@ -1,4 +1,3 @@
-
 # Unlock entrances
 fill -218 100 -4 -214 100 -4 air
 fill -219 101 -4 -213 101 -4 air

@@ -19,4 +19,4 @@ tellraw @s [{"text": "JUMP > ","color":"dark_purple","bold":true,"italic":true},
 
 scoreboard players add @s jump.step 1
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1 0
-advancement grant @s only jump:replace_hotbar
+advancement grant @s only jump:update_hotbar

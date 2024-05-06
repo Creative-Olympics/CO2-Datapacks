@@ -1,0 +1,6 @@
+{
+  "values": [
+    "#magma_run:events/stop",
+    "magma_run:__load__"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "values": [
+    "magma_run:map/remove_starting_signs",
+    "magma_run:start/animation"
+  ]
+}

@@ -1,9 +1,2 @@
-
-
 execute at @a[team=magma_run] as @e[tag=lobby.horse,distance=..3] run function lobby:horse/kill
-
-execute if score $magma_run.post_start_timer data matches ..0 run function #magma_run:destroy_sand
-execute if score $magma_run.post_start_timer data matches ..0 run function #magma_run:fall
-function #magma_run:stop
-
-execute if score $magma_run.post_start_timer data matches 0.. run function magma_run:start/post_start
+execute as @a[team=magma_run,predicate=magma_run:stepping_on_sand] at @s run function magma_run:ground/destroy
