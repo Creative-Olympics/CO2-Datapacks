@@ -1,0 +1,39 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "player": {
+          "team": "prophunt"
+        },
+        "item": {
+          "items": [
+            "minecraft:ghast_tear"
+          ]
+        }
+      }
+    },
+    "interact": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+          "team": "prophunt"
+        },
+        "item": {
+          "items": [
+            "minecraft:ghast_tear"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "use",
+      "interact"
+    ]
+  ],
+  "rewards": {
+    "function": "prophunt:prop/abilities/lock/apply"
+  }
+}

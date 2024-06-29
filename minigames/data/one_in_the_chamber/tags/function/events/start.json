@@ -1,0 +1,8 @@
+{
+  "values": [
+    "one_in_the_chamber:start/start",
+    "one_in_the_chamber:map/replace_windows",
+    "one_in_the_chamber:map/lock",
+    "one_in_the_chamber:music/play"
+  ]
+}

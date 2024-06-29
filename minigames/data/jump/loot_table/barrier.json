@@ -1,0 +1,30 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrier",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "jump": true
+                },
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 1000000000
+                },
+                "minecraft:item_name": "[\"\",{\"text\":\"Leave game\",\"color\":\"red\",\"bold\":true,\"italic\":true},{\"text\":\" - Right click\",\"color\":\"gray\"}]"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

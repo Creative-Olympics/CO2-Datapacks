@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:damage": {},
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:knockback": 1,
+                    "minecraft:sharpness": 1
+                  },
+                  "show_in_tooltip": false
+                },
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:item_name": "{\"text\":\"The Sword of Despair\",\"color\":\"red\",\"bold\":true,\"italic\":true,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}",
+                "minecraft:lore": [
+                  "{\"text\":\"A chance to kill enemies without arrow...\",\"color\":\"gray\",\"italic\":false}",
+                  "\"\"",
+                  "{\"text\":\"Although it comes with a knockback effect,\",\"color\":\"dark_gray\"}",
+                  "{\"text\":\"it inflicts greater harm than your bare hands.\",\"color\":\"dark_gray\"}"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "data": {
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#count"
+        },
+        "score": "data"
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "criteria": {
+    "_": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "player": {
+          "team": "oitc",
+          "type_specific": {
+            "type": "minecraft:player",
+            "stats": [
+              {
+                "type": "minecraft:custom",
+                "stat": "minecraft:time_since_death",
+                "value": 0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "b0": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "team": "oitc",
+          "nbt": "{Tags:[\"oitc.b0\"]}"
+        }
+      }
+    },
+    "b1": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "team": "oitc",
+          "nbt": "{Tags:[\"oitc.b1\"]}"
+        }
+      }
+    },
+    "b2": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "team": "oitc",
+          "nbt": "{Tags:[\"oitc.b2\"]}"
+        }
+      }
+    },
+    "b3": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "team": "oitc",
+          "nbt": "{Tags:[\"oitc.b3\"]}"
+        }
+      }
+    },
+    "b4": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "team": "oitc",
+          "nbt": "{Tags:[\"oitc.b4\"]}"
+        }
+      }
+    },
+    "b5": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "team": "oitc",
+          "nbt": "{Tags:[\"oitc.b5\"]}"
+        }
+      }
+    },
+    "b6": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player",
+          "team": "oitc",
+          "nbt": "{Tags:[\"oitc.b6\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "_"
+    ],
+    [
+      "_",
+      "b0",
+      "b1",
+      "b2",
+      "b3",
+      "b4",
+      "b5",
+      "b6"
+    ]
+  ],
+  "rewards": {
+    "function": "one_in_the_chamber:death/on_death"
+  }
+}

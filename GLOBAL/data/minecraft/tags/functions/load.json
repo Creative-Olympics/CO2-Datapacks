@@ -1,8 +1,0 @@
-{
-  "values": [
-    "#lib:load",
-    "global:__load__",
-    "lobby:__load__",
-    "environment:__load__"
-  ]
-}

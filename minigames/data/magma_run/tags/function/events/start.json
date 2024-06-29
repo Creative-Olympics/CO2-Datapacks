@@ -1,0 +1,7 @@
+{
+  "values": [
+    "magma_run:start/start",
+    "magma_run:start/countdown",
+    "magma_run:map/lock"
+  ]
+}

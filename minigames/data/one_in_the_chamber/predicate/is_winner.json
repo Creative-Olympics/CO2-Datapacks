@@ -1,0 +1,24 @@
+{
+  "condition": "minecraft:entity_scores",
+  "entity": "this",
+  "scores": {
+    "oitc.kill_count": {
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "$oitc.best_score"
+        },
+        "score": "data"
+      },
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "$oitc.best_score"
+        },
+        "score": "data"
+      }
+    }
+  }
+}

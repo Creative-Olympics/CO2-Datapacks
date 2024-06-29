@@ -1,0 +1,6 @@
+{
+  "values": [
+    "jump:checkpoint/as_checkpoint",
+    "jump:fall/as_checkpoint"
+  ]
+}

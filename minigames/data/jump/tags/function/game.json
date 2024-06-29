@@ -1,0 +1,6 @@
+{
+  "values": [
+    "jump:game_tick",
+    "jump:stop/trigger"
+  ]
+}

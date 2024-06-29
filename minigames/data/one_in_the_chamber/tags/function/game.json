@@ -1,0 +1,7 @@
+{
+  "values": [
+    "one_in_the_chamber:game_tick",
+    "one_in_the_chamber:arrow/trigger",
+    "one_in_the_chamber:stop/trigger"
+  ]
+}

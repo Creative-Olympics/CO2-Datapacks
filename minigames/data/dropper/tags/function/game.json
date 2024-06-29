@@ -1,0 +1,7 @@
+{
+  "values": [
+    "dropper:game_tick",
+    "dropper:jump/trigger",
+    "dropper:stop/trigger"
+  ]
+}

@@ -1,4 +1,0 @@
-
-function one_in_the_chamber:map/repair_windows
-function one_in_the_chamber:map/unlock
-function one_in_the_chamber:map/place_start_sign

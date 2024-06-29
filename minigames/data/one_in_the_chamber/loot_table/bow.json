@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:damage": {},
+                "minecraft:enchantments": {
+                  "levels": {
+                    "minecraft:power": 127
+                  },
+                  "show_in_tooltip": false
+                },
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:item_name": "{\"text\":\"The Mighty Bow\",\"color\":\"red\",\"bold\":true,\"italic\":true,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false}",
+                "minecraft:lore": [
+                  "{\"text\":\"Use this bow to one shot your opponents.\",\"color\":\"gray\",\"italic\":false}"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

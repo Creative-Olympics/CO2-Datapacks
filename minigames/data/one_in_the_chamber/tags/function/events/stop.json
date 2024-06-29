@@ -1,0 +1,9 @@
+{
+  "values": [
+    "one_in_the_chamber:stop/stop",
+    "one_in_the_chamber:map/unlock",
+    "one_in_the_chamber:map/repair_windows",
+    "one_in_the_chamber:map/place_starting_sign",
+    "one_in_the_chamber:music/stop"
+  ]
+}
