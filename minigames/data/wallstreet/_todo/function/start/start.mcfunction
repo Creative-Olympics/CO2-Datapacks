@@ -7,7 +7,7 @@ scoreboard players operation #wallstreet.timer data = #wallstreet.game_time data
 function wallstreet:economy_model/get_global_data
 function wallstreet:villager/summon/all
 
-execute at @e[tag=lib.start_animation.wallstreet] run team join wallstreet @a[distance=..13]
+execute at @e[tag=common.start_animation.wallstreet] run team join wallstreet @a[distance=..13]
 
 clear @a[team=wallstreet]
 scoreboard players set @a[team=wallstreet] wallstreet.budget 5000
@@ -24,7 +24,7 @@ scoreboard players set @a[team=wallstreet] wallstreet.leather_current_stock 0
 scoreboard players set @a[team=wallstreet] wallstreet.iron_current_stock 0
 scoreboard players set @a[team=wallstreet] wallstreet.diamond_current_stock 0
 
-execute as @a[team=wallstreet] run function #lib:animated_title {type:"start"}
+execute as @a[team=wallstreet] run function #common:animated_title {type:"start"}
 
 # Register a new sidebar
 function #bs.sidebar:create { \

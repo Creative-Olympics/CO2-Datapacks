@@ -1,0 +1,188 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:compass",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantment_glint_override": false,
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0,
+                  "can_always_eat": true,
+                  "eat_seconds": 1000000000
+                },
+                "minecraft:lore": [
+                  "{\"text\":\"Indicate the game location\",\"color\":\"dark_gray\",\"italic\":false}",
+                  "\"\"",
+                  "{\"text\":\"Right click for next game\",\"color\":\"gray\",\"italic\":false}"
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "[{\"text\":\"JUMP\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":true}]",
+                "minecraft:lodestone_tracker": {
+                  "target": {
+                    "dimension": "minecraft:overworld",
+                    "pos": [
+                      -311,
+                      97,
+                      19
+                    ]
+                  },
+                  "tracked": false
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "lobby.compass_id": 2
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"text\":\"MAGMA RUN\",\"color\":\"gold\",\"bold\":true,\"italic\":true}",
+                "minecraft:lodestone_tracker": {
+                  "target": {
+                    "dimension": "minecraft:overworld",
+                    "pos": [
+                      -216,
+                      100,
+                      17
+                    ]
+                  },
+                  "tracked": false
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "lobby.compass_id": 0
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"text\":\"ONE IN THE CHAMBER\",\"color\":\"red\",\"bold\":true,\"italic\":true}",
+                "minecraft:lodestone_tracker": {
+                  "target": {
+                    "dimension": "minecraft:overworld",
+                    "pos": [
+                      -184,
+                      97,
+                      -97
+                    ]
+                  },
+                  "tracked": false
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "lobby.compass_id": 1
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"text\":\"PROPHUNT\",\"color\":\"blue\",\"bold\":true,\"italic\":true}",
+                "minecraft:lodestone_tracker": {
+                  "target": {
+                    "dimension": "minecraft:overworld",
+                    "pos": [
+                      112,
+                      82,
+                      66
+                    ]
+                  },
+                  "tracked": false
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "lobby.compass_id": 3
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"text\":\"DROPPER\",\"color\":\"green\",\"bold\":true,\"italic\":true}",
+                "minecraft:lodestone_tracker": {
+                  "target": {
+                    "dimension": "minecraft:overworld",
+                    "pos": [
+                      123,
+                      99,
+                      9
+                    ]
+                  },
+                  "tracked": false
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "lobby.compass_id": 4
+                  }
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "{\"text\":\"WALLSTREET\",\"color\":\"yellow\",\"bold\":true,\"italic\":true}",
+                "minecraft:lodestone_tracker": {
+                  "target": {
+                    "dimension": "minecraft:overworld",
+                    "pos": [
+                      -115,
+                      100,
+                      107
+                    ]
+                  },
+                  "tracked": false
+                }
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "lobby.compass_id": 5
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 # Executed as & at the player
 
 team join jump @s
-function #lib:animated_title {type:"start"}
+function #common:animated_title {type:"start"}
 
 scoreboard players set @s jump.step 1
 scoreboard players set @s jump.timer 0

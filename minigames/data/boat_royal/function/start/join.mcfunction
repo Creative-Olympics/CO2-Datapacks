@@ -1,6 +1,6 @@
 team join boat_royal @s
 scoreboard players set $boat_royal.game_started data 1
-function #lib:animated_title {type:"start"}
+function #common:animated_title {type:"start"}
 
 advancement grant @s only boat_royal:update_hotbar
 

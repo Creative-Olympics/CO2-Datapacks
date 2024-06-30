@@ -7,8 +7,8 @@ function one_in_the_chamber:stop/animation
 
 scoreboard players set $oitc.best_score data 0
 scoreboard players operation $oitc.best_score data > @a[team=oitc] oitc.kill_count
-execute as @a[team=oitc,predicate=one_in_the_chamber:is_winner] run function #lib:animated_title {type:"victory"}
-execute as @a[team=oitc,predicate=!one_in_the_chamber:is_winner] run function #lib:animated_title {type:"defeat"}
+execute as @a[team=oitc,predicate=one_in_the_chamber:is_winner] run function #common:animated_title {type:"victory"}
+execute as @a[team=oitc,predicate=!one_in_the_chamber:is_winner] run function #common:animated_title {type:"defeat"}
 
 gamemode spectator @a[team=oitc]
 stopsound @a[team=oitc] record

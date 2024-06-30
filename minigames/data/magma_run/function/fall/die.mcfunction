@@ -5,4 +5,4 @@ tp @s -194 103 17 90 0
 team join lobby @s
 stopsound @s record
 effect clear @s speed
-function #lib:animated_title {type:"defeat"}
+function #common:animated_title {type:"defeat"}

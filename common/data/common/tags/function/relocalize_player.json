@@ -1,0 +1,6 @@
+{
+  "values": [
+    "common:relocalize_player/interface",
+    "common:relocalize_player/next_frame"
+  ]
+}

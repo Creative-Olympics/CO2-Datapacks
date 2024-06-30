@@ -1,7 +1,7 @@
 
 function wallstreet:map/remove_starting_sign
 
-execute positioned -114.5 99.5 104.5 run function #lib:start_animation {\
+execute positioned -114.5 99.5 104.5 run function #common:start_animation {\
     minigame: "WALLSTREET", \
     color: "yellow", \
     size: 13, \

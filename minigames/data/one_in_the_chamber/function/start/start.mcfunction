@@ -14,7 +14,7 @@ clear @a[team=oitc]
 effect clear @a[team=oitc]
 effect give @a[team=oitc] minecraft:regeneration infinite 0 true
 execute as @a[team=oitc] run function one_in_the_chamber:death/respawn
-execute as @a[team=oitc] run function #lib:animated_title {type:"start"}
+execute as @a[team=oitc] run function #common:animated_title {type:"start"}
 gamemode adventure @a[team=oitc]
 
 scoreboard players set @a[team=oitc] oitc.kill_count 0

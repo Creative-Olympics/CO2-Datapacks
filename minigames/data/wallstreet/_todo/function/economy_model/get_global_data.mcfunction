@@ -3,31 +3,31 @@
 scoreboard players operation #mean input = #wallstreet.model.wood.ideal_stock data
 scoreboard players operation #std input = #wallstreet.model.wood.ideal_stock data
 scoreboard players operation #std input /= 10 const
-function #lib:random_normal
+function #common:random_normal
 scoreboard players operation #wallstreet.model.wood.ideal_stock data = #x output
 
 scoreboard players operation #mean input = #wallstreet.model.stone.ideal_stock data
 scoreboard players operation #std input = #wallstreet.model.stone.ideal_stock data
 scoreboard players operation #std input /= 10 const
-function #lib:random_normal
+function #common:random_normal
 scoreboard players operation #wallstreet.model.stone.ideal_stock data = #x output
 
 scoreboard players operation #mean input = #wallstreet.model.leather.ideal_stock data
 scoreboard players operation #std input = #wallstreet.model.leather.ideal_stock data
 scoreboard players operation #std input /= 10 const
-function #lib:random_normal
+function #common:random_normal
 scoreboard players operation #wallstreet.model.leather.ideal_stock data = #x output
 
 scoreboard players operation #mean input = #wallstreet.model.iron.ideal_stock data
 scoreboard players operation #std input = #wallstreet.model.iron.ideal_stock data
 scoreboard players operation #std input /= 10 const
-function #lib:random_normal
+function #common:random_normal
 scoreboard players operation #wallstreet.model.iron.ideal_stock data = #x output
 
 scoreboard players operation #mean input = #wallstreet.model.diamond.ideal_stock data
 scoreboard players operation #std input = #wallstreet.model.diamond.ideal_stock data
 scoreboard players operation #std input /= 10 const
-function #lib:random_normal
+function #common:random_normal
 scoreboard players operation #wallstreet.model.diamond.ideal_stock data = #x output
 
 # ---
@@ -84,34 +84,34 @@ scoreboard players operation #wallstreet.model.diamond.price_index data /= #wall
 scoreboard players operation #mean input = #wallstreet.model.wood.price_index data
 scoreboard players operation #std input = #wallstreet.model.wood.price_index data
 scoreboard players operation #std input /= 10 const
-function #lib:random_normal
+function #common:random_normal
 scoreboard players operation #wallstreet.model.wood.price_index data = #x output
 scoreboard players operation #wallstreet.model.wood.price_index data > 1 const
 
 scoreboard players operation #mean input = #wallstreet.model.stone.price_index data
 scoreboard players operation #std input = #wallstreet.model.stone.price_index data
 scoreboard players operation #std input /= 10 const
-function #lib:random_normal
+function #common:random_normal
 scoreboard players operation #wallstreet.model.stone.price_index data = #x output
 scoreboard players operation #wallstreet.model.stone.price_index data > 1 const
 
 scoreboard players operation #mean input = #wallstreet.model.leather.price_index data
 scoreboard players operation #std input = #wallstreet.model.leather.price_index data
 scoreboard players operation #std input /= 10 const
-function #lib:random_normal
+function #common:random_normal
 scoreboard players operation #wallstreet.model.leather.price_index data = #x output
 scoreboard players operation #wallstreet.model.leather.price_index data > 1 const
 
 scoreboard players operation #mean input = #wallstreet.model.iron.price_index data
 scoreboard players operation #std input = #wallstreet.model.iron.price_index data
 scoreboard players operation #std input /= 10 const
-function #lib:random_normal
+function #common:random_normal
 scoreboard players operation #wallstreet.model.iron.price_index data = #x output
 scoreboard players operation #wallstreet.model.iron.price_index data > 1 const
 
 scoreboard players operation #mean input = #wallstreet.model.diamond.price_index data
 scoreboard players operation #std input = #wallstreet.model.diamond.price_index data
 scoreboard players operation #std input /= 10 const
-function #lib:random_normal
+function #common:random_normal
 scoreboard players operation #wallstreet.model.diamond.price_index data = #x output
 scoreboard players operation #wallstreet.model.diamond.price_index data > 1 const

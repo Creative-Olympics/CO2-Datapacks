@@ -1,0 +1,6 @@
+{
+  "values": [
+    "common:start_animation/interface",
+    "common:start_animation/next_frame"
+  ]
+}

@@ -54,7 +54,7 @@ scoreboard players operation #price output > #price_lower_limit ctx
 scoreboard players operation #mean input = #price output
 scoreboard players operation #std input = #mean input
 scoreboard players operation #std input /= 10 const
-function #lib:random_normal
+function #common:random_normal
 scoreboard players operation #price output = #x output
 
 # tellraw @a [{"text":"price randomized: "},{"score":{"name":"#price","objective":"output"}}]

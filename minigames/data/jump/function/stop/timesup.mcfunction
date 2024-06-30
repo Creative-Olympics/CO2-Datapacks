@@ -6,5 +6,5 @@ execute at @s run particle dust{color:[0.565,0.000,1.000],scale:1} ~ ~1 ~ 0.3 0.
 
 tellraw @s [{"text":"\nJUMP > ","bold":true,"italic":true,"color":"dark_purple"},{"text":"You arrived at step ","bold":false,"italic":false,"color":"gray"},{"score":{"name":"@s","objective":"jump.step"},"bold":true,"italic":false,"color":"green"},{"text":"\n"}]
 
-function #lib:animated_title {type:"timesup"}
+function #common:animated_title {type:"timesup"}
 function jump:stop/leave

@@ -1,4 +1,4 @@
-function lobby:handlers/player_joined
+function #common:join_lobby
 
 title @s subtitle {"text":" "}
 title @s actionbar {"text":" "}

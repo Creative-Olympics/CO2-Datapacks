@@ -1,6 +1,0 @@
-{
-  "values": [
-    "lib:relocalize_player/interface",
-    "lib:relocalize_player/next_frame"
-  ]
-}

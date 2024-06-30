@@ -4,7 +4,7 @@ clear @a[team=magma_run]
 tp @a[team=magma_run] -216 100 17
 effect give @a[team=magma_run] speed infinite 2 true
 
-execute as @a[team=magma_run] run function #lib:animated_title {type:"start"}
+execute as @a[team=magma_run] run function #common:animated_title {type:"start"}
 title @a[team=magma_run] subtitle {"text":"START TO RUN!","color":"gold","bold":true,"italic":true}
 
 stopsound @a[team=magma_run] record

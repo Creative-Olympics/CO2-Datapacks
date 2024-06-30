@@ -5,7 +5,6 @@ kill @e[tag=prophunt.display]
 
 
 
-SWAP ITEM HAND STUN
 
 
 

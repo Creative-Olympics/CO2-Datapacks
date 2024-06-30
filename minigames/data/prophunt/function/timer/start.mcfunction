@@ -16,8 +16,8 @@ function #bs.sidebar:create { \
         '[{"text":" "},{"score":{"name":"$prophunt.prop_count","objective":"data"}},{"text":" prop(s) left"}]', \
         '{"text":" "}', \
         '[{"text":" Remaining time: "},{"score":{"name":"#prophunt.timer.minutes","objective":"data"}},{"text":"m "},{"score":{"name":"#prophunt.timer.seconds","objective":"data"}},{"text":"s"}]', \
-        '{"text":" "}', \
-    ], \
+        '{"text":" "}' \
+    ] \
 }
 
 scoreboard objectives setdisplay sidebar.team.blue prophunt.sidebar

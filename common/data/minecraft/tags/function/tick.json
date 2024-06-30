@@ -1,6 +1,6 @@
 {
   "values": [
-    "#lib:tick",
+    "#common:tick",
     "#lobby:tick"
   ]
 }

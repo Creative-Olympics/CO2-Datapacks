@@ -17,7 +17,7 @@ $summon marker $(x) $(y) $(z) {Tags:["wallstreet.entity","wallstreet.villager_ma
     chair_z: $(chair_z) \
 }}}
 
-execute as @e[tag=wallstreet.villager_marker.new] run function #lib:get_id
+execute as @e[tag=wallstreet.villager_marker.new] run function #common:get_id
 
 $execute at @e[tag=wallstreet.villager_marker.new] run summon minecraft:villager ~ ~ ~ {CustomName:'{"text":"$(name)","color":"yellow","bold":true,"italic":true}',CustomNameVisible:1b,VillagerData:{profession:"$(profession)",type:"$(type)"},Tags:["wallstreet.entity","wallstreet.villager","wallstreet.villager.new"], NoAI:1,Offers:{}}
 
