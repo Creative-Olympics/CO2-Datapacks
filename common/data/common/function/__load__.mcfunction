@@ -37,7 +37,8 @@ gamerule naturalRegeneration false
 gamerule showDeathMessages false
 gamerule doFireTick false
 gamerule doTileDrops false
-
+# TODO: to enable to avoid hacks like showing the hitbox in prophunt
+gamerule reducedDebugInfo false
 
 tag B5-0-0-0-1 add permanent
 tag B5-0-0-0-2 add permanent

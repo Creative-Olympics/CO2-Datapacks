@@ -1,0 +1,63 @@
+{
+  "criteria": {
+    "mini_market": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+          "team": "lobby"
+        },
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"lobby.minimap.mini_market\"]}"
+        }
+      }
+    },
+    "big_market": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+          "team": "lobby"
+        },
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"lobby.minimap.big_market\"]}"
+        }
+      }
+    },
+    "gladiator_place": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+          "team": "lobby"
+        },
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"lobby.minimap.gladiator_place\"]}"
+        }
+      }
+    },
+    "port": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "player": {
+          "team": "lobby"
+        },
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"lobby.minimap.port\"]}"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "mini_market",
+      "big_market",
+      "gladiator_place",
+      "port"
+    ]
+  ],
+  "rewards": {
+    "function": "lobby:events/click_minimap_poi"
+  }
+}

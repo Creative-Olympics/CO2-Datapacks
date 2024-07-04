@@ -9,7 +9,7 @@ execute if score @s prophunt.prop_variation matches 0 run summon minecraft:block
   transformation: [1f,0f,0f,-0.5f,0f,1f,0f,0f,0f,0f,1f,-0.5f,0f,0f,0f,1f], \
   Tags:["prophunt.entity","prophunt.display","prophunt.new"], \
   Passengers:[ \
-    {id:"minecraft:interaction",width:1.2f,height:2.2f}, \
+    {id:"minecraft:interaction",width:1.4f,height:2.2f}, \
     { \
       id:"minecraft:block_display", \
       teleport_duration:2, \
@@ -27,7 +27,7 @@ execute if score @s prophunt.prop_variation matches 1 run summon minecraft:block
   transformation: [1f,0f,0f,-0.5f,0f,1f,0f,0f,0f,0f,1f,-0.5f,0f,0f,0f,1f], \
   Tags:["prophunt.entity","prophunt.display","prophunt.new"], \
   Passengers:[ \
-    {id:"minecraft:interaction",width:1.2f,height:2.2f}, \
+    {id:"minecraft:interaction",width:1.4f,height:2.2f}, \
     { \
       id:"minecraft:block_display", \
       teleport_duration:2, \

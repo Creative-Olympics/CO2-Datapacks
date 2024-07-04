@@ -8,7 +8,7 @@ execute if score @s prophunt.prop_variation matches 0 run summon minecraft:block
   block_state:{Name:"barrel",Properties:{facing:"south"}}, \
   transformation: [1f,0f,0f,-0.5f,0f,1f,0f,0f,0f,0f,1f,-0.5f,0f,0f,0f,1f], \
   Tags:["prophunt.entity","prophunt.display","prophunt.new"], \
-  Passengers:[{id:"minecraft:interaction",width:1.2f,height:1.2f}] \
+  Passengers:[{id:"minecraft:interaction",width:1.4f,height:1.4f}] \
 }
 
 execute if score @s prophunt.prop_variation matches 1 run summon minecraft:block_display ~ ~ ~ { \
@@ -17,5 +17,5 @@ execute if score @s prophunt.prop_variation matches 1 run summon minecraft:block
   block_state:{Name:"barrel",Properties:{facing:"up"}}, \
   transformation: [1f,0f,0f,-0.5f,0f,1f,0f,0f,0f,0f,1f,-0.5f,0f,0f,0f,1f], \
   Tags:["prophunt.entity","prophunt.display","prophunt.new"], \
-  Passengers:[{id:"minecraft:interaction",width:1.2f,height:1.2f}] \
+  Passengers:[{id:"minecraft:interaction",width:1.4f,height:1.4f}] \
 }

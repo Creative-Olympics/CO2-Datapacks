@@ -4,7 +4,13 @@
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "player": {
-          "team": "lobby"
+          "team": "lobby",
+          "type_specific": {
+            "type": "player",
+            "gamemode": [
+              "adventure"
+            ]
+          }
         }
       }
     }

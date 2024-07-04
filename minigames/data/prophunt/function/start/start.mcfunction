@@ -3,6 +3,7 @@ scoreboard players set $prophunt.game_started data 1
 team join prophunt @a[x=112,y=82,z=66,distance=..5.5]
 
 gamemode adventure @a[team=prophunt]
+effect clear @a[team=prophunt]
 effect give @a[team=prophunt] saturation infinite 255 true
 effect give @a[team=prophunt] regeneration infinite 255 true
 effect give @a[team=prophunt] resistance infinite 255 true
@@ -18,6 +19,11 @@ scoreboard players reset @a[team=prophunt] prophunt.prop_variation_cooldown
 scoreboard players reset @a[team=prophunt] prophunt.prop_switch_cooldown
 scoreboard players reset @a[team=prophunt] prophunt.prop_stun_cooldown
 scoreboard players reset @a[team=prophunt] prophunt.prop_taunt_timer
+scoreboard players reset @a[team=prophunt] prophunt.hunter_dash_cooldown
+scoreboard players reset @a[team=prophunt] prophunt.hunter_ping_cooldown
+scoreboard players reset @a[team=prophunt] prophunt.hunter_ultimate_points
+scoreboard players reset @a[team=prophunt] prophunt.hunter_ultimate_timer
+scoreboard players reset @a[team=prophunt] prophunt.hunter_stunned
 
 tag @a[team=prophunt] remove prophunt.is_hunter
 tag @a[team=prophunt] remove prophunt.is_prop
@@ -39,6 +45,8 @@ execute as @a[team=prophunt,tag=prophunt.is_prop] store result score @s prophunt
 scoreboard players add @a[team=prophunt,tag=prophunt.is_prop] prophunt.prop_taunt_timer 600
 
 effect give @a[team=prophunt,tag=prophunt.is_prop] minecraft:invisibility infinite 0 true
+effect give @a[team=prophunt,tag=prophunt.is_prop] minecraft:weakness infinite 255 true
+
 execute as @a[team=prophunt,tag=prophunt.is_prop] at @s run function prophunt:prop/abilities/switch_type/stop
 execute as @a[team=prophunt,tag=prophunt.is_prop] at @s run scoreboard players set @s prophunt.prop_switch_cooldown 0
 

@@ -1,5 +1,4 @@
-# Game time to 5min
-scoreboard players set $prophunt.remaining_time data 6000
+scoreboard players operation $prophunt.remaining_time data = $prophunt.game_duration data
 
 scoreboard players operation #prophunt.timer.seconds data = $prophunt.remaining_time data
 scoreboard players operation #prophunt.timer.seconds data /= 20 const

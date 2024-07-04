@@ -1,3 +1,4 @@
+execute unless score @s prophunt.hunter_dash_cooldown matches 200.. run function prophunt:hunter/abilities/dash/stop
 scoreboard players set @s prophunt.hunter_stunned 100
 
 effect give @s blindness infinite 255 true

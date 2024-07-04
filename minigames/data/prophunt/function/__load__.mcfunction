@@ -21,10 +21,17 @@ scoreboard objectives add prophunt.prop_taunt_timer dummy
 scoreboard objectives add prophunt.hunter_stunned dummy
 scoreboard objectives add prophunt.hunter_ping_stack dummy
 scoreboard objectives add prophunt.hunter_ping_cooldown dummy
+scoreboard objectives add prophunt.hunter_dash_cooldown dummy
+scoreboard objectives add prophunt.hunter_ultimate_points dummy
+scoreboard objectives add prophunt.hunter_ultimate_timer dummy
+
 
 team add prophunt
 team modify prophunt collisionRule never
 team modify prophunt color blue
-team modify prophunt friendlyFire false
+team modify prophunt friendlyFire true
 team modify prophunt nametagVisibility never
 team modify prophunt seeFriendlyInvisibles false
+
+scoreboard players set $prophunt.game_duration data 6000
+scoreboard players set $prophunt.hunter_ultimate_cost data 6000

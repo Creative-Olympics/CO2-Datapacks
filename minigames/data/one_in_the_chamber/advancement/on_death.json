@@ -6,7 +6,7 @@
         "player": {
           "team": "oitc",
           "type_specific": {
-            "type": "minecraft:player",
+            "type": "player",
             "stats": [
               {
                 "type": "minecraft:custom",
