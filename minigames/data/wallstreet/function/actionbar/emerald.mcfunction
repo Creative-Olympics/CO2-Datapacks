@@ -1,0 +1,1 @@
+title @s actionbar [{"text":"You have ","color":"gray","bold":false,"italic":false},{"score":{"name":"@s","objective":"wallstreet.budget"},"color":"yellow","bold":true,"italic":true},{"text":"","color":"white","bold":false,"italic":false}]

@@ -1,3 +1,0 @@
-
-
-$item replace entity @s hotbar.7 with compass{display:{Name:'{"text":" ","color":"dark_purple","bold":true,"italic":true}',Lore:['{"text":"This compass indicate the selected villager","color":"white","italic":false}','{"text":"Drop it to select the next villager","color":"white","italic":false}','{"text":"Swap it from hands to select the previous one","color":"white","italic":false}']},LodestoneDimension:"minecraft:overworld",LodestonePos:{X:$(x),Y:$(y),Z:$(z)},LodestoneTracked:0b,HideFlags:255}

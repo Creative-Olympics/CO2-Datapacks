@@ -1,7 +1,7 @@
 clear @s
 tag @s remove prophunt.is_prop
 
-scoreboard players remove @a[team=prophunt,tag=prophunt.is_attacker] prophunt.hunter_ultimate_points 600
+scoreboard players add @a[team=prophunt,tag=prophunt.is_attacker] prophunt.hunter_ultimate_points 600
 
 scoreboard players operation $id.suid bs.in = @s bs.id
 execute as @e[type=minecraft:block_display,tag=prophunt.display,predicate=bs.id:suid_equal] run function prophunt:prop/display/kill

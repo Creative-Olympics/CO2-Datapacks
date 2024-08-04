@@ -1,6 +1,6 @@
 {
   "values": [
     "prophunt:start/start",
-    "prophunt:timer/start"
+    "prophunt:timer/refresh"
   ]
 }

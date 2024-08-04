@@ -1,5 +1,7 @@
 scoreboard players set $prophunt.game_started data 1
 
+scoreboard players operation $prophunt.remaining_time data = $prophunt.game_duration data
+
 team join prophunt @a[x=112,y=82,z=66,distance=..5.5]
 
 gamemode adventure @a[team=prophunt]

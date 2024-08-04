@@ -1,4 +1,4 @@
-execute as @e[type=marker,tag=jump.checkpoint] run function jump:checkpoint/as_player
+execute as @e[type=marker,tag=jump.checkpoint] run function jump:checkpoint/process
 
 execute at @a[team=jump] as @e[type=horse,tag=lobby.horse,distance=..3] run function lobby:horse/kill
 execute at @a[team=jump] run effect give @a[distance=0.001..2] invisibility 1 1

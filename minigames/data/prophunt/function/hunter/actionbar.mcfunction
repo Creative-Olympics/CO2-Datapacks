@@ -30,7 +30,7 @@ scoreboard players add #this prophunt.hunter_ultimate_timer 1
 data modify storage prophunt:controls ultimate set value '[{"keybind":"key.swapOffhand","color":"red"},{"text":" to enrage","color":"red"}]'
 # Already in ultimate
 execute if score @s prophunt.hunter_ultimate_timer matches 1.. \
-  run data modify storage prophunt:controls ultimate set value '{"text":"... ","color":"red","obfuscated":"true"},{"text":"ENRAGED ","color":"red"},{"score":{"name":"#this","objective":"prophunt.hunter_ultimate_timer"},"color":"red"},{"text":"s","color":"red"},{"text":" ...","color":"red","obfuscated":"true"}'
+  run data modify storage prophunt:controls ultimate set value '[{"text":"... ","color":"red","obfuscated":"true"},{"text":"ENRAGED ","color":"red"},{"score":{"name":"#this","objective":"prophunt.hunter_ultimate_timer"},"color":"red"},{"text":"s","color":"red"},{"text":" ...","color":"red","obfuscated":"true"}]'
 # Can enrage
 execute unless score @s prophunt.hunter_dash_cooldown matches 200.. \
   unless score @s prophunt.hunter_ultimate_timer matches 1.. \
@@ -38,7 +38,7 @@ execute unless score @s prophunt.hunter_dash_cooldown matches 200.. \
   if score @s prophunt.hunter_ultimate_timer >= $prophunt.hunter_ultimate_cost data \
   run data modify storage prophunt:controls ultimate set value '[{"text":"... ","color":"green","obfuscated":"true"},{"keybind":"key.swapOffhand","color":"dark_aqua"},{"text":" TO ENRAGE","color":"green"},{"text":" ...","color":"green","obfuscated":"true"}]'
 # Progress
-execute if score @s prophunt.hunter_ultimate_points < $prophunt.hunter_ultimate_cost data run data modify storage prophunt:controls ultimate set value '{"text":"Enrage ","color":"red"},{"score":{"name":"prophunt.hunter_ultimate_points","objective":"data"},"color":"yellow"},{"text":"%","color":"yellow"}'
+execute if score @s prophunt.hunter_ultimate_points < $prophunt.hunter_ultimate_cost data run data modify storage prophunt:controls ultimate set value '[{"text":"Enrage ","color":"red"},{"score":{"name":"#this","objective":"prophunt.hunter_ultimate_points"},"color":"yellow"},{"text":"%","color":"yellow"}]'
 
 
 # Ping ------------------------------------------------------------------------

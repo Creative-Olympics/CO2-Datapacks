@@ -1,6 +1,7 @@
 {
   "values": [
     "prophunt:game_tick",
+    "prophunt:timer/refresh",
     "prophunt:climb/trigger",
     "prophunt:hunter/abilities/dash/trigger",
     "prophunt:hunter/abilities/ping/trigger",
@@ -10,7 +11,6 @@
     "prophunt:prop/abilities/switch_type/trigger",
     "prophunt:prop/abilities/switch_variation/trigger",
     "prophunt:prop/taunt/trigger",
-    "prophunt:stop/trigger",
-    "prophunt:timer/refresh"
+    "prophunt:stop/trigger"
   ]
 }

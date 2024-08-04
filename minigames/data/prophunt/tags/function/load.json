@@ -1,6 +1,7 @@
 {
   "values": [
     "#prophunt:events/stop",
-    "prophunt:__load__"
+    "prophunt:__load__",
+    "prophunt:config"
   ]
 }
